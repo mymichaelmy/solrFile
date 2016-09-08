@@ -534,7 +534,7 @@
     <dynamicField name="ss_*"  type="string"  indexed="true"  stored="true" multiValued="false" />
 
 
-    <dynamicField name="sm_*"  type="string_ci"  indexed="true"  stored="true" multiValued="false" >
+    <dynamicField name="sm_*"  type="string_ci"  indexed="true"  stored="true" multiValued="true" >
       <analyzer type="index">
         <filter class="solr.LowerCaseFilterFactory"/>
       </analyzer>

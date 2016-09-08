@@ -1,318 +1,644 @@
 WARNING: System properties and/or JVM args set.  Consider using --dry-run or --exec
-0    INFO  (main) [   ] o.e.j.u.log Logging initialized @346ms
-184  INFO  (main) [   ] o.e.j.s.Server jetty-9.2.13.v20150730
-199  WARN  (main) [   ] o.e.j.s.h.RequestLogHandler !RequestLog
-200  INFO  (main) [   ] o.e.j.d.p.ScanningAppProvider Deployment monitor [file:/Applications/drupal-7.50-0/apps/solr-5.5.0/server/contexts/] at interval 0
-571  INFO  (main) [   ] o.e.j.w.StandardDescriptorProcessor NO JSP Support for /solr, did not find org.apache.jasper.servlet.JspServlet
-581  WARN  (main) [   ] o.e.j.s.SecurityHandler ServletContext@o.e.j.w.WebAppContext@146ba0ac{/solr,file:/Applications/drupal-7.50-0/apps/solr-5.5.0/server/solr-webapp/webapp/,STARTING}{/Applications/drupal-7.50-0/apps/solr-5.5.0/server/solr-webapp/webapp} has uncovered http methods for path: /
-593  INFO  (main) [   ] o.a.s.s.SolrDispatchFilter SolrDispatchFilter.init(): WebAppClassLoader=239465106@e45f292
-616  INFO  (main) [   ] o.a.s.c.SolrResourceLoader JNDI not configured for solr (NoInitialContextEx)
-616  INFO  (main) [   ] o.a.s.c.SolrResourceLoader using system property solr.solr.home: /Applications/drupal-7.50-0/apps/solr-5.5.0/server/solr
-617  INFO  (main) [   ] o.a.s.c.SolrResourceLoader new SolrResourceLoader for directory: '/Applications/drupal-7.50-0/apps/solr-5.5.0/server/solr'
-617  INFO  (main) [   ] o.a.s.c.SolrResourceLoader JNDI not configured for solr (NoInitialContextEx)
-617  INFO  (main) [   ] o.a.s.c.SolrResourceLoader using system property solr.solr.home: /Applications/drupal-7.50-0/apps/solr-5.5.0/server/solr
-623  INFO  (main) [   ] o.a.s.c.SolrXmlConfig Loading container configuration from /Applications/drupal-7.50-0/apps/solr-5.5.0/server/solr/solr.xml
-726  INFO  (main) [   ] o.a.s.c.CorePropertiesLocator Config-defined core root directory: /Applications/drupal-7.50-0/apps/solr-5.5.0/server/solr
-755  INFO  (main) [   ] o.a.s.c.CoreContainer New CoreContainer 513700442
-755  INFO  (main) [   ] o.a.s.c.CoreContainer Loading cores into CoreContainer [instanceDir=/Applications/drupal-7.50-0/apps/solr-5.5.0/server/solr]
-756  WARN  (main) [   ] o.a.s.c.CoreContainer Couldn't add files from /Applications/drupal-7.50-0/apps/solr-5.5.0/server/solr/lib to classpath: /Applications/drupal-7.50-0/apps/solr-5.5.0/server/solr/lib
-768  INFO  (main) [   ] o.a.s.h.c.HttpShardHandlerFactory created with socketTimeout : 600000,connTimeout : 60000,maxConnectionsPerHost : 20,maxConnections : 10000,corePoolSize : 0,maximumPoolSize : 2147483647,maxThreadIdleTime : 5,sizeOfQueue : -1,fairnessPolicy : false,useRetries : false,
-972  INFO  (main) [   ] o.a.s.u.UpdateShardHandler Creating UpdateShardHandler HTTP client with params: socketTimeout=600000&connTimeout=60000&retry=true
-975  INFO  (main) [   ] o.a.s.l.LogWatcher SLF4J impl is org.slf4j.impl.Log4jLoggerFactory
-975  INFO  (main) [   ] o.a.s.l.LogWatcher Registering Log Listener [Log4j (org.slf4j.impl.Log4jLoggerFactory)]
-977  INFO  (main) [   ] o.a.s.c.CoreContainer Security conf doesn't exist. Skipping setup for authorization module.
-978  INFO  (main) [   ] o.a.s.c.CoreContainer No authentication plugin used.
-1056 INFO  (main) [   ] o.a.s.c.CorePropertiesLocator Looking for core definitions underneath /Applications/drupal-7.50-0/apps/solr-5.5.0/server/solr
-1080 INFO  (main) [   ] o.a.s.c.CoreDescriptor Created CoreDescriptor: {solr.replication.pollInterval=00:00:60, solr.autoCommit.MaxDocs=10000, solr.contrib.dir=../../../contrib, solr.replication.confFiles=schema.xml,mapping-ISOLatin1Accent.txt,protwords.txt,stopwords.txt,synonyms.txt,elevate.xml, loadOnStartup=true, solr.replication.master=false, solr.mlt.timeAllowed=2000, solr.pinkPony.timeAllowed=-1, solr.autoSoftCommit.MaxTime=10000, schema=schema.xml, solr.replication.masterUrl=http://localhost:8983/solr, solr.autoSoftCommit.MaxDocs=2000, solr.luceneMatchVersion=5.0.0, configSetProperties=configsetprops.json, solr.autoCommit.MaxTime=120000, dataDir=data, transient=false, config=solrconfig.xml, solr.replication.slave=false, name=drupal}
-1080 INFO  (main) [   ] o.a.s.c.CorePropertiesLocator Found core drupal in /Applications/drupal-7.50-0/apps/solr-5.5.0/server/solr/drupal
-1083 INFO  (main) [   ] o.a.s.c.CoreDescriptor Created CoreDescriptor: {solr.replication.pollInterval=00:00:60, solr.autoCommit.MaxDocs=10000, solr.contrib.dir=../../../contrib, solr.replication.confFiles=schema.xml,mapping-ISOLatin1Accent.txt,protwords.txt,stopwords.txt,synonyms.txt,elevate.xml, loadOnStartup=true, solr.replication.master=false, solr.mlt.timeAllowed=2000, solr.pinkPony.timeAllowed=-1, solr.autoSoftCommit.MaxTime=10000, schema=schema.xml, solr.replication.masterUrl=http://localhost:8983/solr, solr.autoSoftCommit.MaxDocs=2000, solr.luceneMatchVersion=5.0.0, configSetProperties=configsetprops.json, solr.autoCommit.MaxTime=120000, dataDir=data, transient=false, config=solrconfig.xml, solr.replication.slave=false, name=search}
-1083 INFO  (main) [   ] o.a.s.c.CorePropertiesLocator Found core search in /Applications/drupal-7.50-0/apps/solr-5.5.0/server/solr/search
-1083 INFO  (main) [   ] o.a.s.c.CorePropertiesLocator Found 2 core definitions
-1086 INFO  (main) [   ] o.a.s.s.SolrDispatchFilter user.dir=/Applications/drupal-7.50-0/apps/solr-5.5.0/server
-1086 INFO  (main) [   ] o.a.s.s.SolrDispatchFilter SolrDispatchFilter.init() done
-1087 INFO  (coreLoadExecutor-6-thread-2) [   ] o.a.s.c.SolrResourceLoader new SolrResourceLoader for directory: '/Applications/drupal-7.50-0/apps/solr-5.5.0/server/solr/search'
-1087 INFO  (coreLoadExecutor-6-thread-1) [   ] o.a.s.c.SolrResourceLoader new SolrResourceLoader for directory: '/Applications/drupal-7.50-0/apps/solr-5.5.0/server/solr/drupal'
-1087 INFO  (coreLoadExecutor-6-thread-2) [   ] o.a.s.c.SolrResourceLoader JNDI not configured for solr (NoInitialContextEx)
-1087 INFO  (coreLoadExecutor-6-thread-1) [   ] o.a.s.c.SolrResourceLoader JNDI not configured for solr (NoInitialContextEx)
-1087 INFO  (coreLoadExecutor-6-thread-1) [   ] o.a.s.c.SolrResourceLoader using system property solr.solr.home: /Applications/drupal-7.50-0/apps/solr-5.5.0/server/solr
-1087 INFO  (coreLoadExecutor-6-thread-2) [   ] o.a.s.c.SolrResourceLoader using system property solr.solr.home: /Applications/drupal-7.50-0/apps/solr-5.5.0/server/solr
-1096 INFO  (main) [   ] o.e.j.s.h.ContextHandler Started o.e.j.w.WebAppContext@146ba0ac{/solr,file:/Applications/drupal-7.50-0/apps/solr-5.5.0/server/solr-webapp/webapp/,AVAILABLE}{/Applications/drupal-7.50-0/apps/solr-5.5.0/server/solr-webapp/webapp}
-1118 INFO  (main) [   ] o.e.j.s.ServerConnector Started ServerConnector@5c6648b0{HTTP/1.1}{0.0.0.0:8983}
-1118 INFO  (main) [   ] o.e.j.s.Server Started @1467ms
-1141 INFO  (coreLoadExecutor-6-thread-1) [   ] o.a.s.c.SolrConfig current version of requestparams : -1
-1141 INFO  (coreLoadExecutor-6-thread-2) [   ] o.a.s.c.SolrConfig current version of requestparams : -1
-1144 INFO  (coreLoadExecutor-6-thread-1) [   ] o.a.s.c.SolrConfig Adding specified lib dirs to ClassLoader
-1144 INFO  (coreLoadExecutor-6-thread-2) [   ] o.a.s.c.SolrConfig Adding specified lib dirs to ClassLoader
-1151 INFO  (coreLoadExecutor-6-thread-1) [   ] o.a.s.c.SolrResourceLoader Adding 'file:/Applications/drupal-7.50-0/apps/solr-5.5.0/contrib/extraction/lib/apache-mime4j-core-0.7.2.jar' to classloader
-1151 INFO  (coreLoadExecutor-6-thread-1) [   ] o.a.s.c.SolrResourceLoader Adding 'file:/Applications/drupal-7.50-0/apps/solr-5.5.0/contrib/extraction/lib/apache-mime4j-dom-0.7.2.jar' to classloader
-1151 INFO  (coreLoadExecutor-6-thread-1) [   ] o.a.s.c.SolrResourceLoader Adding 'file:/Applications/drupal-7.50-0/apps/solr-5.5.0/contrib/extraction/lib/aspectjrt-1.8.0.jar' to classloader
-1152 INFO  (coreLoadExecutor-6-thread-1) [   ] o.a.s.c.SolrResourceLoader Adding 'file:/Applications/drupal-7.50-0/apps/solr-5.5.0/contrib/extraction/lib/bcmail-jdk15-1.45.jar' to classloader
-1152 INFO  (coreLoadExecutor-6-thread-1) [   ] o.a.s.c.SolrResourceLoader Adding 'file:/Applications/drupal-7.50-0/apps/solr-5.5.0/contrib/extraction/lib/bcprov-jdk15-1.45.jar' to classloader
-1152 INFO  (coreLoadExecutor-6-thread-1) [   ] o.a.s.c.SolrResourceLoader Adding 'file:/Applications/drupal-7.50-0/apps/solr-5.5.0/contrib/extraction/lib/boilerpipe-1.1.0.jar' to classloader
-1151 INFO  (coreLoadExecutor-6-thread-2) [   ] o.a.s.c.SolrResourceLoader Adding 'file:/Applications/drupal-7.50-0/apps/solr-5.5.0/contrib/extraction/lib/apache-mime4j-core-0.7.2.jar' to classloader
-1152 INFO  (coreLoadExecutor-6-thread-1) [   ] o.a.s.c.SolrResourceLoader Adding 'file:/Applications/drupal-7.50-0/apps/solr-5.5.0/contrib/extraction/lib/commons-compress-1.8.1.jar' to classloader
-1152 INFO  (coreLoadExecutor-6-thread-2) [   ] o.a.s.c.SolrResourceLoader Adding 'file:/Applications/drupal-7.50-0/apps/solr-5.5.0/contrib/extraction/lib/apache-mime4j-dom-0.7.2.jar' to classloader
-1152 INFO  (coreLoadExecutor-6-thread-2) [   ] o.a.s.c.SolrResourceLoader Adding 'file:/Applications/drupal-7.50-0/apps/solr-5.5.0/contrib/extraction/lib/aspectjrt-1.8.0.jar' to classloader
-1152 INFO  (coreLoadExecutor-6-thread-2) [   ] o.a.s.c.SolrResourceLoader Adding 'file:/Applications/drupal-7.50-0/apps/solr-5.5.0/contrib/extraction/lib/bcmail-jdk15-1.45.jar' to classloader
-1152 INFO  (coreLoadExecutor-6-thread-2) [   ] o.a.s.c.SolrResourceLoader Adding 'file:/Applications/drupal-7.50-0/apps/solr-5.5.0/contrib/extraction/lib/bcprov-jdk15-1.45.jar' to classloader
-1152 INFO  (coreLoadExecutor-6-thread-2) [   ] o.a.s.c.SolrResourceLoader Adding 'file:/Applications/drupal-7.50-0/apps/solr-5.5.0/contrib/extraction/lib/boilerpipe-1.1.0.jar' to classloader
-1152 INFO  (coreLoadExecutor-6-thread-2) [   ] o.a.s.c.SolrResourceLoader Adding 'file:/Applications/drupal-7.50-0/apps/solr-5.5.0/contrib/extraction/lib/commons-compress-1.8.1.jar' to classloader
-1152 INFO  (coreLoadExecutor-6-thread-2) [   ] o.a.s.c.SolrResourceLoader Adding 'file:/Applications/drupal-7.50-0/apps/solr-5.5.0/contrib/extraction/lib/fontbox-1.8.8.jar' to classloader
-1152 INFO  (coreLoadExecutor-6-thread-2) [   ] o.a.s.c.SolrResourceLoader Adding 'file:/Applications/drupal-7.50-0/apps/solr-5.5.0/contrib/extraction/lib/icu4j-54.1.jar' to classloader
-1152 INFO  (coreLoadExecutor-6-thread-2) [   ] o.a.s.c.SolrResourceLoader Adding 'file:/Applications/drupal-7.50-0/apps/solr-5.5.0/contrib/extraction/lib/isoparser-1.0.2.jar' to classloader
-1152 INFO  (coreLoadExecutor-6-thread-2) [   ] o.a.s.c.SolrResourceLoader Adding 'file:/Applications/drupal-7.50-0/apps/solr-5.5.0/contrib/extraction/lib/java-libpst-0.8.1.jar' to classloader
-1152 INFO  (coreLoadExecutor-6-thread-1) [   ] o.a.s.c.SolrResourceLoader Adding 'file:/Applications/drupal-7.50-0/apps/solr-5.5.0/contrib/extraction/lib/fontbox-1.8.8.jar' to classloader
-1153 INFO  (coreLoadExecutor-6-thread-2) [   ] o.a.s.c.SolrResourceLoader Adding 'file:/Applications/drupal-7.50-0/apps/solr-5.5.0/contrib/extraction/lib/jdom-1.0.jar' to classloader
-1153 INFO  (coreLoadExecutor-6-thread-1) [   ] o.a.s.c.SolrResourceLoader Adding 'file:/Applications/drupal-7.50-0/apps/solr-5.5.0/contrib/extraction/lib/icu4j-54.1.jar' to classloader
-1153 INFO  (coreLoadExecutor-6-thread-2) [   ] o.a.s.c.SolrResourceLoader Adding 'file:/Applications/drupal-7.50-0/apps/solr-5.5.0/contrib/extraction/lib/jempbox-1.8.8.jar' to classloader
-1153 INFO  (coreLoadExecutor-6-thread-1) [   ] o.a.s.c.SolrResourceLoader Adding 'file:/Applications/drupal-7.50-0/apps/solr-5.5.0/contrib/extraction/lib/isoparser-1.0.2.jar' to classloader
-1153 INFO  (coreLoadExecutor-6-thread-2) [   ] o.a.s.c.SolrResourceLoader Adding 'file:/Applications/drupal-7.50-0/apps/solr-5.5.0/contrib/extraction/lib/jmatio-1.0.jar' to classloader
-1153 INFO  (coreLoadExecutor-6-thread-1) [   ] o.a.s.c.SolrResourceLoader Adding 'file:/Applications/drupal-7.50-0/apps/solr-5.5.0/contrib/extraction/lib/java-libpst-0.8.1.jar' to classloader
-1153 INFO  (coreLoadExecutor-6-thread-2) [   ] o.a.s.c.SolrResourceLoader Adding 'file:/Applications/drupal-7.50-0/apps/solr-5.5.0/contrib/extraction/lib/juniversalchardet-1.0.3.jar' to classloader
-1153 INFO  (coreLoadExecutor-6-thread-1) [   ] o.a.s.c.SolrResourceLoader Adding 'file:/Applications/drupal-7.50-0/apps/solr-5.5.0/contrib/extraction/lib/jdom-1.0.jar' to classloader
-1153 INFO  (coreLoadExecutor-6-thread-2) [   ] o.a.s.c.SolrResourceLoader Adding 'file:/Applications/drupal-7.50-0/apps/solr-5.5.0/contrib/extraction/lib/metadata-extractor-2.6.2.jar' to classloader
-1153 INFO  (coreLoadExecutor-6-thread-1) [   ] o.a.s.c.SolrResourceLoader Adding 'file:/Applications/drupal-7.50-0/apps/solr-5.5.0/contrib/extraction/lib/jempbox-1.8.8.jar' to classloader
-1153 INFO  (coreLoadExecutor-6-thread-2) [   ] o.a.s.c.SolrResourceLoader Adding 'file:/Applications/drupal-7.50-0/apps/solr-5.5.0/contrib/extraction/lib/pdfbox-1.8.8.jar' to classloader
-1153 INFO  (coreLoadExecutor-6-thread-1) [   ] o.a.s.c.SolrResourceLoader Adding 'file:/Applications/drupal-7.50-0/apps/solr-5.5.0/contrib/extraction/lib/jmatio-1.0.jar' to classloader
-1153 INFO  (coreLoadExecutor-6-thread-2) [   ] o.a.s.c.SolrResourceLoader Adding 'file:/Applications/drupal-7.50-0/apps/solr-5.5.0/contrib/extraction/lib/poi-3.11.jar' to classloader
-1153 INFO  (coreLoadExecutor-6-thread-1) [   ] o.a.s.c.SolrResourceLoader Adding 'file:/Applications/drupal-7.50-0/apps/solr-5.5.0/contrib/extraction/lib/juniversalchardet-1.0.3.jar' to classloader
-1153 INFO  (coreLoadExecutor-6-thread-2) [   ] o.a.s.c.SolrResourceLoader Adding 'file:/Applications/drupal-7.50-0/apps/solr-5.5.0/contrib/extraction/lib/poi-ooxml-3.11.jar' to classloader
-1153 INFO  (coreLoadExecutor-6-thread-1) [   ] o.a.s.c.SolrResourceLoader Adding 'file:/Applications/drupal-7.50-0/apps/solr-5.5.0/contrib/extraction/lib/metadata-extractor-2.6.2.jar' to classloader
-1154 INFO  (coreLoadExecutor-6-thread-2) [   ] o.a.s.c.SolrResourceLoader Adding 'file:/Applications/drupal-7.50-0/apps/solr-5.5.0/contrib/extraction/lib/poi-ooxml-schemas-3.11.jar' to classloader
-1154 INFO  (coreLoadExecutor-6-thread-1) [   ] o.a.s.c.SolrResourceLoader Adding 'file:/Applications/drupal-7.50-0/apps/solr-5.5.0/contrib/extraction/lib/pdfbox-1.8.8.jar' to classloader
-1154 INFO  (coreLoadExecutor-6-thread-2) [   ] o.a.s.c.SolrResourceLoader Adding 'file:/Applications/drupal-7.50-0/apps/solr-5.5.0/contrib/extraction/lib/poi-scratchpad-3.11.jar' to classloader
-1154 INFO  (coreLoadExecutor-6-thread-1) [   ] o.a.s.c.SolrResourceLoader Adding 'file:/Applications/drupal-7.50-0/apps/solr-5.5.0/contrib/extraction/lib/poi-3.11.jar' to classloader
-1154 INFO  (coreLoadExecutor-6-thread-2) [   ] o.a.s.c.SolrResourceLoader Adding 'file:/Applications/drupal-7.50-0/apps/solr-5.5.0/contrib/extraction/lib/rome-1.0.jar' to classloader
-1154 INFO  (coreLoadExecutor-6-thread-1) [   ] o.a.s.c.SolrResourceLoader Adding 'file:/Applications/drupal-7.50-0/apps/solr-5.5.0/contrib/extraction/lib/poi-ooxml-3.11.jar' to classloader
-1154 INFO  (coreLoadExecutor-6-thread-2) [   ] o.a.s.c.SolrResourceLoader Adding 'file:/Applications/drupal-7.50-0/apps/solr-5.5.0/contrib/extraction/lib/tagsoup-1.2.1.jar' to classloader
-1154 INFO  (coreLoadExecutor-6-thread-1) [   ] o.a.s.c.SolrResourceLoader Adding 'file:/Applications/drupal-7.50-0/apps/solr-5.5.0/contrib/extraction/lib/poi-ooxml-schemas-3.11.jar' to classloader
-1154 INFO  (coreLoadExecutor-6-thread-2) [   ] o.a.s.c.SolrResourceLoader Adding 'file:/Applications/drupal-7.50-0/apps/solr-5.5.0/contrib/extraction/lib/tika-core-1.7.jar' to classloader
-1154 INFO  (coreLoadExecutor-6-thread-1) [   ] o.a.s.c.SolrResourceLoader Adding 'file:/Applications/drupal-7.50-0/apps/solr-5.5.0/contrib/extraction/lib/poi-scratchpad-3.11.jar' to classloader
-1154 INFO  (coreLoadExecutor-6-thread-2) [   ] o.a.s.c.SolrResourceLoader Adding 'file:/Applications/drupal-7.50-0/apps/solr-5.5.0/contrib/extraction/lib/tika-java7-1.7.jar' to classloader
-1154 INFO  (coreLoadExecutor-6-thread-1) [   ] o.a.s.c.SolrResourceLoader Adding 'file:/Applications/drupal-7.50-0/apps/solr-5.5.0/contrib/extraction/lib/rome-1.0.jar' to classloader
-1154 INFO  (coreLoadExecutor-6-thread-2) [   ] o.a.s.c.SolrResourceLoader Adding 'file:/Applications/drupal-7.50-0/apps/solr-5.5.0/contrib/extraction/lib/tika-parsers-1.7.jar' to classloader
-1154 INFO  (coreLoadExecutor-6-thread-1) [   ] o.a.s.c.SolrResourceLoader Adding 'file:/Applications/drupal-7.50-0/apps/solr-5.5.0/contrib/extraction/lib/tagsoup-1.2.1.jar' to classloader
-1154 INFO  (coreLoadExecutor-6-thread-2) [   ] o.a.s.c.SolrResourceLoader Adding 'file:/Applications/drupal-7.50-0/apps/solr-5.5.0/contrib/extraction/lib/tika-xmp-1.7.jar' to classloader
-1154 INFO  (coreLoadExecutor-6-thread-1) [   ] o.a.s.c.SolrResourceLoader Adding 'file:/Applications/drupal-7.50-0/apps/solr-5.5.0/contrib/extraction/lib/tika-core-1.7.jar' to classloader
-1154 INFO  (coreLoadExecutor-6-thread-2) [   ] o.a.s.c.SolrResourceLoader Adding 'file:/Applications/drupal-7.50-0/apps/solr-5.5.0/contrib/extraction/lib/vorbis-java-core-0.6.jar' to classloader
-1154 INFO  (coreLoadExecutor-6-thread-1) [   ] o.a.s.c.SolrResourceLoader Adding 'file:/Applications/drupal-7.50-0/apps/solr-5.5.0/contrib/extraction/lib/tika-java7-1.7.jar' to classloader
-1155 INFO  (coreLoadExecutor-6-thread-2) [   ] o.a.s.c.SolrResourceLoader Adding 'file:/Applications/drupal-7.50-0/apps/solr-5.5.0/contrib/extraction/lib/vorbis-java-tika-0.6.jar' to classloader
-1155 INFO  (coreLoadExecutor-6-thread-1) [   ] o.a.s.c.SolrResourceLoader Adding 'file:/Applications/drupal-7.50-0/apps/solr-5.5.0/contrib/extraction/lib/tika-parsers-1.7.jar' to classloader
-1155 INFO  (coreLoadExecutor-6-thread-2) [   ] o.a.s.c.SolrResourceLoader Adding 'file:/Applications/drupal-7.50-0/apps/solr-5.5.0/contrib/extraction/lib/xercesImpl-2.9.1.jar' to classloader
-1155 INFO  (coreLoadExecutor-6-thread-1) [   ] o.a.s.c.SolrResourceLoader Adding 'file:/Applications/drupal-7.50-0/apps/solr-5.5.0/contrib/extraction/lib/tika-xmp-1.7.jar' to classloader
-1155 INFO  (coreLoadExecutor-6-thread-2) [   ] o.a.s.c.SolrResourceLoader Adding 'file:/Applications/drupal-7.50-0/apps/solr-5.5.0/contrib/extraction/lib/xmlbeans-2.6.0.jar' to classloader
-1155 INFO  (coreLoadExecutor-6-thread-1) [   ] o.a.s.c.SolrResourceLoader Adding 'file:/Applications/drupal-7.50-0/apps/solr-5.5.0/contrib/extraction/lib/vorbis-java-core-0.6.jar' to classloader
-1155 INFO  (coreLoadExecutor-6-thread-2) [   ] o.a.s.c.SolrResourceLoader Adding 'file:/Applications/drupal-7.50-0/apps/solr-5.5.0/contrib/extraction/lib/xmpcore-5.1.2.jar' to classloader
-1155 INFO  (coreLoadExecutor-6-thread-1) [   ] o.a.s.c.SolrResourceLoader Adding 'file:/Applications/drupal-7.50-0/apps/solr-5.5.0/contrib/extraction/lib/vorbis-java-tika-0.6.jar' to classloader
-1155 INFO  (coreLoadExecutor-6-thread-2) [   ] o.a.s.c.SolrResourceLoader Adding 'file:/Applications/drupal-7.50-0/apps/solr-5.5.0/contrib/extraction/lib/xz-1.5.jar' to classloader
-1155 INFO  (coreLoadExecutor-6-thread-1) [   ] o.a.s.c.SolrResourceLoader Adding 'file:/Applications/drupal-7.50-0/apps/solr-5.5.0/contrib/extraction/lib/xercesImpl-2.9.1.jar' to classloader
-1155 INFO  (coreLoadExecutor-6-thread-2) [   ] o.a.s.c.SolrResourceLoader Adding 'file:/Applications/drupal-7.50-0/apps/solr-5.5.0/contrib/clustering/lib/attributes-binder-1.2.3.jar' to classloader
-1155 INFO  (coreLoadExecutor-6-thread-1) [   ] o.a.s.c.SolrResourceLoader Adding 'file:/Applications/drupal-7.50-0/apps/solr-5.5.0/contrib/extraction/lib/xmlbeans-2.6.0.jar' to classloader
-1155 INFO  (coreLoadExecutor-6-thread-2) [   ] o.a.s.c.SolrResourceLoader Adding 'file:/Applications/drupal-7.50-0/apps/solr-5.5.0/contrib/clustering/lib/carrot2-guava-18.0.jar' to classloader
-1156 INFO  (coreLoadExecutor-6-thread-1) [   ] o.a.s.c.SolrResourceLoader Adding 'file:/Applications/drupal-7.50-0/apps/solr-5.5.0/contrib/extraction/lib/xmpcore-5.1.2.jar' to classloader
-1156 INFO  (coreLoadExecutor-6-thread-2) [   ] o.a.s.c.SolrResourceLoader Adding 'file:/Applications/drupal-7.50-0/apps/solr-5.5.0/contrib/clustering/lib/carrot2-mini-3.10.4.jar' to classloader
-1156 INFO  (coreLoadExecutor-6-thread-1) [   ] o.a.s.c.SolrResourceLoader Adding 'file:/Applications/drupal-7.50-0/apps/solr-5.5.0/contrib/extraction/lib/xz-1.5.jar' to classloader
-1156 INFO  (coreLoadExecutor-6-thread-2) [   ] o.a.s.c.SolrResourceLoader Adding 'file:/Applications/drupal-7.50-0/apps/solr-5.5.0/contrib/clustering/lib/jackson-annotations-2.5.4.jar' to classloader
-1156 INFO  (coreLoadExecutor-6-thread-1) [   ] o.a.s.c.SolrResourceLoader Adding 'file:/Applications/drupal-7.50-0/apps/solr-5.5.0/contrib/clustering/lib/attributes-binder-1.2.3.jar' to classloader
-1156 INFO  (coreLoadExecutor-6-thread-2) [   ] o.a.s.c.SolrResourceLoader Adding 'file:/Applications/drupal-7.50-0/apps/solr-5.5.0/contrib/clustering/lib/jackson-databind-2.5.4.jar' to classloader
-1156 INFO  (coreLoadExecutor-6-thread-1) [   ] o.a.s.c.SolrResourceLoader Adding 'file:/Applications/drupal-7.50-0/apps/solr-5.5.0/contrib/clustering/lib/carrot2-guava-18.0.jar' to classloader
-1156 INFO  (coreLoadExecutor-6-thread-2) [   ] o.a.s.c.SolrResourceLoader Adding 'file:/Applications/drupal-7.50-0/apps/solr-5.5.0/contrib/clustering/lib/mahout-collections-1.0.jar' to classloader
-1156 INFO  (coreLoadExecutor-6-thread-2) [   ] o.a.s.c.SolrResourceLoader Adding 'file:/Applications/drupal-7.50-0/apps/solr-5.5.0/contrib/clustering/lib/mahout-math-0.6.jar' to classloader
-1156 INFO  (coreLoadExecutor-6-thread-1) [   ] o.a.s.c.SolrResourceLoader Adding 'file:/Applications/drupal-7.50-0/apps/solr-5.5.0/contrib/clustering/lib/carrot2-mini-3.10.4.jar' to classloader
-1156 INFO  (coreLoadExecutor-6-thread-2) [   ] o.a.s.c.SolrResourceLoader Adding 'file:/Applications/drupal-7.50-0/apps/solr-5.5.0/contrib/clustering/lib/simple-xml-2.7.1.jar' to classloader
-1156 INFO  (coreLoadExecutor-6-thread-1) [   ] o.a.s.c.SolrResourceLoader Adding 'file:/Applications/drupal-7.50-0/apps/solr-5.5.0/contrib/clustering/lib/jackson-annotations-2.5.4.jar' to classloader
-1156 INFO  (coreLoadExecutor-6-thread-1) [   ] o.a.s.c.SolrResourceLoader Adding 'file:/Applications/drupal-7.50-0/apps/solr-5.5.0/contrib/clustering/lib/jackson-databind-2.5.4.jar' to classloader
-1156 INFO  (coreLoadExecutor-6-thread-1) [   ] o.a.s.c.SolrResourceLoader Adding 'file:/Applications/drupal-7.50-0/apps/solr-5.5.0/contrib/clustering/lib/mahout-collections-1.0.jar' to classloader
-1157 INFO  (coreLoadExecutor-6-thread-1) [   ] o.a.s.c.SolrResourceLoader Adding 'file:/Applications/drupal-7.50-0/apps/solr-5.5.0/contrib/clustering/lib/mahout-math-0.6.jar' to classloader
-1157 INFO  (coreLoadExecutor-6-thread-1) [   ] o.a.s.c.SolrResourceLoader Adding 'file:/Applications/drupal-7.50-0/apps/solr-5.5.0/contrib/clustering/lib/simple-xml-2.7.1.jar' to classloader
-1358 WARN  (coreLoadExecutor-6-thread-2) [   ] o.a.s.c.Config Solr no longer supports forceful unlocking via the 'unlockOnStartup' option.  This is no longer neccessary for the default lockType except in situations where it would be dangerous and should not be done.  For other lockTypes and/or directoryFactory options it may also be dangerous and users must resolve problematic locks manually.
-1360 WARN  (coreLoadExecutor-6-thread-1) [   ] o.a.s.c.Config Solr no longer supports forceful unlocking via the 'unlockOnStartup' option.  This is no longer neccessary for the default lockType except in situations where it would be dangerous and should not be done.  For other lockTypes and/or directoryFactory options it may also be dangerous and users must resolve problematic locks manually.
-1395 WARN  (coreLoadExecutor-6-thread-2) [   ] o.a.s.c.Config Beginning with Solr 5.5, <mergePolicy> is deprecated, use <mergePolicyFactory> instead.
-1395 WARN  (coreLoadExecutor-6-thread-2) [   ] o.a.s.c.Config Beginning with Solr 5.5, <maxMergeDocs> is deprecated, configure it on the relevant <mergePolicyFactory> instead.
-1395 WARN  (coreLoadExecutor-6-thread-2) [   ] o.a.s.c.Config Beginning with Solr 5.5, <mergeFactor> is deprecated, configure it on the relevant <mergePolicyFactory> instead.
-1397 WARN  (coreLoadExecutor-6-thread-1) [   ] o.a.s.c.Config Beginning with Solr 5.5, <mergePolicy> is deprecated, use <mergePolicyFactory> instead.
-1397 WARN  (coreLoadExecutor-6-thread-1) [   ] o.a.s.c.Config Beginning with Solr 5.5, <maxMergeDocs> is deprecated, configure it on the relevant <mergePolicyFactory> instead.
-1397 WARN  (coreLoadExecutor-6-thread-1) [   ] o.a.s.c.Config Beginning with Solr 5.5, <mergeFactor> is deprecated, configure it on the relevant <mergePolicyFactory> instead.
-1399 INFO  (coreLoadExecutor-6-thread-2) [   ] o.a.s.u.SolrIndexConfig IndexWriter infoStream solr logging is enabled
-1400 INFO  (coreLoadExecutor-6-thread-1) [   ] o.a.s.u.SolrIndexConfig IndexWriter infoStream solr logging is enabled
-1407 INFO  (coreLoadExecutor-6-thread-1) [   ] o.a.s.c.SolrConfig Using Lucene MatchVersion: 5.0.0
-1407 INFO  (coreLoadExecutor-6-thread-2) [   ] o.a.s.c.SolrConfig Using Lucene MatchVersion: 5.0.0
-1503 INFO  (coreLoadExecutor-6-thread-1) [   ] o.a.s.c.SolrConfig Loaded SolrConfig: solrconfig.xml
-1503 INFO  (coreLoadExecutor-6-thread-2) [   ] o.a.s.c.SolrConfig Loaded SolrConfig: solrconfig.xml
-1538 INFO  (coreLoadExecutor-6-thread-2) [   ] o.a.s.s.IndexSchema [search] Schema name=drupal-4.3-solr-5.x
-1538 INFO  (coreLoadExecutor-6-thread-1) [   ] o.a.s.s.IndexSchema [drupal] Schema name=drupal-4.3-solr-5.x
-1751 INFO  (coreLoadExecutor-6-thread-2) [   ] o.a.s.s.IndexSchema unique key field: id
-1751 INFO  (coreLoadExecutor-6-thread-1) [   ] o.a.s.s.IndexSchema unique key field: id
-1793 INFO  (coreLoadExecutor-6-thread-2) [   ] o.a.s.c.ConfigSetProperties Did not find ConfigSet properties, assuming default properties: Can't find resource 'configsetprops.json' in classpath or '/Applications/drupal-7.50-0/apps/solr-5.5.0/server/solr/search'
-1793 INFO  (coreLoadExecutor-6-thread-1) [   ] o.a.s.c.ConfigSetProperties Did not find ConfigSet properties, assuming default properties: Can't find resource 'configsetprops.json' in classpath or '/Applications/drupal-7.50-0/apps/solr-5.5.0/server/solr/drupal'
-1794 INFO  (coreLoadExecutor-6-thread-2) [   ] o.a.s.c.CoreContainer Creating SolrCore 'search' using configuration from instancedir /Applications/drupal-7.50-0/apps/solr-5.5.0/server/solr/search
-1794 INFO  (coreLoadExecutor-6-thread-1) [   ] o.a.s.c.CoreContainer Creating SolrCore 'drupal' using configuration from instancedir /Applications/drupal-7.50-0/apps/solr-5.5.0/server/solr/drupal
-1813 INFO  (coreLoadExecutor-6-thread-1) [   x:drupal] o.a.s.c.SolrCore solr.NRTCachingDirectoryFactory
-1813 INFO  (coreLoadExecutor-6-thread-2) [   x:search] o.a.s.c.SolrCore solr.NRTCachingDirectoryFactory
-1825 INFO  (coreLoadExecutor-6-thread-2) [   x:search] o.a.s.c.SolrCore [[search] ] Opening new SolrCore at [/Applications/drupal-7.50-0/apps/solr-5.5.0/server/solr/search], dataDir=[/Applications/drupal-7.50-0/apps/solr-5.5.0/server/solr/search/data/]
-1825 INFO  (coreLoadExecutor-6-thread-1) [   x:drupal] o.a.s.c.SolrCore [[drupal] ] Opening new SolrCore at [/Applications/drupal-7.50-0/apps/solr-5.5.0/server/solr/drupal], dataDir=[/Applications/drupal-7.50-0/apps/solr-5.5.0/server/solr/drupal/data/]
-1825 INFO  (coreLoadExecutor-6-thread-2) [   x:search] o.a.s.c.SolrCore JMX monitoring not detected for core: search
-1825 INFO  (coreLoadExecutor-6-thread-1) [   x:drupal] o.a.s.c.SolrCore JMX monitoring not detected for core: drupal
-1829 INFO  (coreLoadExecutor-6-thread-2) [   x:search] o.a.s.c.SolrCore [[search] ] Added SolrEventListener for newSearcher: [org.apache.solr.core.QuerySenderListener{queries=[]}]
-1829 INFO  (coreLoadExecutor-6-thread-1) [   x:drupal] o.a.s.c.SolrCore [[drupal] ] Added SolrEventListener for newSearcher: [org.apache.solr.core.QuerySenderListener{queries=[]}]
-1829 INFO  (coreLoadExecutor-6-thread-2) [   x:search] o.a.s.c.SolrCore [[search] ] Added SolrEventListener for firstSearcher: [org.apache.solr.core.QuerySenderListener{queries=[{q=solr rocks,start=0,rows=10}]}]
-1829 INFO  (coreLoadExecutor-6-thread-1) [   x:drupal] o.a.s.c.SolrCore [[drupal] ] Added SolrEventListener for firstSearcher: [org.apache.solr.core.QuerySenderListener{queries=[{q=solr rocks,start=0,rows=10}]}]
-1834 INFO  (coreLoadExecutor-6-thread-2) [   x:search] o.a.s.c.SchemaCodecFactory Using default compressionMode: BEST_SPEED
-1834 INFO  (coreLoadExecutor-6-thread-1) [   x:drupal] o.a.s.c.SchemaCodecFactory Using default compressionMode: BEST_SPEED
-1842 INFO  (coreLoadExecutor-6-thread-1) [   x:drupal] o.a.s.c.CachingDirectoryFactory return new directory for /Applications/drupal-7.50-0/apps/solr-5.5.0/server/solr/drupal/data
-1842 INFO  (coreLoadExecutor-6-thread-2) [   x:search] o.a.s.c.CachingDirectoryFactory return new directory for /Applications/drupal-7.50-0/apps/solr-5.5.0/server/solr/search/data
-1843 INFO  (coreLoadExecutor-6-thread-2) [   x:search] o.a.s.c.SolrCore New index directory detected: old=null new=/Applications/drupal-7.50-0/apps/solr-5.5.0/server/solr/search/data/index/
-1843 INFO  (coreLoadExecutor-6-thread-1) [   x:drupal] o.a.s.c.SolrCore New index directory detected: old=null new=/Applications/drupal-7.50-0/apps/solr-5.5.0/server/solr/drupal/data/index/
-1843 INFO  (coreLoadExecutor-6-thread-2) [   x:search] o.a.s.c.CachingDirectoryFactory return new directory for /Applications/drupal-7.50-0/apps/solr-5.5.0/server/solr/search/data/index
-1843 INFO  (coreLoadExecutor-6-thread-1) [   x:drupal] o.a.s.c.CachingDirectoryFactory return new directory for /Applications/drupal-7.50-0/apps/solr-5.5.0/server/solr/drupal/data/index
-1857 INFO  (OldIndexDirectoryCleanupThreadForCore-drupal) [   x:drupal] o.a.s.c.SolrCore Looking for old index directories to cleanup for core drupal in /Applications/drupal-7.50-0/apps/solr-5.5.0/server/solr/drupal/data/
-1857 INFO  (OldIndexDirectoryCleanupThreadForCore-search) [   x:search] o.a.s.c.SolrCore Looking for old index directories to cleanup for core search in /Applications/drupal-7.50-0/apps/solr-5.5.0/server/solr/search/data/
-1863 INFO  (coreLoadExecutor-6-thread-2) [   x:search] o.a.s.r.XSLTResponseWriter xsltCacheLifetimeSeconds=5
-1863 INFO  (coreLoadExecutor-6-thread-1) [   x:drupal] o.a.s.r.XSLTResponseWriter xsltCacheLifetimeSeconds=5
-1967 INFO  (coreLoadExecutor-6-thread-2) [   x:search] o.a.s.c.SolrCore no updateRequestProcessorChain defined as default, creating implicit default
-1967 INFO  (coreLoadExecutor-6-thread-1) [   x:drupal] o.a.s.c.SolrCore no updateRequestProcessorChain defined as default, creating implicit default
-2004 INFO  (coreLoadExecutor-6-thread-1) [   x:drupal] o.a.s.h.l.XMLLoader xsltCacheLifetimeSeconds=60
-2004 INFO  (coreLoadExecutor-6-thread-2) [   x:search] o.a.s.h.l.XMLLoader xsltCacheLifetimeSeconds=60
-2006 INFO  (coreLoadExecutor-6-thread-1) [   x:drupal] o.a.s.c.PluginBag requestHandler : '/update/json' created with startup=lazy 
-2006 INFO  (coreLoadExecutor-6-thread-2) [   x:search] o.a.s.c.PluginBag requestHandler : '/update/json' created with startup=lazy 
-2006 INFO  (coreLoadExecutor-6-thread-1) [   x:drupal] o.a.s.c.PluginBag requestHandler : '/update/csv' created with startup=lazy 
-2006 INFO  (coreLoadExecutor-6-thread-2) [   x:search] o.a.s.c.PluginBag requestHandler : '/update/csv' created with startup=lazy 
-2007 INFO  (coreLoadExecutor-6-thread-2) [   x:search] o.a.s.h.l.XMLLoader xsltCacheLifetimeSeconds=60
-2007 INFO  (coreLoadExecutor-6-thread-1) [   x:drupal] o.a.s.h.l.XMLLoader xsltCacheLifetimeSeconds=60
-2023 INFO  (coreLoadExecutor-6-thread-1) [   x:drupal] o.a.s.c.PluginBag requestHandler : '/update/extract' created with startup=lazy 
-2023 INFO  (coreLoadExecutor-6-thread-2) [   x:search] o.a.s.c.PluginBag requestHandler : '/update/extract' created with startup=lazy 
-2023 INFO  (coreLoadExecutor-6-thread-1) [   x:drupal] o.a.s.c.PluginBag requestHandler : '/update/xslt' created with startup=lazy 
-2023 INFO  (coreLoadExecutor-6-thread-2) [   x:search] o.a.s.c.PluginBag requestHandler : '/update/xslt' created with startup=lazy 
-2023 INFO  (coreLoadExecutor-6-thread-1) [   x:drupal] o.a.s.c.PluginBag requestHandler : '/analysis/field' created with startup=lazy 
-2023 INFO  (coreLoadExecutor-6-thread-2) [   x:search] o.a.s.c.PluginBag requestHandler : '/analysis/field' created with startup=lazy 
-2024 INFO  (coreLoadExecutor-6-thread-1) [   x:drupal] o.a.s.c.PluginBag requestHandler : '/analysis/document' created with startup=lazy 
-2024 INFO  (coreLoadExecutor-6-thread-2) [   x:search] o.a.s.c.PluginBag requestHandler : '/analysis/document' created with startup=lazy 
-2026 INFO  (coreLoadExecutor-6-thread-2) [   x:search] o.a.s.c.PluginBag requestHandler : '/spell' created with startup=lazy 
-2026 INFO  (coreLoadExecutor-6-thread-1) [   x:drupal] o.a.s.c.PluginBag requestHandler : '/spell' created with startup=lazy 
-2026 INFO  (coreLoadExecutor-6-thread-2) [   x:search] o.a.s.c.PluginBag requestHandler : '/tvrh' created with startup=lazy 
-2026 INFO  (coreLoadExecutor-6-thread-1) [   x:drupal] o.a.s.c.PluginBag requestHandler : '/tvrh' created with startup=lazy 
-2026 INFO  (coreLoadExecutor-6-thread-2) [   x:search] o.a.s.c.PluginBag requestHandler : '/terms' created with startup=lazy 
-2026 INFO  (coreLoadExecutor-6-thread-1) [   x:drupal] o.a.s.c.PluginBag requestHandler : '/terms' created with startup=lazy 
-2026 INFO  (coreLoadExecutor-6-thread-2) [   x:search] o.a.s.c.PluginBag requestHandler : '/elevate' created with startup=lazy 
-2026 INFO  (coreLoadExecutor-6-thread-1) [   x:drupal] o.a.s.c.PluginBag requestHandler : '/elevate' created with startup=lazy 
-2027 INFO  (coreLoadExecutor-6-thread-1) [   x:drupal] o.a.s.c.RequestHandlers Registered paths: /admin/mbeans,standard,,/update/json/docs,/admin/luke,/export,pinkPony,/get,/admin/properties,/elevate,/update/json,/admin/threads,/query,/analysis/field,/analysis/document,/spell,/update/csv,/tvrh,/admin/segments,/admin/system,/replication,mlt,/config,/schema,/update/xslt,/admin/plugins,/admin/logging,/admin/ping,/update,/admin/file,/debug/dump,/terms,/update/extract
-2027 INFO  (coreLoadExecutor-6-thread-2) [   x:search] o.a.s.c.RequestHandlers Registered paths: /admin/mbeans,standard,,/update/json/docs,/admin/luke,/export,pinkPony,/get,/admin/properties,/elevate,/update/json,/admin/threads,/query,/analysis/field,/analysis/document,/spell,/update/csv,/tvrh,/admin/segments,/admin/system,/replication,mlt,/config,/schema,/update/xslt,/admin/plugins,/admin/logging,/admin/ping,/update,/admin/file,/debug/dump,/terms,/update/extract
-2028 INFO  (coreLoadExecutor-6-thread-1) [   x:drupal] o.a.s.c.SolrCore Using default statsCache cache: org.apache.solr.search.stats.LocalStatsCache
-2028 INFO  (coreLoadExecutor-6-thread-2) [   x:search] o.a.s.c.SolrCore Using default statsCache cache: org.apache.solr.search.stats.LocalStatsCache
-2036 INFO  (coreLoadExecutor-6-thread-2) [   x:search] o.a.s.u.UpdateHandler Using UpdateLog implementation: org.apache.solr.update.UpdateLog
-2036 INFO  (coreLoadExecutor-6-thread-1) [   x:drupal] o.a.s.u.UpdateHandler Using UpdateLog implementation: org.apache.solr.update.UpdateLog
-2036 INFO  (coreLoadExecutor-6-thread-2) [   x:search] o.a.s.u.UpdateLog Initializing UpdateLog: dataDir= defaultSyncLevel=FLUSH numRecordsToKeep=100 maxNumLogsToKeep=10 numVersionBuckets=65536
-2036 INFO  (coreLoadExecutor-6-thread-1) [   x:drupal] o.a.s.u.UpdateLog Initializing UpdateLog: dataDir= defaultSyncLevel=FLUSH numRecordsToKeep=100 maxNumLogsToKeep=10 numVersionBuckets=65536
-2044 INFO  (coreLoadExecutor-6-thread-2) [   x:search] o.a.s.u.CommitTracker Hard AutoCommit: if uncommited for 120000ms; if 10000 uncommited docs 
-2045 INFO  (coreLoadExecutor-6-thread-2) [   x:search] o.a.s.u.CommitTracker Soft AutoCommit: if uncommited for 10000ms; if 2000 uncommited docs 
-2057 INFO  (coreLoadExecutor-6-thread-1) [   x:drupal] o.a.s.u.CommitTracker Hard AutoCommit: if uncommited for 120000ms; if 10000 uncommited docs 
-2057 INFO  (coreLoadExecutor-6-thread-1) [   x:drupal] o.a.s.u.CommitTracker Soft AutoCommit: if uncommited for 10000ms; if 2000 uncommited docs 
-2084 INFO  (coreLoadExecutor-6-thread-2) [   x:search] o.a.s.c.SolrDeletionPolicy SolrDeletionPolicy.onInit: commits: num=1
-	commit{dir=NRTCachingDirectory(MMapDirectory@/Applications/drupal-7.50-0/apps/solr-5.5.0/server/solr/search/data/index lockFactory=org.apache.lucene.store.NativeFSLockFactory@32e4ae58; maxCacheMB=48.0 maxMergeSizeMB=4.0),segFN=segments_1,generation=1}
-2084 INFO  (coreLoadExecutor-6-thread-1) [   x:drupal] o.a.s.c.SolrDeletionPolicy SolrDeletionPolicy.onInit: commits: num=1
-	commit{dir=NRTCachingDirectory(MMapDirectory@/Applications/drupal-7.50-0/apps/solr-5.5.0/server/solr/drupal/data/index lockFactory=org.apache.lucene.store.NativeFSLockFactory@32e4ae58; maxCacheMB=48.0 maxMergeSizeMB=4.0),segFN=segments_1d,generation=49}
-2084 INFO  (coreLoadExecutor-6-thread-2) [   x:search] o.a.s.c.SolrDeletionPolicy newest commit generation = 1
-2084 INFO  (coreLoadExecutor-6-thread-1) [   x:drupal] o.a.s.c.SolrDeletionPolicy newest commit generation = 49
-2097 INFO  (coreLoadExecutor-6-thread-2) [   x:search] o.a.s.s.SolrIndexSearcher Opening Searcher@35964bda[search] main
-2105 INFO  (coreLoadExecutor-6-thread-2) [   x:search] o.a.s.r.ManagedResourceStorage File-based storage initialized to use dir: /Applications/drupal-7.50-0/apps/solr-5.5.0/server/solr/search/conf
-2105 INFO  (coreLoadExecutor-6-thread-2) [   x:search] o.a.s.r.RestManager Initializing RestManager with initArgs: {storageDir=/Applications/drupal-7.50-0/apps/solr-5.5.0/server/solr/search/conf}
-2116 INFO  (coreLoadExecutor-6-thread-2) [   x:search] o.a.s.r.ManagedResourceStorage Reading _rest_managed.json using file:dir=/Applications/drupal-7.50-0/apps/solr-5.5.0/server/solr/search/conf
-2116 INFO  (coreLoadExecutor-6-thread-2) [   x:search] o.a.s.r.RestManager Initializing 0 registered ManagedResources
-2126 INFO  (coreLoadExecutor-6-thread-2) [   x:search] o.a.s.h.c.QueryElevationComponent Loading QueryElevation from: /Applications/drupal-7.50-0/apps/solr-5.5.0/server/solr/search/conf/elevate.xml
-2133 INFO  (coreLoadExecutor-6-thread-2) [   x:search] o.a.s.h.c.SpellCheckComponent Initializing spell checkers
-2141 INFO  (coreLoadExecutor-6-thread-2) [   x:search] o.a.s.h.c.SpellCheckComponent Registering newSearcher listener for spellchecker: default
-2141 INFO  (coreLoadExecutor-6-thread-2) [   x:search] o.a.s.h.c.SpellCheckComponent No queryConverter defined, using default converter
-2142 INFO  (coreLoadExecutor-6-thread-2) [   x:search] o.a.s.h.ReplicationHandler Commits will be reserved for  10000
-2143 INFO  (searcherExecutor-7-thread-1-processing-x:search) [   x:search] o.a.s.c.QuerySenderListener QuerySenderListener sending requests to Searcher@35964bda[search] main{ExitableDirectoryReader(UninvertingDirectoryReader())}
-2143 INFO  (coreLoadExecutor-6-thread-2) [   x:search] o.a.s.u.UpdateLog Looking up max value of version field to seed version buckets
-2144 INFO  (coreLoadExecutor-6-thread-2) [   x:search] o.a.s.u.VersionInfo Refreshing highest value of _version_ for 65536 version buckets from index
-2144 INFO  (coreLoadExecutor-6-thread-2) [   x:search] o.a.s.u.VersionInfo No terms found for _version_, cannot seed version bucket highest value from index
-2144 INFO  (coreLoadExecutor-6-thread-2) [   x:search] o.a.s.u.UpdateLog Could not find max version in index or recent updates, using new clock 1543702771505561600
-2148 INFO  (coreLoadExecutor-6-thread-2) [   x:search] o.a.s.u.UpdateLog Took 3.0ms to seed version buckets with highest version 1543702771505561600
-2148 INFO  (coreLoadExecutor-6-thread-2) [   x:search] o.a.s.c.CoreContainer registering core: search
-2152 INFO  (coreLoadExecutor-6-thread-1) [   x:drupal] o.a.s.s.SolrIndexSearcher Opening Searcher@564216e0[drupal] main
-2153 INFO  (coreLoadExecutor-6-thread-1) [   x:drupal] o.a.s.r.ManagedResourceStorage File-based storage initialized to use dir: /Applications/drupal-7.50-0/apps/solr-5.5.0/server/solr/drupal/conf
-2153 INFO  (coreLoadExecutor-6-thread-1) [   x:drupal] o.a.s.r.RestManager Initializing RestManager with initArgs: {storageDir=/Applications/drupal-7.50-0/apps/solr-5.5.0/server/solr/drupal/conf}
-2153 INFO  (coreLoadExecutor-6-thread-1) [   x:drupal] o.a.s.r.ManagedResourceStorage Reading _rest_managed.json using file:dir=/Applications/drupal-7.50-0/apps/solr-5.5.0/server/solr/drupal/conf
-2153 INFO  (coreLoadExecutor-6-thread-1) [   x:drupal] o.a.s.r.RestManager Initializing 0 registered ManagedResources
-2153 INFO  (coreLoadExecutor-6-thread-1) [   x:drupal] o.a.s.h.c.QueryElevationComponent Loading QueryElevation from: /Applications/drupal-7.50-0/apps/solr-5.5.0/server/solr/drupal/conf/elevate.xml
-2157 INFO  (coreLoadExecutor-6-thread-1) [   x:drupal] o.a.s.h.c.SpellCheckComponent Initializing spell checkers
-2162 INFO  (coreLoadExecutor-6-thread-1) [   x:drupal] o.a.s.h.c.SpellCheckComponent Registering newSearcher listener for spellchecker: default
-2162 INFO  (coreLoadExecutor-6-thread-1) [   x:drupal] o.a.s.h.c.SpellCheckComponent No queryConverter defined, using default converter
-2162 INFO  (coreLoadExecutor-6-thread-1) [   x:drupal] o.a.s.h.ReplicationHandler Commits will be reserved for  10000
-2162 INFO  (searcherExecutor-8-thread-1-processing-x:drupal) [   x:drupal] o.a.s.c.QuerySenderListener QuerySenderListener sending requests to Searcher@564216e0[drupal] main{ExitableDirectoryReader(UninvertingDirectoryReader(Uninverting(_11(5.5.0):C27)))}
-2163 INFO  (coreLoadExecutor-6-thread-1) [   x:drupal] o.a.s.u.UpdateLog Looking up max value of version field to seed version buckets
-2164 INFO  (coreLoadExecutor-6-thread-1) [   x:drupal] o.a.s.u.VersionInfo Refreshing highest value of _version_ for 65536 version buckets from index
-2174 INFO  (coreLoadExecutor-6-thread-1) [   x:drupal] o.a.s.u.VersionInfo Found MAX value 1543412300906496000 from Terms for _version_ in index
-2176 INFO  (coreLoadExecutor-6-thread-1) [   x:drupal] o.a.s.u.UpdateLog Took 13.0ms to seed version buckets with highest version 1543412300906496000
-2176 INFO  (coreLoadExecutor-6-thread-1) [   x:drupal] o.a.s.c.CoreContainer registering core: drupal
-2217 INFO  (searcherExecutor-7-thread-1-processing-x:search) [   x:search] o.a.s.c.S.Request [search]  webapp=null path=null params={q=solr+rocks&distrib=false&start=0&rows=10&event=firstSearcher} hits=0 status=0 QTime=72
-2218 INFO  (searcherExecutor-7-thread-1-processing-x:search) [   x:search] o.a.s.c.QuerySenderListener QuerySenderListener done.
-2218 INFO  (searcherExecutor-7-thread-1-processing-x:search) [   x:search] o.a.s.h.c.SpellCheckComponent Loading spell index for spellchecker: default
-2220 INFO  (searcherExecutor-7-thread-1-processing-x:search) [   x:search] o.a.s.c.SolrCore [search] Registered new searcher Searcher@35964bda[search] main{ExitableDirectoryReader(UninvertingDirectoryReader())}
-2222 INFO  (searcherExecutor-8-thread-1-processing-x:drupal) [   x:drupal] o.a.s.c.S.Request [drupal]  webapp=null path=null params={q=solr+rocks&distrib=false&start=0&rows=10&event=firstSearcher} hits=9 status=0 QTime=59
-2230 INFO  (searcherExecutor-8-thread-1-processing-x:drupal) [   x:drupal] o.a.s.c.QuerySenderListener QuerySenderListener done.
-2230 INFO  (searcherExecutor-8-thread-1-processing-x:drupal) [   x:drupal] o.a.s.h.c.SpellCheckComponent Loading spell index for spellchecker: default
-2232 INFO  (searcherExecutor-8-thread-1-processing-x:drupal) [   x:drupal] o.a.s.c.SolrCore [drupal] Registered new searcher Searcher@564216e0[drupal] main{ExitableDirectoryReader(UninvertingDirectoryReader(Uninverting(_11(5.5.0):C27)))}
-13069 INFO  (qtp434176574-38) [   ] o.a.s.s.HttpSolrCall [admin] webapp=null path=/admin/cores params={indexInfo=false&wt=json&_=1472189696269} status=0 QTime=1
-13125 INFO  (qtp434176574-40) [   ] o.a.s.s.HttpSolrCall [admin] webapp=null path=/admin/info/system params={wt=json&_=1472189696301} status=0 QTime=28
-45390955 INFO  (qtp434176574-40) [   x:drupal] o.a.s.u.DirectUpdateHandler2 start commit{,optimize=true,openSearcher=true,waitSearcher=false,expungeDeletes=false,softCommit=false,prepareCommit=false}
-45390957 WARN  (qtp434176574-40) [   x:drupal] o.a.s.u.DirectUpdateHandler2 Starting optimize... Reading and rewriting the entire index! Use with care.
-45390962 INFO  (qtp434176574-40) [   x:drupal] o.a.s.u.DirectUpdateHandler2 No uncommitted changes. Skipping IW.commit.
-45390965 INFO  (qtp434176574-40) [   x:drupal] o.a.s.c.SolrCore SolrIndexSearcher has not changed - not re-opening: org.apache.solr.search.SolrIndexSearcher
-45390966 INFO  (qtp434176574-40) [   x:drupal] o.a.s.u.DirectUpdateHandler2 end_commit_flush
-45390967 INFO  (qtp434176574-40) [   x:drupal] o.a.s.u.p.LogUpdateProcessorFactory [drupal]  webapp=/solr path=/update params={wt=json}{optimize=} 0 96
-45391022 INFO  (qtp434176574-44) [   x:drupal] o.a.s.c.S.Request [drupal]  webapp=/solr path=/admin/ping params={} hits=27 status=0 QTime=10
-45391022 INFO  (qtp434176574-44) [   x:drupal] o.a.s.c.S.Request [drupal]  webapp=/solr path=/admin/ping params={} status=0 QTime=10
-45391051 INFO  (qtp434176574-15) [   x:drupal] o.a.s.c.S.Request [drupal]  webapp=/solr path=/admin/luke params={json.nl=map&numTerms=0&wt=json} status=0 QTime=24
-45391063 INFO  (qtp434176574-42) [   x:drupal] o.a.s.c.S.Request [drupal]  webapp=/solr path=/admin/ping params={} hits=27 status=0 QTime=0
-45391063 INFO  (qtp434176574-42) [   x:drupal] o.a.s.c.S.Request [drupal]  webapp=/solr path=/admin/ping params={} status=0 QTime=0
-45391068 INFO  (qtp434176574-18) [   x:search] o.a.s.u.DirectUpdateHandler2 start commit{,optimize=true,openSearcher=true,waitSearcher=false,expungeDeletes=false,softCommit=false,prepareCommit=false}
-45391068 WARN  (qtp434176574-18) [   x:search] o.a.s.u.DirectUpdateHandler2 Starting optimize... Reading and rewriting the entire index! Use with care.
-45391069 INFO  (qtp434176574-18) [   x:search] o.a.s.u.DirectUpdateHandler2 No uncommitted changes. Skipping IW.commit.
-45391069 INFO  (qtp434176574-18) [   x:search] o.a.s.c.SolrCore SolrIndexSearcher has not changed - not re-opening: org.apache.solr.search.SolrIndexSearcher
-45391069 INFO  (qtp434176574-18) [   x:search] o.a.s.u.DirectUpdateHandler2 end_commit_flush
-45391069 INFO  (qtp434176574-18) [   x:search] o.a.s.u.p.LogUpdateProcessorFactory [search]  webapp=/solr path=/update params={wt=json}{optimize=} 0 1
-45391093 INFO  (qtp434176574-40) [   x:search] o.a.s.c.S.Request [search]  webapp=/solr path=/admin/ping params={} hits=0 status=0 QTime=0
-45391093 INFO  (qtp434176574-40) [   x:search] o.a.s.c.S.Request [search]  webapp=/solr path=/admin/ping params={} status=0 QTime=1
-45391098 INFO  (qtp434176574-44) [   x:search] o.a.s.c.S.Request [search]  webapp=/solr path=/admin/luke params={json.nl=map&numTerms=0&wt=json} status=0 QTime=0
-45391102 INFO  (qtp434176574-15) [   x:search] o.a.s.c.S.Request [search]  webapp=/solr path=/admin/ping params={} hits=0 status=0 QTime=0
-45391102 INFO  (qtp434176574-15) [   x:search] o.a.s.c.S.Request [search]  webapp=/solr path=/admin/ping params={} status=0 QTime=0
-49431030 INFO  (qtp434176574-44) [   ] o.a.s.s.HttpSolrCall [admin] webapp=null path=/admin/cores params={wt=json&_=1472239114228} status=0 QTime=5
-49431056 INFO  (qtp434176574-47) [   ] o.a.s.s.HttpSolrCall [admin] webapp=null path=/admin/cores params={wt=json&_=1472239114254} status=0 QTime=2
-56112909 INFO  (qtp434176574-40) [   ] o.a.s.s.HttpSolrCall [admin] webapp=null path=/admin/cores params={indexInfo=false&wt=json&_=1472245796112} status=0 QTime=0
-56112962 INFO  (qtp434176574-45) [   ] o.a.s.s.HttpSolrCall [admin] webapp=null path=/admin/info/system params={wt=json&_=1472245796146} status=0 QTime=20
-56212542 INFO  (qtp434176574-45) [   x:drupal] o.a.s.c.S.Request [drupal]  webapp=/solr path=/admin/ping params={} hits=27 status=0 QTime=0
-56212543 INFO  (qtp434176574-45) [   x:drupal] o.a.s.c.S.Request [drupal]  webapp=/solr path=/admin/ping params={} status=0 QTime=1
-56212557 INFO  (qtp434176574-40) [   x:drupal] o.a.s.c.S.Request [drupal]  webapp=/solr path=/admin/luke params={json.nl=map&numTerms=0&wt=json} status=0 QTime=10
-56212590 INFO  (qtp434176574-49) [   x:drupal] o.a.s.c.S.Request [drupal]  webapp=/solr path=/admin/ping params={} hits=27 status=0 QTime=0
-56212590 INFO  (qtp434176574-49) [   x:drupal] o.a.s.c.S.Request [drupal]  webapp=/solr path=/admin/ping params={} status=0 QTime=0
-56212595 INFO  (qtp434176574-50) [   x:search] o.a.s.c.S.Request [search]  webapp=/solr path=/admin/ping params={} hits=0 status=0 QTime=0
-56212595 INFO  (qtp434176574-50) [   x:search] o.a.s.c.S.Request [search]  webapp=/solr path=/admin/ping params={} status=0 QTime=1
-56212599 INFO  (qtp434176574-15) [   x:search] o.a.s.c.S.Request [search]  webapp=/solr path=/admin/luke params={json.nl=map&numTerms=0&wt=json} status=0 QTime=0
-56212613 INFO  (qtp434176574-49) [   x:search] o.a.s.c.S.Request [search]  webapp=/solr path=/admin/ping params={} hits=0 status=0 QTime=0
-56212613 INFO  (qtp434176574-49) [   x:search] o.a.s.c.S.Request [search]  webapp=/solr path=/admin/ping params={} status=0 QTime=0
-56212837 INFO  (qtp434176574-50) [   x:drupal] o.a.s.c.S.Request [drupal]  webapp=/solr path=/select params={json.nl=map&spellcheck=true&rows=0&wt=json&spellcheck.build=true} hits=27 status=0 QTime=176
-56212845 INFO  (qtp434176574-15) [   x:search] o.a.s.c.S.Request [search]  webapp=/solr path=/select params={json.nl=map&spellcheck=true&rows=0&wt=json&spellcheck.build=true} hits=0 status=0 QTime=3
-56237417 INFO  (qtp434176574-45) [   x:drupal] o.a.s.c.S.Request [drupal]  webapp=/solr path=/admin/ping params={} hits=27 status=0 QTime=0
-56237418 INFO  (qtp434176574-45) [   x:drupal] o.a.s.c.S.Request [drupal]  webapp=/solr path=/admin/ping params={} status=0 QTime=0
-56237491 INFO  (qtp434176574-40) [   x:search] o.a.s.c.S.Request [search]  webapp=/solr path=/admin/ping params={} hits=0 status=0 QTime=0
-56237492 INFO  (qtp434176574-40) [   x:search] o.a.s.c.S.Request [search]  webapp=/solr path=/admin/ping params={} status=0 QTime=0
-56237494 INFO  (qtp434176574-42) [   x:drupal] o.a.s.c.S.Request [drupal]  webapp=/solr path=/admin/ping params={} hits=27 status=0 QTime=0
-56237494 INFO  (qtp434176574-42) [   x:drupal] o.a.s.c.S.Request [drupal]  webapp=/solr path=/admin/ping params={} status=0 QTime=0
-56240030 INFO  (qtp434176574-50) [   x:drupal] o.a.s.c.S.Request [drupal]  webapp=/solr path=/admin/ping params={} hits=27 status=0 QTime=0
-56240030 INFO  (qtp434176574-50) [   x:drupal] o.a.s.c.S.Request [drupal]  webapp=/solr path=/admin/ping params={} status=0 QTime=0
-56240033 INFO  (qtp434176574-15) [   x:drupal] o.a.s.c.S.Request [drupal]  webapp=/solr path=/admin/ping params={} hits=27 status=0 QTime=0
-56240033 INFO  (qtp434176574-15) [   x:drupal] o.a.s.c.S.Request [drupal]  webapp=/solr path=/admin/ping params={} status=0 QTime=0
-56240044 INFO  (qtp434176574-45) [   x:drupal] o.a.s.c.S.Request [drupal]  webapp=/solr path=/admin/luke params={json.nl=map&numTerms=0&wt=json} status=0 QTime=7
-56240085 INFO  (qtp434176574-40) [   x:drupal] o.a.s.c.S.Request [drupal]  webapp=/solr path=/admin/mbeans params={stats=true&wt=xml} status=0 QTime=26
-56247071 INFO  (qtp434176574-42) [   x:drupal] o.a.s.c.S.Request [drupal]  webapp=/solr path=/admin/ping params={} hits=27 status=0 QTime=0
-56247071 INFO  (qtp434176574-42) [   x:drupal] o.a.s.c.S.Request [drupal]  webapp=/solr path=/admin/ping params={} status=0 QTime=0
-56247073 INFO  (qtp434176574-50) [   x:search] o.a.s.c.S.Request [search]  webapp=/solr path=/admin/ping params={} hits=0 status=0 QTime=0
-56247074 INFO  (qtp434176574-50) [   x:search] o.a.s.c.S.Request [search]  webapp=/solr path=/admin/ping params={} status=0 QTime=0
-60160986 INFO  (qtp434176574-45) [   ] o.a.s.s.HttpSolrCall [admin] webapp=null path=/admin/cores params={indexInfo=false&wt=json&_=1472249844188} status=0 QTime=0
-60161029 INFO  (qtp434176574-42) [   ] o.a.s.s.HttpSolrCall [admin] webapp=null path=/admin/info/system params={wt=json&_=1472249844217} status=0 QTime=14
-60930119 INFO  (qtp434176574-52) [   ] o.a.s.s.HttpSolrCall [admin] webapp=null path=/admin/cores params={indexInfo=false&wt=json&_=1472250613321} status=0 QTime=0
-60930152 INFO  (qtp434176574-15) [   ] o.a.s.s.HttpSolrCall [admin] webapp=null path=/admin/info/system params={wt=json&_=1472250613344} status=0 QTime=11
-63807572 INFO  (qtp434176574-57) [   ] o.a.s.s.HttpSolrCall [admin] webapp=null path=/admin/cores params={indexInfo=false&wt=json&_=1472253490775} status=0 QTime=0
-63807615 INFO  (qtp434176574-42) [   ] o.a.s.s.HttpSolrCall [admin] webapp=null path=/admin/info/system params={wt=json&_=1472253490807} status=0 QTime=11
+0    INFO  (main) [   ] o.e.j.u.log Logging initialized @261ms
+136  INFO  (main) [   ] o.e.j.s.Server jetty-9.2.13.v20150730
+150  WARN  (main) [   ] o.e.j.s.h.RequestLogHandler !RequestLog
+151  INFO  (main) [   ] o.e.j.d.p.ScanningAppProvider Deployment monitor [file:/Applications/drupal-7.50-0/apps/solr-5.5.0/server/contexts/] at interval 0
+490  INFO  (main) [   ] o.e.j.w.StandardDescriptorProcessor NO JSP Support for /solr, did not find org.apache.jasper.servlet.JspServlet
+498  WARN  (main) [   ] o.e.j.s.SecurityHandler ServletContext@o.e.j.w.WebAppContext@146ba0ac{/solr,file:/Applications/drupal-7.50-0/apps/solr-5.5.0/server/solr-webapp/webapp/,STARTING}{/Applications/drupal-7.50-0/apps/solr-5.5.0/server/solr-webapp/webapp} has uncovered http methods for path: /
+507  INFO  (main) [   ] o.a.s.s.SolrDispatchFilter SolrDispatchFilter.init(): WebAppClassLoader=239465106@e45f292
+520  INFO  (main) [   ] o.a.s.c.SolrResourceLoader JNDI not configured for solr (NoInitialContextEx)
+520  INFO  (main) [   ] o.a.s.c.SolrResourceLoader using system property solr.solr.home: /Applications/drupal-7.50-0/apps/solr-5.5.0/server/solr
+521  INFO  (main) [   ] o.a.s.c.SolrResourceLoader new SolrResourceLoader for directory: '/Applications/drupal-7.50-0/apps/solr-5.5.0/server/solr'
+521  INFO  (main) [   ] o.a.s.c.SolrResourceLoader JNDI not configured for solr (NoInitialContextEx)
+521  INFO  (main) [   ] o.a.s.c.SolrResourceLoader using system property solr.solr.home: /Applications/drupal-7.50-0/apps/solr-5.5.0/server/solr
+526  INFO  (main) [   ] o.a.s.c.SolrXmlConfig Loading container configuration from /Applications/drupal-7.50-0/apps/solr-5.5.0/server/solr/solr.xml
+580  INFO  (main) [   ] o.a.s.c.CorePropertiesLocator Config-defined core root directory: /Applications/drupal-7.50-0/apps/solr-5.5.0/server/solr
+598  INFO  (main) [   ] o.a.s.c.CoreContainer New CoreContainer 513700442
+598  INFO  (main) [   ] o.a.s.c.CoreContainer Loading cores into CoreContainer [instanceDir=/Applications/drupal-7.50-0/apps/solr-5.5.0/server/solr]
+599  WARN  (main) [   ] o.a.s.c.CoreContainer Couldn't add files from /Applications/drupal-7.50-0/apps/solr-5.5.0/server/solr/lib to classpath: /Applications/drupal-7.50-0/apps/solr-5.5.0/server/solr/lib
+608  INFO  (main) [   ] o.a.s.h.c.HttpShardHandlerFactory created with socketTimeout : 600000,connTimeout : 60000,maxConnectionsPerHost : 20,maxConnections : 10000,corePoolSize : 0,maximumPoolSize : 2147483647,maxThreadIdleTime : 5,sizeOfQueue : -1,fairnessPolicy : false,useRetries : false,
+753  INFO  (main) [   ] o.a.s.u.UpdateShardHandler Creating UpdateShardHandler HTTP client with params: socketTimeout=600000&connTimeout=60000&retry=true
+754  INFO  (main) [   ] o.a.s.l.LogWatcher SLF4J impl is org.slf4j.impl.Log4jLoggerFactory
+755  INFO  (main) [   ] o.a.s.l.LogWatcher Registering Log Listener [Log4j (org.slf4j.impl.Log4jLoggerFactory)]
+757  INFO  (main) [   ] o.a.s.c.CoreContainer Security conf doesn't exist. Skipping setup for authorization module.
+757  INFO  (main) [   ] o.a.s.c.CoreContainer No authentication plugin used.
+1372 INFO  (main) [   ] o.a.s.c.CorePropertiesLocator Looking for core definitions underneath /Applications/drupal-7.50-0/apps/solr-5.5.0/server/solr
+1383 INFO  (main) [   ] o.a.s.c.CoreDescriptor Created CoreDescriptor: {solr.replication.pollInterval=00:00:60, solr.autoCommit.MaxDocs=10000, solr.contrib.dir=../../../contrib, solr.replication.confFiles=schema.xml,mapping-ISOLatin1Accent.txt,protwords.txt,stopwords.txt,synonyms.txt,elevate.xml, loadOnStartup=true, solr.replication.master=false, solr.mlt.timeAllowed=2000, solr.pinkPony.timeAllowed=-1, solr.autoSoftCommit.MaxTime=10000, schema=schema.xml, solr.replication.masterUrl=http://localhost:8983/solr, solr.autoSoftCommit.MaxDocs=2000, solr.luceneMatchVersion=5.0.0, configSetProperties=configsetprops.json, solr.autoCommit.MaxTime=120000, dataDir=data, transient=false, config=solrconfig.xml, solr.replication.slave=false, name=drupal}
+1383 INFO  (main) [   ] o.a.s.c.CorePropertiesLocator Found core drupal in /Applications/drupal-7.50-0/apps/solr-5.5.0/server/solr/drupal
+1385 INFO  (main) [   ] o.a.s.c.CoreDescriptor Created CoreDescriptor: {solr.replication.pollInterval=00:00:60, solr.autoCommit.MaxDocs=10000, solr.contrib.dir=../../../contrib, solr.replication.confFiles=schema.xml,mapping-ISOLatin1Accent.txt,protwords.txt,stopwords.txt,synonyms.txt,elevate.xml, loadOnStartup=true, solr.replication.master=false, solr.mlt.timeAllowed=2000, solr.pinkPony.timeAllowed=-1, solr.autoSoftCommit.MaxTime=10000, schema=schema.xml, solr.replication.masterUrl=http://localhost:8983/solr, solr.autoSoftCommit.MaxDocs=2000, solr.luceneMatchVersion=5.0.0, configSetProperties=configsetprops.json, solr.autoCommit.MaxTime=120000, dataDir=data, transient=false, config=solrconfig.xml, solr.replication.slave=false, name=search}
+1385 INFO  (main) [   ] o.a.s.c.CorePropertiesLocator Found core search in /Applications/drupal-7.50-0/apps/solr-5.5.0/server/solr/search
+1385 INFO  (main) [   ] o.a.s.c.CorePropertiesLocator Found 2 core definitions
+1389 INFO  (main) [   ] o.a.s.s.SolrDispatchFilter user.dir=/Applications/drupal-7.50-0/apps/solr-5.5.0/server
+1389 INFO  (coreLoadExecutor-6-thread-1) [   ] o.a.s.c.SolrResourceLoader new SolrResourceLoader for directory: '/Applications/drupal-7.50-0/apps/solr-5.5.0/server/solr/drupal'
+1389 INFO  (main) [   ] o.a.s.s.SolrDispatchFilter SolrDispatchFilter.init() done
+1389 INFO  (coreLoadExecutor-6-thread-2) [   ] o.a.s.c.SolrResourceLoader new SolrResourceLoader for directory: '/Applications/drupal-7.50-0/apps/solr-5.5.0/server/solr/search'
+1389 INFO  (coreLoadExecutor-6-thread-1) [   ] o.a.s.c.SolrResourceLoader JNDI not configured for solr (NoInitialContextEx)
+1389 INFO  (coreLoadExecutor-6-thread-1) [   ] o.a.s.c.SolrResourceLoader using system property solr.solr.home: /Applications/drupal-7.50-0/apps/solr-5.5.0/server/solr
+1389 INFO  (coreLoadExecutor-6-thread-2) [   ] o.a.s.c.SolrResourceLoader JNDI not configured for solr (NoInitialContextEx)
+1389 INFO  (coreLoadExecutor-6-thread-2) [   ] o.a.s.c.SolrResourceLoader using system property solr.solr.home: /Applications/drupal-7.50-0/apps/solr-5.5.0/server/solr
+1400 INFO  (main) [   ] o.e.j.s.h.ContextHandler Started o.e.j.w.WebAppContext@146ba0ac{/solr,file:/Applications/drupal-7.50-0/apps/solr-5.5.0/server/solr-webapp/webapp/,AVAILABLE}{/Applications/drupal-7.50-0/apps/solr-5.5.0/server/solr-webapp/webapp}
+1421 INFO  (main) [   ] o.e.j.s.ServerConnector Started ServerConnector@5c6648b0{HTTP/1.1}{0.0.0.0:8983}
+1422 INFO  (main) [   ] o.e.j.s.Server Started @1684ms
+1447 INFO  (coreLoadExecutor-6-thread-1) [   ] o.a.s.c.SolrConfig current version of requestparams : -1
+1447 INFO  (coreLoadExecutor-6-thread-2) [   ] o.a.s.c.SolrConfig current version of requestparams : -1
+1451 INFO  (coreLoadExecutor-6-thread-2) [   ] o.a.s.c.SolrConfig Adding specified lib dirs to ClassLoader
+1451 INFO  (coreLoadExecutor-6-thread-1) [   ] o.a.s.c.SolrConfig Adding specified lib dirs to ClassLoader
+1453 INFO  (coreLoadExecutor-6-thread-2) [   ] o.a.s.c.SolrResourceLoader Adding 'file:/Applications/drupal-7.50-0/apps/solr-5.5.0/contrib/extraction/lib/apache-mime4j-core-0.7.2.jar' to classloader
+1454 INFO  (coreLoadExecutor-6-thread-2) [   ] o.a.s.c.SolrResourceLoader Adding 'file:/Applications/drupal-7.50-0/apps/solr-5.5.0/contrib/extraction/lib/apache-mime4j-dom-0.7.2.jar' to classloader
+1454 INFO  (coreLoadExecutor-6-thread-2) [   ] o.a.s.c.SolrResourceLoader Adding 'file:/Applications/drupal-7.50-0/apps/solr-5.5.0/contrib/extraction/lib/aspectjrt-1.8.0.jar' to classloader
+1454 INFO  (coreLoadExecutor-6-thread-2) [   ] o.a.s.c.SolrResourceLoader Adding 'file:/Applications/drupal-7.50-0/apps/solr-5.5.0/contrib/extraction/lib/bcmail-jdk15-1.45.jar' to classloader
+1454 INFO  (coreLoadExecutor-6-thread-2) [   ] o.a.s.c.SolrResourceLoader Adding 'file:/Applications/drupal-7.50-0/apps/solr-5.5.0/contrib/extraction/lib/bcprov-jdk15-1.45.jar' to classloader
+1454 INFO  (coreLoadExecutor-6-thread-2) [   ] o.a.s.c.SolrResourceLoader Adding 'file:/Applications/drupal-7.50-0/apps/solr-5.5.0/contrib/extraction/lib/boilerpipe-1.1.0.jar' to classloader
+1454 INFO  (coreLoadExecutor-6-thread-2) [   ] o.a.s.c.SolrResourceLoader Adding 'file:/Applications/drupal-7.50-0/apps/solr-5.5.0/contrib/extraction/lib/commons-compress-1.8.1.jar' to classloader
+1454 INFO  (coreLoadExecutor-6-thread-2) [   ] o.a.s.c.SolrResourceLoader Adding 'file:/Applications/drupal-7.50-0/apps/solr-5.5.0/contrib/extraction/lib/fontbox-1.8.8.jar' to classloader
+1453 INFO  (coreLoadExecutor-6-thread-1) [   ] o.a.s.c.SolrResourceLoader Adding 'file:/Applications/drupal-7.50-0/apps/solr-5.5.0/contrib/extraction/lib/apache-mime4j-core-0.7.2.jar' to classloader
+1454 INFO  (coreLoadExecutor-6-thread-1) [   ] o.a.s.c.SolrResourceLoader Adding 'file:/Applications/drupal-7.50-0/apps/solr-5.5.0/contrib/extraction/lib/apache-mime4j-dom-0.7.2.jar' to classloader
+1454 INFO  (coreLoadExecutor-6-thread-1) [   ] o.a.s.c.SolrResourceLoader Adding 'file:/Applications/drupal-7.50-0/apps/solr-5.5.0/contrib/extraction/lib/aspectjrt-1.8.0.jar' to classloader
+1454 INFO  (coreLoadExecutor-6-thread-1) [   ] o.a.s.c.SolrResourceLoader Adding 'file:/Applications/drupal-7.50-0/apps/solr-5.5.0/contrib/extraction/lib/bcmail-jdk15-1.45.jar' to classloader
+1454 INFO  (coreLoadExecutor-6-thread-1) [   ] o.a.s.c.SolrResourceLoader Adding 'file:/Applications/drupal-7.50-0/apps/solr-5.5.0/contrib/extraction/lib/bcprov-jdk15-1.45.jar' to classloader
+1454 INFO  (coreLoadExecutor-6-thread-1) [   ] o.a.s.c.SolrResourceLoader Adding 'file:/Applications/drupal-7.50-0/apps/solr-5.5.0/contrib/extraction/lib/boilerpipe-1.1.0.jar' to classloader
+1454 INFO  (coreLoadExecutor-6-thread-2) [   ] o.a.s.c.SolrResourceLoader Adding 'file:/Applications/drupal-7.50-0/apps/solr-5.5.0/contrib/extraction/lib/icu4j-54.1.jar' to classloader
+1455 INFO  (coreLoadExecutor-6-thread-2) [   ] o.a.s.c.SolrResourceLoader Adding 'file:/Applications/drupal-7.50-0/apps/solr-5.5.0/contrib/extraction/lib/isoparser-1.0.2.jar' to classloader
+1455 INFO  (coreLoadExecutor-6-thread-2) [   ] o.a.s.c.SolrResourceLoader Adding 'file:/Applications/drupal-7.50-0/apps/solr-5.5.0/contrib/extraction/lib/java-libpst-0.8.1.jar' to classloader
+1455 INFO  (coreLoadExecutor-6-thread-2) [   ] o.a.s.c.SolrResourceLoader Adding 'file:/Applications/drupal-7.50-0/apps/solr-5.5.0/contrib/extraction/lib/jdom-1.0.jar' to classloader
+1454 INFO  (coreLoadExecutor-6-thread-1) [   ] o.a.s.c.SolrResourceLoader Adding 'file:/Applications/drupal-7.50-0/apps/solr-5.5.0/contrib/extraction/lib/commons-compress-1.8.1.jar' to classloader
+1455 INFO  (coreLoadExecutor-6-thread-1) [   ] o.a.s.c.SolrResourceLoader Adding 'file:/Applications/drupal-7.50-0/apps/solr-5.5.0/contrib/extraction/lib/fontbox-1.8.8.jar' to classloader
+1455 INFO  (coreLoadExecutor-6-thread-1) [   ] o.a.s.c.SolrResourceLoader Adding 'file:/Applications/drupal-7.50-0/apps/solr-5.5.0/contrib/extraction/lib/icu4j-54.1.jar' to classloader
+1455 INFO  (coreLoadExecutor-6-thread-1) [   ] o.a.s.c.SolrResourceLoader Adding 'file:/Applications/drupal-7.50-0/apps/solr-5.5.0/contrib/extraction/lib/isoparser-1.0.2.jar' to classloader
+1455 INFO  (coreLoadExecutor-6-thread-1) [   ] o.a.s.c.SolrResourceLoader Adding 'file:/Applications/drupal-7.50-0/apps/solr-5.5.0/contrib/extraction/lib/java-libpst-0.8.1.jar' to classloader
+1455 INFO  (coreLoadExecutor-6-thread-1) [   ] o.a.s.c.SolrResourceLoader Adding 'file:/Applications/drupal-7.50-0/apps/solr-5.5.0/contrib/extraction/lib/jdom-1.0.jar' to classloader
+1455 INFO  (coreLoadExecutor-6-thread-1) [   ] o.a.s.c.SolrResourceLoader Adding 'file:/Applications/drupal-7.50-0/apps/solr-5.5.0/contrib/extraction/lib/jempbox-1.8.8.jar' to classloader
+1455 INFO  (coreLoadExecutor-6-thread-1) [   ] o.a.s.c.SolrResourceLoader Adding 'file:/Applications/drupal-7.50-0/apps/solr-5.5.0/contrib/extraction/lib/jmatio-1.0.jar' to classloader
+1455 INFO  (coreLoadExecutor-6-thread-1) [   ] o.a.s.c.SolrResourceLoader Adding 'file:/Applications/drupal-7.50-0/apps/solr-5.5.0/contrib/extraction/lib/juniversalchardet-1.0.3.jar' to classloader
+1455 INFO  (coreLoadExecutor-6-thread-1) [   ] o.a.s.c.SolrResourceLoader Adding 'file:/Applications/drupal-7.50-0/apps/solr-5.5.0/contrib/extraction/lib/metadata-extractor-2.6.2.jar' to classloader
+1455 INFO  (coreLoadExecutor-6-thread-1) [   ] o.a.s.c.SolrResourceLoader Adding 'file:/Applications/drupal-7.50-0/apps/solr-5.5.0/contrib/extraction/lib/pdfbox-1.8.8.jar' to classloader
+1455 INFO  (coreLoadExecutor-6-thread-1) [   ] o.a.s.c.SolrResourceLoader Adding 'file:/Applications/drupal-7.50-0/apps/solr-5.5.0/contrib/extraction/lib/poi-3.11.jar' to classloader
+1455 INFO  (coreLoadExecutor-6-thread-2) [   ] o.a.s.c.SolrResourceLoader Adding 'file:/Applications/drupal-7.50-0/apps/solr-5.5.0/contrib/extraction/lib/jempbox-1.8.8.jar' to classloader
+1456 INFO  (coreLoadExecutor-6-thread-2) [   ] o.a.s.c.SolrResourceLoader Adding 'file:/Applications/drupal-7.50-0/apps/solr-5.5.0/contrib/extraction/lib/jmatio-1.0.jar' to classloader
+1456 INFO  (coreLoadExecutor-6-thread-1) [   ] o.a.s.c.SolrResourceLoader Adding 'file:/Applications/drupal-7.50-0/apps/solr-5.5.0/contrib/extraction/lib/poi-ooxml-3.11.jar' to classloader
+1456 INFO  (coreLoadExecutor-6-thread-2) [   ] o.a.s.c.SolrResourceLoader Adding 'file:/Applications/drupal-7.50-0/apps/solr-5.5.0/contrib/extraction/lib/juniversalchardet-1.0.3.jar' to classloader
+1456 INFO  (coreLoadExecutor-6-thread-1) [   ] o.a.s.c.SolrResourceLoader Adding 'file:/Applications/drupal-7.50-0/apps/solr-5.5.0/contrib/extraction/lib/poi-ooxml-schemas-3.11.jar' to classloader
+1456 INFO  (coreLoadExecutor-6-thread-2) [   ] o.a.s.c.SolrResourceLoader Adding 'file:/Applications/drupal-7.50-0/apps/solr-5.5.0/contrib/extraction/lib/metadata-extractor-2.6.2.jar' to classloader
+1456 INFO  (coreLoadExecutor-6-thread-1) [   ] o.a.s.c.SolrResourceLoader Adding 'file:/Applications/drupal-7.50-0/apps/solr-5.5.0/contrib/extraction/lib/poi-scratchpad-3.11.jar' to classloader
+1456 INFO  (coreLoadExecutor-6-thread-1) [   ] o.a.s.c.SolrResourceLoader Adding 'file:/Applications/drupal-7.50-0/apps/solr-5.5.0/contrib/extraction/lib/rome-1.0.jar' to classloader
+1456 INFO  (coreLoadExecutor-6-thread-1) [   ] o.a.s.c.SolrResourceLoader Adding 'file:/Applications/drupal-7.50-0/apps/solr-5.5.0/contrib/extraction/lib/tagsoup-1.2.1.jar' to classloader
+1456 INFO  (coreLoadExecutor-6-thread-2) [   ] o.a.s.c.SolrResourceLoader Adding 'file:/Applications/drupal-7.50-0/apps/solr-5.5.0/contrib/extraction/lib/pdfbox-1.8.8.jar' to classloader
+1456 INFO  (coreLoadExecutor-6-thread-2) [   ] o.a.s.c.SolrResourceLoader Adding 'file:/Applications/drupal-7.50-0/apps/solr-5.5.0/contrib/extraction/lib/poi-3.11.jar' to classloader
+1456 INFO  (coreLoadExecutor-6-thread-2) [   ] o.a.s.c.SolrResourceLoader Adding 'file:/Applications/drupal-7.50-0/apps/solr-5.5.0/contrib/extraction/lib/poi-ooxml-3.11.jar' to classloader
+1456 INFO  (coreLoadExecutor-6-thread-2) [   ] o.a.s.c.SolrResourceLoader Adding 'file:/Applications/drupal-7.50-0/apps/solr-5.5.0/contrib/extraction/lib/poi-ooxml-schemas-3.11.jar' to classloader
+1456 INFO  (coreLoadExecutor-6-thread-2) [   ] o.a.s.c.SolrResourceLoader Adding 'file:/Applications/drupal-7.50-0/apps/solr-5.5.0/contrib/extraction/lib/poi-scratchpad-3.11.jar' to classloader
+1456 INFO  (coreLoadExecutor-6-thread-2) [   ] o.a.s.c.SolrResourceLoader Adding 'file:/Applications/drupal-7.50-0/apps/solr-5.5.0/contrib/extraction/lib/rome-1.0.jar' to classloader
+1457 INFO  (coreLoadExecutor-6-thread-2) [   ] o.a.s.c.SolrResourceLoader Adding 'file:/Applications/drupal-7.50-0/apps/solr-5.5.0/contrib/extraction/lib/tagsoup-1.2.1.jar' to classloader
+1457 INFO  (coreLoadExecutor-6-thread-2) [   ] o.a.s.c.SolrResourceLoader Adding 'file:/Applications/drupal-7.50-0/apps/solr-5.5.0/contrib/extraction/lib/tika-core-1.7.jar' to classloader
+1456 INFO  (coreLoadExecutor-6-thread-1) [   ] o.a.s.c.SolrResourceLoader Adding 'file:/Applications/drupal-7.50-0/apps/solr-5.5.0/contrib/extraction/lib/tika-core-1.7.jar' to classloader
+1457 INFO  (coreLoadExecutor-6-thread-2) [   ] o.a.s.c.SolrResourceLoader Adding 'file:/Applications/drupal-7.50-0/apps/solr-5.5.0/contrib/extraction/lib/tika-java7-1.7.jar' to classloader
+1457 INFO  (coreLoadExecutor-6-thread-1) [   ] o.a.s.c.SolrResourceLoader Adding 'file:/Applications/drupal-7.50-0/apps/solr-5.5.0/contrib/extraction/lib/tika-java7-1.7.jar' to classloader
+1457 INFO  (coreLoadExecutor-6-thread-2) [   ] o.a.s.c.SolrResourceLoader Adding 'file:/Applications/drupal-7.50-0/apps/solr-5.5.0/contrib/extraction/lib/tika-parsers-1.7.jar' to classloader
+1457 INFO  (coreLoadExecutor-6-thread-1) [   ] o.a.s.c.SolrResourceLoader Adding 'file:/Applications/drupal-7.50-0/apps/solr-5.5.0/contrib/extraction/lib/tika-parsers-1.7.jar' to classloader
+1457 INFO  (coreLoadExecutor-6-thread-2) [   ] o.a.s.c.SolrResourceLoader Adding 'file:/Applications/drupal-7.50-0/apps/solr-5.5.0/contrib/extraction/lib/tika-xmp-1.7.jar' to classloader
+1457 INFO  (coreLoadExecutor-6-thread-1) [   ] o.a.s.c.SolrResourceLoader Adding 'file:/Applications/drupal-7.50-0/apps/solr-5.5.0/contrib/extraction/lib/tika-xmp-1.7.jar' to classloader
+1457 INFO  (coreLoadExecutor-6-thread-2) [   ] o.a.s.c.SolrResourceLoader Adding 'file:/Applications/drupal-7.50-0/apps/solr-5.5.0/contrib/extraction/lib/vorbis-java-core-0.6.jar' to classloader
+1457 INFO  (coreLoadExecutor-6-thread-1) [   ] o.a.s.c.SolrResourceLoader Adding 'file:/Applications/drupal-7.50-0/apps/solr-5.5.0/contrib/extraction/lib/vorbis-java-core-0.6.jar' to classloader
+1457 INFO  (coreLoadExecutor-6-thread-2) [   ] o.a.s.c.SolrResourceLoader Adding 'file:/Applications/drupal-7.50-0/apps/solr-5.5.0/contrib/extraction/lib/vorbis-java-tika-0.6.jar' to classloader
+1457 INFO  (coreLoadExecutor-6-thread-1) [   ] o.a.s.c.SolrResourceLoader Adding 'file:/Applications/drupal-7.50-0/apps/solr-5.5.0/contrib/extraction/lib/vorbis-java-tika-0.6.jar' to classloader
+1458 INFO  (coreLoadExecutor-6-thread-2) [   ] o.a.s.c.SolrResourceLoader Adding 'file:/Applications/drupal-7.50-0/apps/solr-5.5.0/contrib/extraction/lib/xercesImpl-2.9.1.jar' to classloader
+1458 INFO  (coreLoadExecutor-6-thread-1) [   ] o.a.s.c.SolrResourceLoader Adding 'file:/Applications/drupal-7.50-0/apps/solr-5.5.0/contrib/extraction/lib/xercesImpl-2.9.1.jar' to classloader
+1458 INFO  (coreLoadExecutor-6-thread-2) [   ] o.a.s.c.SolrResourceLoader Adding 'file:/Applications/drupal-7.50-0/apps/solr-5.5.0/contrib/extraction/lib/xmlbeans-2.6.0.jar' to classloader
+1458 INFO  (coreLoadExecutor-6-thread-1) [   ] o.a.s.c.SolrResourceLoader Adding 'file:/Applications/drupal-7.50-0/apps/solr-5.5.0/contrib/extraction/lib/xmlbeans-2.6.0.jar' to classloader
+1458 INFO  (coreLoadExecutor-6-thread-2) [   ] o.a.s.c.SolrResourceLoader Adding 'file:/Applications/drupal-7.50-0/apps/solr-5.5.0/contrib/extraction/lib/xmpcore-5.1.2.jar' to classloader
+1458 INFO  (coreLoadExecutor-6-thread-1) [   ] o.a.s.c.SolrResourceLoader Adding 'file:/Applications/drupal-7.50-0/apps/solr-5.5.0/contrib/extraction/lib/xmpcore-5.1.2.jar' to classloader
+1458 INFO  (coreLoadExecutor-6-thread-2) [   ] o.a.s.c.SolrResourceLoader Adding 'file:/Applications/drupal-7.50-0/apps/solr-5.5.0/contrib/extraction/lib/xz-1.5.jar' to classloader
+1458 INFO  (coreLoadExecutor-6-thread-1) [   ] o.a.s.c.SolrResourceLoader Adding 'file:/Applications/drupal-7.50-0/apps/solr-5.5.0/contrib/extraction/lib/xz-1.5.jar' to classloader
+1458 INFO  (coreLoadExecutor-6-thread-2) [   ] o.a.s.c.SolrResourceLoader Adding 'file:/Applications/drupal-7.50-0/apps/solr-5.5.0/contrib/clustering/lib/attributes-binder-1.2.3.jar' to classloader
+1458 INFO  (coreLoadExecutor-6-thread-1) [   ] o.a.s.c.SolrResourceLoader Adding 'file:/Applications/drupal-7.50-0/apps/solr-5.5.0/contrib/clustering/lib/attributes-binder-1.2.3.jar' to classloader
+1458 INFO  (coreLoadExecutor-6-thread-2) [   ] o.a.s.c.SolrResourceLoader Adding 'file:/Applications/drupal-7.50-0/apps/solr-5.5.0/contrib/clustering/lib/carrot2-guava-18.0.jar' to classloader
+1458 INFO  (coreLoadExecutor-6-thread-1) [   ] o.a.s.c.SolrResourceLoader Adding 'file:/Applications/drupal-7.50-0/apps/solr-5.5.0/contrib/clustering/lib/carrot2-guava-18.0.jar' to classloader
+1458 INFO  (coreLoadExecutor-6-thread-2) [   ] o.a.s.c.SolrResourceLoader Adding 'file:/Applications/drupal-7.50-0/apps/solr-5.5.0/contrib/clustering/lib/carrot2-mini-3.10.4.jar' to classloader
+1459 INFO  (coreLoadExecutor-6-thread-2) [   ] o.a.s.c.SolrResourceLoader Adding 'file:/Applications/drupal-7.50-0/apps/solr-5.5.0/contrib/clustering/lib/jackson-annotations-2.5.4.jar' to classloader
+1459 INFO  (coreLoadExecutor-6-thread-1) [   ] o.a.s.c.SolrResourceLoader Adding 'file:/Applications/drupal-7.50-0/apps/solr-5.5.0/contrib/clustering/lib/carrot2-mini-3.10.4.jar' to classloader
+1459 INFO  (coreLoadExecutor-6-thread-1) [   ] o.a.s.c.SolrResourceLoader Adding 'file:/Applications/drupal-7.50-0/apps/solr-5.5.0/contrib/clustering/lib/jackson-annotations-2.5.4.jar' to classloader
+1459 INFO  (coreLoadExecutor-6-thread-1) [   ] o.a.s.c.SolrResourceLoader Adding 'file:/Applications/drupal-7.50-0/apps/solr-5.5.0/contrib/clustering/lib/jackson-databind-2.5.4.jar' to classloader
+1459 INFO  (coreLoadExecutor-6-thread-1) [   ] o.a.s.c.SolrResourceLoader Adding 'file:/Applications/drupal-7.50-0/apps/solr-5.5.0/contrib/clustering/lib/mahout-collections-1.0.jar' to classloader
+1459 INFO  (coreLoadExecutor-6-thread-1) [   ] o.a.s.c.SolrResourceLoader Adding 'file:/Applications/drupal-7.50-0/apps/solr-5.5.0/contrib/clustering/lib/mahout-math-0.6.jar' to classloader
+1459 INFO  (coreLoadExecutor-6-thread-1) [   ] o.a.s.c.SolrResourceLoader Adding 'file:/Applications/drupal-7.50-0/apps/solr-5.5.0/contrib/clustering/lib/simple-xml-2.7.1.jar' to classloader
+1459 INFO  (coreLoadExecutor-6-thread-2) [   ] o.a.s.c.SolrResourceLoader Adding 'file:/Applications/drupal-7.50-0/apps/solr-5.5.0/contrib/clustering/lib/jackson-databind-2.5.4.jar' to classloader
+1459 INFO  (coreLoadExecutor-6-thread-2) [   ] o.a.s.c.SolrResourceLoader Adding 'file:/Applications/drupal-7.50-0/apps/solr-5.5.0/contrib/clustering/lib/mahout-collections-1.0.jar' to classloader
+1459 INFO  (coreLoadExecutor-6-thread-2) [   ] o.a.s.c.SolrResourceLoader Adding 'file:/Applications/drupal-7.50-0/apps/solr-5.5.0/contrib/clustering/lib/mahout-math-0.6.jar' to classloader
+1459 INFO  (coreLoadExecutor-6-thread-2) [   ] o.a.s.c.SolrResourceLoader Adding 'file:/Applications/drupal-7.50-0/apps/solr-5.5.0/contrib/clustering/lib/simple-xml-2.7.1.jar' to classloader
+1581 WARN  (coreLoadExecutor-6-thread-2) [   ] o.a.s.c.Config Solr no longer supports forceful unlocking via the 'unlockOnStartup' option.  This is no longer neccessary for the default lockType except in situations where it would be dangerous and should not be done.  For other lockTypes and/or directoryFactory options it may also be dangerous and users must resolve problematic locks manually.
+1581 WARN  (coreLoadExecutor-6-thread-1) [   ] o.a.s.c.Config Solr no longer supports forceful unlocking via the 'unlockOnStartup' option.  This is no longer neccessary for the default lockType except in situations where it would be dangerous and should not be done.  For other lockTypes and/or directoryFactory options it may also be dangerous and users must resolve problematic locks manually.
+1617 WARN  (coreLoadExecutor-6-thread-2) [   ] o.a.s.c.Config Beginning with Solr 5.5, <mergePolicy> is deprecated, use <mergePolicyFactory> instead.
+1617 WARN  (coreLoadExecutor-6-thread-2) [   ] o.a.s.c.Config Beginning with Solr 5.5, <maxMergeDocs> is deprecated, configure it on the relevant <mergePolicyFactory> instead.
+1617 WARN  (coreLoadExecutor-6-thread-2) [   ] o.a.s.c.Config Beginning with Solr 5.5, <mergeFactor> is deprecated, configure it on the relevant <mergePolicyFactory> instead.
+1618 WARN  (coreLoadExecutor-6-thread-1) [   ] o.a.s.c.Config Beginning with Solr 5.5, <mergePolicy> is deprecated, use <mergePolicyFactory> instead.
+1618 WARN  (coreLoadExecutor-6-thread-1) [   ] o.a.s.c.Config Beginning with Solr 5.5, <maxMergeDocs> is deprecated, configure it on the relevant <mergePolicyFactory> instead.
+1618 WARN  (coreLoadExecutor-6-thread-1) [   ] o.a.s.c.Config Beginning with Solr 5.5, <mergeFactor> is deprecated, configure it on the relevant <mergePolicyFactory> instead.
+1621 INFO  (coreLoadExecutor-6-thread-2) [   ] o.a.s.u.SolrIndexConfig IndexWriter infoStream solr logging is enabled
+1621 INFO  (coreLoadExecutor-6-thread-1) [   ] o.a.s.u.SolrIndexConfig IndexWriter infoStream solr logging is enabled
+1627 INFO  (coreLoadExecutor-6-thread-1) [   ] o.a.s.c.SolrConfig Using Lucene MatchVersion: 5.0.0
+1627 INFO  (coreLoadExecutor-6-thread-2) [   ] o.a.s.c.SolrConfig Using Lucene MatchVersion: 5.0.0
+1718 INFO  (coreLoadExecutor-6-thread-1) [   ] o.a.s.c.SolrConfig Loaded SolrConfig: solrconfig.xml
+1718 INFO  (coreLoadExecutor-6-thread-2) [   ] o.a.s.c.SolrConfig Loaded SolrConfig: solrconfig.xml
+1750 INFO  (coreLoadExecutor-6-thread-2) [   ] o.a.s.s.IndexSchema [search] Schema name=drupal-4.3-solr-5.x
+1752 INFO  (coreLoadExecutor-6-thread-1) [   ] o.a.s.s.IndexSchema [drupal] Schema name=drupal-4.3-solr-5.x
+1939 INFO  (coreLoadExecutor-6-thread-2) [   ] o.a.s.s.IndexSchema unique key field: id
+1941 INFO  (coreLoadExecutor-6-thread-1) [   ] o.a.s.s.IndexSchema unique key field: id
+1980 INFO  (coreLoadExecutor-6-thread-1) [   ] o.a.s.c.ConfigSetProperties Did not find ConfigSet properties, assuming default properties: Can't find resource 'configsetprops.json' in classpath or '/Applications/drupal-7.50-0/apps/solr-5.5.0/server/solr/drupal'
+1980 INFO  (coreLoadExecutor-6-thread-2) [   ] o.a.s.c.ConfigSetProperties Did not find ConfigSet properties, assuming default properties: Can't find resource 'configsetprops.json' in classpath or '/Applications/drupal-7.50-0/apps/solr-5.5.0/server/solr/search'
+1980 INFO  (coreLoadExecutor-6-thread-1) [   ] o.a.s.c.CoreContainer Creating SolrCore 'drupal' using configuration from instancedir /Applications/drupal-7.50-0/apps/solr-5.5.0/server/solr/drupal
+1980 INFO  (coreLoadExecutor-6-thread-2) [   ] o.a.s.c.CoreContainer Creating SolrCore 'search' using configuration from instancedir /Applications/drupal-7.50-0/apps/solr-5.5.0/server/solr/search
+1995 INFO  (coreLoadExecutor-6-thread-2) [   x:search] o.a.s.c.SolrCore solr.NRTCachingDirectoryFactory
+1995 INFO  (coreLoadExecutor-6-thread-1) [   x:drupal] o.a.s.c.SolrCore solr.NRTCachingDirectoryFactory
+2005 INFO  (coreLoadExecutor-6-thread-1) [   x:drupal] o.a.s.c.SolrCore [[drupal] ] Opening new SolrCore at [/Applications/drupal-7.50-0/apps/solr-5.5.0/server/solr/drupal], dataDir=[/Applications/drupal-7.50-0/apps/solr-5.5.0/server/solr/drupal/data/]
+2005 INFO  (coreLoadExecutor-6-thread-2) [   x:search] o.a.s.c.SolrCore [[search] ] Opening new SolrCore at [/Applications/drupal-7.50-0/apps/solr-5.5.0/server/solr/search], dataDir=[/Applications/drupal-7.50-0/apps/solr-5.5.0/server/solr/search/data/]
+2005 INFO  (coreLoadExecutor-6-thread-1) [   x:drupal] o.a.s.c.SolrCore JMX monitoring not detected for core: drupal
+2005 INFO  (coreLoadExecutor-6-thread-2) [   x:search] o.a.s.c.SolrCore JMX monitoring not detected for core: search
+2009 INFO  (coreLoadExecutor-6-thread-1) [   x:drupal] o.a.s.c.SolrCore [[drupal] ] Added SolrEventListener for newSearcher: [org.apache.solr.core.QuerySenderListener{queries=[]}]
+2009 INFO  (coreLoadExecutor-6-thread-2) [   x:search] o.a.s.c.SolrCore [[search] ] Added SolrEventListener for newSearcher: [org.apache.solr.core.QuerySenderListener{queries=[]}]
+2009 INFO  (coreLoadExecutor-6-thread-1) [   x:drupal] o.a.s.c.SolrCore [[drupal] ] Added SolrEventListener for firstSearcher: [org.apache.solr.core.QuerySenderListener{queries=[{q=solr rocks,start=0,rows=10}]}]
+2009 INFO  (coreLoadExecutor-6-thread-2) [   x:search] o.a.s.c.SolrCore [[search] ] Added SolrEventListener for firstSearcher: [org.apache.solr.core.QuerySenderListener{queries=[{q=solr rocks,start=0,rows=10}]}]
+2015 INFO  (coreLoadExecutor-6-thread-1) [   x:drupal] o.a.s.c.SchemaCodecFactory Using default compressionMode: BEST_SPEED
+2015 INFO  (coreLoadExecutor-6-thread-2) [   x:search] o.a.s.c.SchemaCodecFactory Using default compressionMode: BEST_SPEED
+2022 INFO  (coreLoadExecutor-6-thread-1) [   x:drupal] o.a.s.c.CachingDirectoryFactory return new directory for /Applications/drupal-7.50-0/apps/solr-5.5.0/server/solr/drupal/data
+2022 INFO  (coreLoadExecutor-6-thread-2) [   x:search] o.a.s.c.CachingDirectoryFactory return new directory for /Applications/drupal-7.50-0/apps/solr-5.5.0/server/solr/search/data
+2022 INFO  (coreLoadExecutor-6-thread-2) [   x:search] o.a.s.c.SolrCore New index directory detected: old=null new=/Applications/drupal-7.50-0/apps/solr-5.5.0/server/solr/search/data/index/
+2022 INFO  (coreLoadExecutor-6-thread-1) [   x:drupal] o.a.s.c.SolrCore New index directory detected: old=null new=/Applications/drupal-7.50-0/apps/solr-5.5.0/server/solr/drupal/data/index/
+2023 INFO  (coreLoadExecutor-6-thread-2) [   x:search] o.a.s.c.CachingDirectoryFactory return new directory for /Applications/drupal-7.50-0/apps/solr-5.5.0/server/solr/search/data/index
+2023 INFO  (coreLoadExecutor-6-thread-1) [   x:drupal] o.a.s.c.CachingDirectoryFactory return new directory for /Applications/drupal-7.50-0/apps/solr-5.5.0/server/solr/drupal/data/index
+2037 INFO  (OldIndexDirectoryCleanupThreadForCore-drupal) [   x:drupal] o.a.s.c.SolrCore Looking for old index directories to cleanup for core drupal in /Applications/drupal-7.50-0/apps/solr-5.5.0/server/solr/drupal/data/
+2037 INFO  (OldIndexDirectoryCleanupThreadForCore-search) [   x:search] o.a.s.c.SolrCore Looking for old index directories to cleanup for core search in /Applications/drupal-7.50-0/apps/solr-5.5.0/server/solr/search/data/
+2043 INFO  (coreLoadExecutor-6-thread-2) [   x:search] o.a.s.r.XSLTResponseWriter xsltCacheLifetimeSeconds=5
+2043 INFO  (coreLoadExecutor-6-thread-1) [   x:drupal] o.a.s.r.XSLTResponseWriter xsltCacheLifetimeSeconds=5
+2125 INFO  (coreLoadExecutor-6-thread-1) [   x:drupal] o.a.s.c.SolrCore no updateRequestProcessorChain defined as default, creating implicit default
+2125 INFO  (coreLoadExecutor-6-thread-2) [   x:search] o.a.s.c.SolrCore no updateRequestProcessorChain defined as default, creating implicit default
+2149 INFO  (coreLoadExecutor-6-thread-1) [   x:drupal] o.a.s.h.l.XMLLoader xsltCacheLifetimeSeconds=60
+2149 INFO  (coreLoadExecutor-6-thread-2) [   x:search] o.a.s.h.l.XMLLoader xsltCacheLifetimeSeconds=60
+2150 INFO  (coreLoadExecutor-6-thread-1) [   x:drupal] o.a.s.c.PluginBag requestHandler : '/update/json' created with startup=lazy 
+2150 INFO  (coreLoadExecutor-6-thread-2) [   x:search] o.a.s.c.PluginBag requestHandler : '/update/json' created with startup=lazy 
+2151 INFO  (coreLoadExecutor-6-thread-2) [   x:search] o.a.s.c.PluginBag requestHandler : '/update/csv' created with startup=lazy 
+2151 INFO  (coreLoadExecutor-6-thread-1) [   x:drupal] o.a.s.c.PluginBag requestHandler : '/update/csv' created with startup=lazy 
+2151 INFO  (coreLoadExecutor-6-thread-2) [   x:search] o.a.s.h.l.XMLLoader xsltCacheLifetimeSeconds=60
+2151 INFO  (coreLoadExecutor-6-thread-1) [   x:drupal] o.a.s.h.l.XMLLoader xsltCacheLifetimeSeconds=60
+2167 INFO  (coreLoadExecutor-6-thread-1) [   x:drupal] o.a.s.c.PluginBag requestHandler : '/update/extract' created with startup=lazy 
+2167 INFO  (coreLoadExecutor-6-thread-2) [   x:search] o.a.s.c.PluginBag requestHandler : '/update/extract' created with startup=lazy 
+2168 INFO  (coreLoadExecutor-6-thread-1) [   x:drupal] o.a.s.c.PluginBag requestHandler : '/update/xslt' created with startup=lazy 
+2168 INFO  (coreLoadExecutor-6-thread-2) [   x:search] o.a.s.c.PluginBag requestHandler : '/update/xslt' created with startup=lazy 
+2168 INFO  (coreLoadExecutor-6-thread-1) [   x:drupal] o.a.s.c.PluginBag requestHandler : '/analysis/field' created with startup=lazy 
+2168 INFO  (coreLoadExecutor-6-thread-2) [   x:search] o.a.s.c.PluginBag requestHandler : '/analysis/field' created with startup=lazy 
+2168 INFO  (coreLoadExecutor-6-thread-1) [   x:drupal] o.a.s.c.PluginBag requestHandler : '/analysis/document' created with startup=lazy 
+2168 INFO  (coreLoadExecutor-6-thread-2) [   x:search] o.a.s.c.PluginBag requestHandler : '/analysis/document' created with startup=lazy 
+2170 INFO  (coreLoadExecutor-6-thread-1) [   x:drupal] o.a.s.c.PluginBag requestHandler : '/spell' created with startup=lazy 
+2170 INFO  (coreLoadExecutor-6-thread-2) [   x:search] o.a.s.c.PluginBag requestHandler : '/spell' created with startup=lazy 
+2170 INFO  (coreLoadExecutor-6-thread-1) [   x:drupal] o.a.s.c.PluginBag requestHandler : '/tvrh' created with startup=lazy 
+2170 INFO  (coreLoadExecutor-6-thread-2) [   x:search] o.a.s.c.PluginBag requestHandler : '/tvrh' created with startup=lazy 
+2170 INFO  (coreLoadExecutor-6-thread-1) [   x:drupal] o.a.s.c.PluginBag requestHandler : '/terms' created with startup=lazy 
+2170 INFO  (coreLoadExecutor-6-thread-2) [   x:search] o.a.s.c.PluginBag requestHandler : '/terms' created with startup=lazy 
+2170 INFO  (coreLoadExecutor-6-thread-1) [   x:drupal] o.a.s.c.PluginBag requestHandler : '/elevate' created with startup=lazy 
+2171 INFO  (coreLoadExecutor-6-thread-2) [   x:search] o.a.s.c.PluginBag requestHandler : '/elevate' created with startup=lazy 
+2171 INFO  (coreLoadExecutor-6-thread-1) [   x:drupal] o.a.s.c.RequestHandlers Registered paths: /admin/mbeans,standard,,/update/json/docs,/admin/luke,/export,pinkPony,/get,/admin/properties,/elevate,/update/json,/admin/threads,/query,/analysis/field,/analysis/document,/spell,/update/csv,/tvrh,/admin/segments,/admin/system,/replication,mlt,/config,/schema,/update/xslt,/admin/plugins,/admin/logging,/admin/ping,/update,/admin/file,/debug/dump,/terms,/update/extract
+2171 INFO  (coreLoadExecutor-6-thread-2) [   x:search] o.a.s.c.RequestHandlers Registered paths: /admin/mbeans,standard,,/update/json/docs,/admin/luke,/export,pinkPony,/get,/admin/properties,/elevate,/update/json,/admin/threads,/query,/analysis/field,/analysis/document,/spell,/update/csv,/tvrh,/admin/segments,/admin/system,/replication,mlt,/config,/schema,/update/xslt,/admin/plugins,/admin/logging,/admin/ping,/update,/admin/file,/debug/dump,/terms,/update/extract
+2172 INFO  (coreLoadExecutor-6-thread-1) [   x:drupal] o.a.s.c.SolrCore Using default statsCache cache: org.apache.solr.search.stats.LocalStatsCache
+2173 INFO  (coreLoadExecutor-6-thread-2) [   x:search] o.a.s.c.SolrCore Using default statsCache cache: org.apache.solr.search.stats.LocalStatsCache
+2181 INFO  (coreLoadExecutor-6-thread-1) [   x:drupal] o.a.s.u.UpdateHandler Using UpdateLog implementation: org.apache.solr.update.UpdateLog
+2181 INFO  (coreLoadExecutor-6-thread-2) [   x:search] o.a.s.u.UpdateHandler Using UpdateLog implementation: org.apache.solr.update.UpdateLog
+2181 INFO  (coreLoadExecutor-6-thread-1) [   x:drupal] o.a.s.u.UpdateLog Initializing UpdateLog: dataDir= defaultSyncLevel=FLUSH numRecordsToKeep=100 maxNumLogsToKeep=10 numVersionBuckets=65536
+2181 INFO  (coreLoadExecutor-6-thread-2) [   x:search] o.a.s.u.UpdateLog Initializing UpdateLog: dataDir= defaultSyncLevel=FLUSH numRecordsToKeep=100 maxNumLogsToKeep=10 numVersionBuckets=65536
+2200 INFO  (coreLoadExecutor-6-thread-2) [   x:search] o.a.s.u.CommitTracker Hard AutoCommit: if uncommited for 120000ms; if 10000 uncommited docs 
+2200 INFO  (coreLoadExecutor-6-thread-1) [   x:drupal] o.a.s.u.CommitTracker Hard AutoCommit: if uncommited for 120000ms; if 10000 uncommited docs 
+2200 INFO  (coreLoadExecutor-6-thread-2) [   x:search] o.a.s.u.CommitTracker Soft AutoCommit: if uncommited for 10000ms; if 2000 uncommited docs 
+2200 INFO  (coreLoadExecutor-6-thread-1) [   x:drupal] o.a.s.u.CommitTracker Soft AutoCommit: if uncommited for 10000ms; if 2000 uncommited docs 
+2234 INFO  (coreLoadExecutor-6-thread-1) [   x:drupal] o.a.s.c.SolrDeletionPolicy SolrDeletionPolicy.onInit: commits: num=1
+	commit{dir=NRTCachingDirectory(MMapDirectory@/Applications/drupal-7.50-0/apps/solr-5.5.0/server/solr/drupal/data/index lockFactory=org.apache.lucene.store.NativeFSLockFactory@5b005506; maxCacheMB=48.0 maxMergeSizeMB=4.0),segFN=segments_1z,generation=71}
+2234 INFO  (coreLoadExecutor-6-thread-2) [   x:search] o.a.s.c.SolrDeletionPolicy SolrDeletionPolicy.onInit: commits: num=1
+	commit{dir=NRTCachingDirectory(MMapDirectory@/Applications/drupal-7.50-0/apps/solr-5.5.0/server/solr/search/data/index lockFactory=org.apache.lucene.store.NativeFSLockFactory@5b005506; maxCacheMB=48.0 maxMergeSizeMB=4.0),segFN=segments_1,generation=1}
+2234 INFO  (coreLoadExecutor-6-thread-1) [   x:drupal] o.a.s.c.SolrDeletionPolicy newest commit generation = 71
+2234 INFO  (coreLoadExecutor-6-thread-2) [   x:search] o.a.s.c.SolrDeletionPolicy newest commit generation = 1
+2244 INFO  (coreLoadExecutor-6-thread-2) [   x:search] o.a.s.s.SolrIndexSearcher Opening Searcher@6e7b8061[search] main
+2250 INFO  (coreLoadExecutor-6-thread-2) [   x:search] o.a.s.r.ManagedResourceStorage File-based storage initialized to use dir: /Applications/drupal-7.50-0/apps/solr-5.5.0/server/solr/search/conf
+2250 INFO  (coreLoadExecutor-6-thread-2) [   x:search] o.a.s.r.RestManager Initializing RestManager with initArgs: {storageDir=/Applications/drupal-7.50-0/apps/solr-5.5.0/server/solr/search/conf}
+2258 INFO  (coreLoadExecutor-6-thread-2) [   x:search] o.a.s.r.ManagedResourceStorage Reading _rest_managed.json using file:dir=/Applications/drupal-7.50-0/apps/solr-5.5.0/server/solr/search/conf
+2259 INFO  (coreLoadExecutor-6-thread-2) [   x:search] o.a.s.r.RestManager Initializing 0 registered ManagedResources
+2267 INFO  (coreLoadExecutor-6-thread-2) [   x:search] o.a.s.h.c.QueryElevationComponent Loading QueryElevation from: /Applications/drupal-7.50-0/apps/solr-5.5.0/server/solr/search/conf/elevate.xml
+2274 INFO  (coreLoadExecutor-6-thread-2) [   x:search] o.a.s.h.c.SpellCheckComponent Initializing spell checkers
+2281 INFO  (coreLoadExecutor-6-thread-2) [   x:search] o.a.s.h.c.SpellCheckComponent Registering newSearcher listener for spellchecker: default
+2281 INFO  (coreLoadExecutor-6-thread-2) [   x:search] o.a.s.h.c.SpellCheckComponent No queryConverter defined, using default converter
+2283 INFO  (coreLoadExecutor-6-thread-2) [   x:search] o.a.s.h.ReplicationHandler Commits will be reserved for  10000
+2283 INFO  (searcherExecutor-7-thread-1-processing-x:search) [   x:search] o.a.s.c.QuerySenderListener QuerySenderListener sending requests to Searcher@6e7b8061[search] main{ExitableDirectoryReader(UninvertingDirectoryReader())}
+2284 INFO  (coreLoadExecutor-6-thread-2) [   x:search] o.a.s.u.UpdateLog Looking up max value of version field to seed version buckets
+2285 INFO  (coreLoadExecutor-6-thread-2) [   x:search] o.a.s.u.VersionInfo Refreshing highest value of _version_ for 65536 version buckets from index
+2285 INFO  (coreLoadExecutor-6-thread-2) [   x:search] o.a.s.u.VersionInfo No terms found for _version_, cannot seed version bucket highest value from index
+2287 INFO  (coreLoadExecutor-6-thread-1) [   x:drupal] o.a.s.s.SolrIndexSearcher Opening Searcher@4da03ef7[drupal] main
+2288 INFO  (coreLoadExecutor-6-thread-1) [   x:drupal] o.a.s.r.ManagedResourceStorage File-based storage initialized to use dir: /Applications/drupal-7.50-0/apps/solr-5.5.0/server/solr/drupal/conf
+2288 INFO  (coreLoadExecutor-6-thread-1) [   x:drupal] o.a.s.r.RestManager Initializing RestManager with initArgs: {storageDir=/Applications/drupal-7.50-0/apps/solr-5.5.0/server/solr/drupal/conf}
+2288 INFO  (coreLoadExecutor-6-thread-1) [   x:drupal] o.a.s.r.ManagedResourceStorage Reading _rest_managed.json using file:dir=/Applications/drupal-7.50-0/apps/solr-5.5.0/server/solr/drupal/conf
+2288 INFO  (coreLoadExecutor-6-thread-1) [   x:drupal] o.a.s.r.RestManager Initializing 0 registered ManagedResources
+2288 INFO  (coreLoadExecutor-6-thread-2) [   x:search] o.a.s.u.UpdateLog Took 3.0ms to seed version buckets with highest version 1544855183087894528
+2288 INFO  (coreLoadExecutor-6-thread-1) [   x:drupal] o.a.s.h.c.QueryElevationComponent Loading QueryElevation from: /Applications/drupal-7.50-0/apps/solr-5.5.0/server/solr/drupal/conf/elevate.xml
+2289 INFO  (coreLoadExecutor-6-thread-2) [   x:search] o.a.s.c.CoreContainer registering core: search
+2293 INFO  (coreLoadExecutor-6-thread-1) [   x:drupal] o.a.s.h.c.SpellCheckComponent Initializing spell checkers
+2297 INFO  (coreLoadExecutor-6-thread-1) [   x:drupal] o.a.s.h.c.SpellCheckComponent Registering newSearcher listener for spellchecker: default
+2298 INFO  (coreLoadExecutor-6-thread-1) [   x:drupal] o.a.s.h.c.SpellCheckComponent No queryConverter defined, using default converter
+2298 INFO  (coreLoadExecutor-6-thread-1) [   x:drupal] o.a.s.h.ReplicationHandler Commits will be reserved for  10000
+2298 INFO  (searcherExecutor-8-thread-1-processing-x:drupal) [   x:drupal] o.a.s.c.QuerySenderListener QuerySenderListener sending requests to Searcher@4da03ef7[drupal] main{ExitableDirectoryReader(UninvertingDirectoryReader(Uninverting(_1g(5.5.0):C23)))}
+2298 INFO  (coreLoadExecutor-6-thread-1) [   x:drupal] o.a.s.u.UpdateLog Looking up max value of version field to seed version buckets
+2299 INFO  (coreLoadExecutor-6-thread-1) [   x:drupal] o.a.s.u.VersionInfo Refreshing highest value of _version_ for 65536 version buckets from index
+2307 INFO  (coreLoadExecutor-6-thread-1) [   x:drupal] o.a.s.u.VersionInfo Found MAX value 1544855500026281984 from Terms for _version_ in index
+2309 INFO  (coreLoadExecutor-6-thread-1) [   x:drupal] o.a.s.u.UpdateLog Took 10.0ms to seed version buckets with highest version 1544855500026281984
+2309 INFO  (coreLoadExecutor-6-thread-1) [   x:drupal] o.a.s.c.CoreContainer registering core: drupal
+2350 INFO  (searcherExecutor-7-thread-1-processing-x:search) [   x:search] o.a.s.c.S.Request [search]  webapp=null path=null params={q=solr+rocks&distrib=false&start=0&rows=10&event=firstSearcher} hits=0 status=0 QTime=64
+2350 INFO  (searcherExecutor-7-thread-1-processing-x:search) [   x:search] o.a.s.c.QuerySenderListener QuerySenderListener done.
+2350 INFO  (searcherExecutor-7-thread-1-processing-x:search) [   x:search] o.a.s.h.c.SpellCheckComponent Loading spell index for spellchecker: default
+2352 INFO  (searcherExecutor-7-thread-1-processing-x:search) [   x:search] o.a.s.c.SolrCore [search] Registered new searcher Searcher@6e7b8061[search] main{ExitableDirectoryReader(UninvertingDirectoryReader())}
+2355 INFO  (searcherExecutor-8-thread-1-processing-x:drupal) [   x:drupal] o.a.s.c.S.Request [drupal]  webapp=null path=null params={q=solr+rocks&distrib=false&start=0&rows=10&event=firstSearcher} hits=10 status=0 QTime=56
+2363 INFO  (searcherExecutor-8-thread-1-processing-x:drupal) [   x:drupal] o.a.s.c.QuerySenderListener QuerySenderListener done.
+2363 INFO  (searcherExecutor-8-thread-1-processing-x:drupal) [   x:drupal] o.a.s.h.c.SpellCheckComponent Loading spell index for spellchecker: default
+2365 INFO  (searcherExecutor-8-thread-1-processing-x:drupal) [   x:drupal] o.a.s.c.SolrCore [drupal] Registered new searcher Searcher@4da03ef7[drupal] main{ExitableDirectoryReader(UninvertingDirectoryReader(Uninverting(_1g(5.5.0):C23)))}
+9636 INFO  (qtp434176574-20) [   ] o.a.s.s.HttpSolrCall [admin] webapp=null path=/admin/cores params={indexInfo=false&wt=json&_=1473289312354} status=0 QTime=1
+9713 INFO  (qtp434176574-40) [   ] o.a.s.s.HttpSolrCall [admin] webapp=null path=/admin/info/system params={wt=json&_=1473289312407} status=0 QTime=27
+9728 INFO  (qtp434176574-38) [   ] o.a.s.s.HttpSolrCall [admin] webapp=null path=/admin/cores params={wt=json&_=1473289312446} status=0 QTime=2
+20397 INFO  (qtp434176574-40) [   x:drupal] o.a.s.c.S.Request [drupal]  webapp=/solr path=/admin/ping params={} hits=23 status=0 QTime=3
+20398 INFO  (qtp434176574-40) [   x:drupal] o.a.s.c.S.Request [drupal]  webapp=/solr path=/admin/ping params={} status=0 QTime=4
+20414 INFO  (qtp434176574-16) [   x:search] o.a.s.c.S.Request [search]  webapp=/solr path=/admin/ping params={} hits=0 status=0 QTime=0
+20414 INFO  (qtp434176574-16) [   x:search] o.a.s.c.S.Request [search]  webapp=/solr path=/admin/ping params={} status=0 QTime=0
+20417 INFO  (qtp434176574-14) [   x:drupal] o.a.s.c.S.Request [drupal]  webapp=/solr path=/admin/ping params={} hits=23 status=0 QTime=0
+20417 INFO  (qtp434176574-14) [   x:drupal] o.a.s.c.S.Request [drupal]  webapp=/solr path=/admin/ping params={} status=0 QTime=0
+86739 INFO  (qtp434176574-17) [   x:drupal] o.a.s.c.S.Request [drupal]  webapp=/solr path=/admin/ping params={} hits=23 status=0 QTime=0
+86740 INFO  (qtp434176574-17) [   x:drupal] o.a.s.c.S.Request [drupal]  webapp=/solr path=/admin/ping params={} status=0 QTime=0
+86742 INFO  (qtp434176574-38) [   x:drupal] o.a.s.c.S.Request [drupal]  webapp=/solr path=/admin/ping params={} hits=23 status=0 QTime=0
+86743 INFO  (qtp434176574-38) [   x:drupal] o.a.s.c.S.Request [drupal]  webapp=/solr path=/admin/ping params={} status=0 QTime=1
+86768 INFO  (qtp434176574-14) [   x:drupal] o.a.s.c.S.Request [drupal]  webapp=/solr path=/admin/luke params={json.nl=map&numTerms=0&wt=json} status=0 QTime=18
+86800 INFO  (qtp434176574-17) [   x:drupal] o.a.s.c.S.Request [drupal]  webapp=/solr path=/admin/mbeans params={stats=true&wt=xml} status=0 QTime=11
+91417 INFO  (qtp434176574-38) [   x:drupal] o.a.s.c.S.Request [drupal]  webapp=/solr path=/admin/ping params={} hits=23 status=0 QTime=0
+91417 INFO  (qtp434176574-38) [   x:drupal] o.a.s.c.S.Request [drupal]  webapp=/solr path=/admin/ping params={} status=0 QTime=0
+91419 INFO  (qtp434176574-14) [   x:drupal] o.a.s.c.S.Request [drupal]  webapp=/solr path=/admin/ping params={} hits=23 status=0 QTime=0
+91419 INFO  (qtp434176574-14) [   x:drupal] o.a.s.c.S.Request [drupal]  webapp=/solr path=/admin/ping params={} status=0 QTime=0
+91436 INFO  (qtp434176574-40) [   x:drupal] o.a.s.c.S.Request [drupal]  webapp=/solr path=/admin/luke params={json.nl=map&numTerms=0&wt=json} status=0 QTime=10
+91459 INFO  (qtp434176574-16) [   x:drupal] o.a.s.c.S.Request [drupal]  webapp=/solr path=/admin/mbeans params={stats=true&wt=xml} status=0 QTime=2
+92930 INFO  (qtp434176574-17) [   x:drupal] o.a.s.s.SolrIndexSearcher Opening Searcher@2a411477[drupal] realtime
+92931 INFO  (qtp434176574-17) [   x:drupal] o.a.s.u.p.LogUpdateProcessorFactory [drupal]  webapp=/solr path=/update params={wt=json}{deleteByQuery=*:* (-1544855901316317184)} 0 56
+92935 INFO  (qtp434176574-40) [   x:drupal] o.a.s.u.DirectUpdateHandler2 start commit{,optimize=false,openSearcher=true,waitSearcher=true,expungeDeletes=false,softCommit=false,prepareCommit=false}
+92939 INFO  (qtp434176574-40) [   x:drupal] o.a.s.c.SolrDeletionPolicy SolrDeletionPolicy.onCommit: commits: num=2
+	commit{dir=NRTCachingDirectory(MMapDirectory@/Applications/drupal-7.50-0/apps/solr-5.5.0/server/solr/drupal/data/index lockFactory=org.apache.lucene.store.NativeFSLockFactory@5b005506; maxCacheMB=48.0 maxMergeSizeMB=4.0),segFN=segments_1z,generation=71}
+	commit{dir=NRTCachingDirectory(MMapDirectory@/Applications/drupal-7.50-0/apps/solr-5.5.0/server/solr/drupal/data/index lockFactory=org.apache.lucene.store.NativeFSLockFactory@5b005506; maxCacheMB=48.0 maxMergeSizeMB=4.0),segFN=segments_20,generation=72}
+92939 INFO  (qtp434176574-40) [   x:drupal] o.a.s.c.SolrDeletionPolicy newest commit generation = 72
+92940 INFO  (qtp434176574-40) [   x:drupal] o.a.s.s.SolrIndexSearcher Opening Searcher@392590ff[drupal] main
+92941 INFO  (qtp434176574-40) [   x:drupal] o.a.s.u.DirectUpdateHandler2 end_commit_flush
+92942 INFO  (searcherExecutor-8-thread-1-processing-x:drupal) [   x:drupal] o.a.s.c.QuerySenderListener QuerySenderListener sending requests to Searcher@392590ff[drupal] main{ExitableDirectoryReader(UninvertingDirectoryReader())}
+92942 INFO  (searcherExecutor-8-thread-1-processing-x:drupal) [   x:drupal] o.a.s.c.QuerySenderListener QuerySenderListener done.
+92942 INFO  (searcherExecutor-8-thread-1-processing-x:drupal) [   x:drupal] o.a.s.h.c.SpellCheckComponent Index is not optimized therefore skipping building spell check index for: default
+92942 INFO  (searcherExecutor-8-thread-1-processing-x:drupal) [   x:drupal] o.a.s.c.SolrCore [drupal] Registered new searcher Searcher@392590ff[drupal] main{ExitableDirectoryReader(UninvertingDirectoryReader())}
+92944 INFO  (qtp434176574-40) [   x:drupal] o.a.s.u.p.LogUpdateProcessorFactory [drupal]  webapp=/solr path=/update params={wt=json}{commit=} 0 9
+93111 INFO  (qtp434176574-16) [   x:drupal] o.a.s.c.S.Request [drupal]  webapp=/solr path=/admin/ping params={} hits=0 status=0 QTime=0
+93111 INFO  (qtp434176574-16) [   x:drupal] o.a.s.c.S.Request [drupal]  webapp=/solr path=/admin/ping params={} status=0 QTime=0
+93113 INFO  (qtp434176574-17) [   x:drupal] o.a.s.c.S.Request [drupal]  webapp=/solr path=/admin/ping params={} hits=0 status=0 QTime=0
+93114 INFO  (qtp434176574-17) [   x:drupal] o.a.s.c.S.Request [drupal]  webapp=/solr path=/admin/ping params={} status=0 QTime=0
+93117 INFO  (qtp434176574-38) [   x:drupal] o.a.s.c.S.Request [drupal]  webapp=/solr path=/admin/luke params={json.nl=map&numTerms=0&wt=json} status=0 QTime=0
+93134 INFO  (qtp434176574-14) [   x:drupal] o.a.s.c.S.Request [drupal]  webapp=/solr path=/admin/system params={wt=json} status=0 QTime=11
+93142 INFO  (qtp434176574-40) [   x:drupal] o.a.s.c.S.Request [drupal]  webapp=/solr path=/admin/mbeans params={stats=true&wt=xml} status=0 QTime=2
+160249 INFO  (qtp434176574-16) [   x:drupal] o.a.s.c.S.Request [drupal]  webapp=/solr path=/admin/ping params={} hits=0 status=0 QTime=0
+160249 INFO  (qtp434176574-16) [   x:drupal] o.a.s.c.S.Request [drupal]  webapp=/solr path=/admin/ping params={} status=0 QTime=0
+160262 INFO  (qtp434176574-14) [   x:search] o.a.s.c.S.Request [search]  webapp=/solr path=/admin/ping params={} hits=0 status=0 QTime=0
+160262 INFO  (qtp434176574-14) [   x:search] o.a.s.c.S.Request [search]  webapp=/solr path=/admin/ping params={} status=0 QTime=0
+160264 INFO  (qtp434176574-38) [   x:drupal] o.a.s.c.S.Request [drupal]  webapp=/solr path=/admin/ping params={} hits=0 status=0 QTime=0
+160264 INFO  (qtp434176574-38) [   x:drupal] o.a.s.c.S.Request [drupal]  webapp=/solr path=/admin/ping params={} status=0 QTime=0
+173832 INFO  (qtp434176574-17) [   x:drupal] o.a.s.c.S.Request [drupal]  webapp=/solr path=/admin/ping params={} hits=0 status=0 QTime=0
+173832 INFO  (qtp434176574-17) [   x:drupal] o.a.s.c.S.Request [drupal]  webapp=/solr path=/admin/ping params={} status=0 QTime=0
+173836 INFO  (qtp434176574-40) [   x:drupal] o.a.s.c.S.Request [drupal]  webapp=/solr path=/admin/ping params={} hits=0 status=0 QTime=1
+173836 INFO  (qtp434176574-40) [   x:drupal] o.a.s.c.S.Request [drupal]  webapp=/solr path=/admin/ping params={} status=0 QTime=1
+173842 INFO  (qtp434176574-16) [   x:drupal] o.a.s.c.S.Request [drupal]  webapp=/solr path=/admin/luke params={json.nl=map&numTerms=0&wt=json} status=0 QTime=0
+173865 INFO  (qtp434176574-14) [   x:drupal] o.a.s.c.S.Request [drupal]  webapp=/solr path=/admin/mbeans params={stats=true&wt=xml} status=0 QTime=2
+178035 INFO  (qtp434176574-38) [   x:drupal] o.a.s.c.S.Request [drupal]  webapp=/solr path=/admin/ping params={} hits=0 status=0 QTime=0
+178035 INFO  (qtp434176574-38) [   x:drupal] o.a.s.c.S.Request [drupal]  webapp=/solr path=/admin/ping params={} status=0 QTime=1
+178049 INFO  (qtp434176574-17) [   x:search] o.a.s.c.S.Request [search]  webapp=/solr path=/admin/ping params={} hits=0 status=0 QTime=0
+178049 INFO  (qtp434176574-17) [   x:search] o.a.s.c.S.Request [search]  webapp=/solr path=/admin/ping params={} status=0 QTime=0
+178050 INFO  (qtp434176574-40) [   x:drupal] o.a.s.c.S.Request [drupal]  webapp=/solr path=/admin/ping params={} hits=0 status=0 QTime=0
+178051 INFO  (qtp434176574-40) [   x:drupal] o.a.s.c.S.Request [drupal]  webapp=/solr path=/admin/ping params={} status=0 QTime=0
+187067 INFO  (qtp434176574-16) [   x:drupal] o.a.s.c.S.Request [drupal]  webapp=/solr path=/admin/ping params={} hits=0 status=0 QTime=0
+187067 INFO  (qtp434176574-16) [   x:drupal] o.a.s.c.S.Request [drupal]  webapp=/solr path=/admin/ping params={} status=0 QTime=0
+187163 INFO  (qtp434176574-17) [   x:search] o.a.s.c.S.Request [search]  webapp=/solr path=/admin/ping params={} hits=0 status=0 QTime=0
+187164 INFO  (qtp434176574-17) [   x:search] o.a.s.c.S.Request [search]  webapp=/solr path=/admin/ping params={} status=0 QTime=0
+187166 INFO  (qtp434176574-38) [   x:drupal] o.a.s.c.S.Request [drupal]  webapp=/solr path=/admin/ping params={} hits=0 status=0 QTime=0
+187166 INFO  (qtp434176574-38) [   x:drupal] o.a.s.c.S.Request [drupal]  webapp=/solr path=/admin/ping params={} status=0 QTime=0
+189547 INFO  (qtp434176574-14) [   x:drupal] o.a.s.c.S.Request [drupal]  webapp=/solr path=/admin/ping params={} hits=0 status=0 QTime=0
+189547 INFO  (qtp434176574-14) [   x:drupal] o.a.s.c.S.Request [drupal]  webapp=/solr path=/admin/ping params={} status=0 QTime=0
+189549 INFO  (qtp434176574-40) [   x:drupal] o.a.s.c.S.Request [drupal]  webapp=/solr path=/admin/ping params={} hits=0 status=0 QTime=0
+189550 INFO  (qtp434176574-40) [   x:drupal] o.a.s.c.S.Request [drupal]  webapp=/solr path=/admin/ping params={} status=0 QTime=0
+189554 INFO  (qtp434176574-16) [   x:drupal] o.a.s.c.S.Request [drupal]  webapp=/solr path=/admin/luke params={json.nl=map&numTerms=0&wt=json} status=0 QTime=0
+189583 INFO  (qtp434176574-17) [   x:drupal] o.a.s.c.S.Request [drupal]  webapp=/solr path=/admin/system params={wt=json} status=0 QTime=10
+189590 INFO  (qtp434176574-38) [   x:drupal] o.a.s.c.S.Request [drupal]  webapp=/solr path=/admin/mbeans params={stats=true&wt=xml} status=0 QTime=1
+195189 INFO  (qtp434176574-14) [   x:drupal] o.a.s.c.S.Request [drupal]  webapp=/solr path=/admin/ping params={} hits=0 status=0 QTime=0
+195189 INFO  (qtp434176574-14) [   x:drupal] o.a.s.c.S.Request [drupal]  webapp=/solr path=/admin/ping params={} status=0 QTime=0
+195192 INFO  (qtp434176574-40) [   x:drupal] o.a.s.c.S.Request [drupal]  webapp=/solr path=/admin/ping params={} hits=0 status=0 QTime=0
+195192 INFO  (qtp434176574-40) [   x:drupal] o.a.s.c.S.Request [drupal]  webapp=/solr path=/admin/ping params={} status=0 QTime=0
+195195 INFO  (qtp434176574-38) [   x:drupal] o.a.s.c.S.Request [drupal]  webapp=/solr path=/admin/luke params={json.nl=map&numTerms=0&wt=json} status=0 QTime=0
+195209 INFO  (qtp434176574-17) [   x:drupal] o.a.s.c.S.Request [drupal]  webapp=/solr path=/admin/mbeans params={stats=true&wt=xml} status=0 QTime=1
+196661 INFO  (qtp434176574-16) [   x:drupal] o.a.s.c.S.Request [drupal]  webapp=/solr path=/admin/ping params={} hits=0 status=0 QTime=0
+196662 INFO  (qtp434176574-16) [   x:drupal] o.a.s.c.S.Request [drupal]  webapp=/solr path=/admin/ping params={} status=0 QTime=0
+196663 INFO  (qtp434176574-14) [   x:drupal] o.a.s.c.S.Request [drupal]  webapp=/solr path=/admin/ping params={} hits=0 status=0 QTime=0
+196664 INFO  (qtp434176574-14) [   x:drupal] o.a.s.c.S.Request [drupal]  webapp=/solr path=/admin/ping params={} status=0 QTime=0
+196667 INFO  (qtp434176574-40) [   x:drupal] o.a.s.c.S.Request [drupal]  webapp=/solr path=/admin/luke params={json.nl=map&numTerms=0&wt=json} status=0 QTime=0
+196683 INFO  (qtp434176574-38) [   x:drupal] o.a.s.c.S.Request [drupal]  webapp=/solr path=/admin/system params={wt=json} status=0 QTime=10
+196690 INFO  (qtp434176574-17) [   x:drupal] o.a.s.c.S.Request [drupal]  webapp=/solr path=/admin/mbeans params={stats=true&wt=xml} status=0 QTime=1
+199005 INFO  (qtp434176574-16) [   x:drupal] o.a.s.c.S.Request [drupal]  webapp=/solr path=/admin/ping params={} hits=0 status=0 QTime=0
+199005 INFO  (qtp434176574-16) [   x:drupal] o.a.s.c.S.Request [drupal]  webapp=/solr path=/admin/ping params={} status=0 QTime=0
+199007 INFO  (qtp434176574-14) [   x:drupal] o.a.s.c.S.Request [drupal]  webapp=/solr path=/admin/ping params={} hits=0 status=0 QTime=0
+199008 INFO  (qtp434176574-14) [   x:drupal] o.a.s.c.S.Request [drupal]  webapp=/solr path=/admin/ping params={} status=0 QTime=0
+199011 INFO  (qtp434176574-40) [   x:drupal] o.a.s.c.S.Request [drupal]  webapp=/solr path=/admin/luke params={json.nl=map&numTerms=0&wt=json} status=0 QTime=0
+199023 INFO  (qtp434176574-38) [   x:drupal] o.a.s.c.S.Request [drupal]  webapp=/solr path=/admin/mbeans params={stats=true&wt=xml} status=0 QTime=1
+200582 INFO  (qtp434176574-17) [   x:drupal] o.a.s.c.S.Request [drupal]  webapp=/solr path=/admin/ping params={} hits=0 status=0 QTime=0
+200583 INFO  (qtp434176574-17) [   x:drupal] o.a.s.c.S.Request [drupal]  webapp=/solr path=/admin/ping params={} status=0 QTime=0
+200593 INFO  (qtp434176574-40) [   x:drupal] o.a.s.c.S.Request [drupal]  webapp=/solr path=/admin/ping params={} hits=0 status=0 QTime=0
+200593 INFO  (qtp434176574-40) [   x:drupal] o.a.s.c.S.Request [drupal]  webapp=/solr path=/admin/ping params={} status=0 QTime=0
+202106 INFO  (qtp434176574-38) [   x:drupal] o.a.s.u.p.LogUpdateProcessorFactory [drupal]  webapp=/solr path=/update params={wt=json}{add=[cvwiqq/node/4 (1544856015619489792), cvwiqq/node/5 (1544856015687647232), cvwiqq/node/6 (1544856015700230144), cvwiqq/node/7 (1544856015712813056), cvwiqq/node/8 (1544856015723298816), cvwiqq/node/9 (1544856015734833152), cvwiqq/node/10 (1544856015740076032), cvwiqq/node/11 (1544856015750561792), cvwiqq/node/12 (1544856015755804672), cvwiqq/node/13 (1544856015762096128), ... (20 adds)]} 0 189
+202122 INFO  (qtp434176574-17) [   x:drupal] o.a.s.u.p.LogUpdateProcessorFactory [drupal]  webapp=/solr path=/update params={wt=json}{add=[cvwiqq/node/25 (1544856015819767808), cvwiqq/node/26 (1544856015826059264), cvwiqq/node/27 (1544856015829204992)]} 0 12
+202356 INFO  (qtp434176574-16) [   x:drupal] o.a.s.c.S.Request [drupal]  webapp=/solr path=/admin/ping params={} hits=0 status=0 QTime=0
+202356 INFO  (qtp434176574-16) [   x:drupal] o.a.s.c.S.Request [drupal]  webapp=/solr path=/admin/ping params={} status=0 QTime=0
+202358 INFO  (qtp434176574-14) [   x:drupal] o.a.s.c.S.Request [drupal]  webapp=/solr path=/admin/ping params={} hits=0 status=0 QTime=0
+202358 INFO  (qtp434176574-14) [   x:drupal] o.a.s.c.S.Request [drupal]  webapp=/solr path=/admin/ping params={} status=0 QTime=0
+202364 INFO  (qtp434176574-40) [   x:drupal] o.a.s.c.S.Request [drupal]  webapp=/solr path=/admin/luke params={json.nl=map&numTerms=0&wt=json} status=0 QTime=0
+202382 INFO  (qtp434176574-38) [   x:drupal] o.a.s.c.S.Request [drupal]  webapp=/solr path=/admin/mbeans params={stats=true&wt=xml} status=0 QTime=1
+211983 INFO  (commitScheduler-16-thread-1) [   x:drupal] o.a.s.u.DirectUpdateHandler2 start commit{,optimize=false,openSearcher=true,waitSearcher=true,expungeDeletes=false,softCommit=true,prepareCommit=false}
+212058 INFO  (commitScheduler-16-thread-1) [   x:drupal] o.a.s.s.SolrIndexSearcher Opening Searcher@b44e70f[drupal] main
+212059 INFO  (commitScheduler-16-thread-1) [   x:drupal] o.a.s.u.DirectUpdateHandler2 end_commit_flush
+212062 INFO  (searcherExecutor-8-thread-1-processing-x:drupal) [   x:drupal] o.a.s.c.QuerySenderListener QuerySenderListener sending requests to Searcher@b44e70f[drupal] main{ExitableDirectoryReader(UninvertingDirectoryReader(Uninverting(_1h(5.5.0):C23)))}
+212062 INFO  (searcherExecutor-8-thread-1-processing-x:drupal) [   x:drupal] o.a.s.c.QuerySenderListener QuerySenderListener done.
+212062 INFO  (searcherExecutor-8-thread-1-processing-x:drupal) [   x:drupal] o.a.s.h.c.SpellCheckComponent Building spell index for spell checker: default
+212145 INFO  (searcherExecutor-8-thread-1-processing-x:drupal) [   x:drupal] o.a.s.c.SolrCore [drupal] Registered new searcher Searcher@b44e70f[drupal] main{ExitableDirectoryReader(UninvertingDirectoryReader(Uninverting(_1h(5.5.0):C23)))}
+212662 INFO  (qtp434176574-17) [   x:drupal] o.a.s.c.S.Request [drupal]  webapp=/solr path=/admin/ping params={} hits=23 status=0 QTime=0
+212662 INFO  (qtp434176574-17) [   x:drupal] o.a.s.c.S.Request [drupal]  webapp=/solr path=/admin/ping params={} status=0 QTime=0
+212664 INFO  (qtp434176574-16) [   x:drupal] o.a.s.c.S.Request [drupal]  webapp=/solr path=/admin/ping params={} hits=23 status=0 QTime=0
+212664 INFO  (qtp434176574-16) [   x:drupal] o.a.s.c.S.Request [drupal]  webapp=/solr path=/admin/ping params={} status=0 QTime=0
+212678 INFO  (qtp434176574-38) [   x:drupal] o.a.s.c.S.Request [drupal]  webapp=/solr path=/admin/luke params={json.nl=map&numTerms=0&wt=json} status=0 QTime=7
+212702 INFO  (qtp434176574-17) [   x:drupal] o.a.s.c.S.Request [drupal]  webapp=/solr path=/admin/mbeans params={stats=true&wt=xml} status=0 QTime=2
+321983 INFO  (commitScheduler-14-thread-1) [   x:drupal] o.a.s.u.DirectUpdateHandler2 start commit{,optimize=false,openSearcher=true,waitSearcher=true,expungeDeletes=false,softCommit=false,prepareCommit=false}
+321991 INFO  (commitScheduler-14-thread-1) [   x:drupal] o.a.s.c.SolrDeletionPolicy SolrDeletionPolicy.onCommit: commits: num=2
+	commit{dir=NRTCachingDirectory(MMapDirectory@/Applications/drupal-7.50-0/apps/solr-5.5.0/server/solr/drupal/data/index lockFactory=org.apache.lucene.store.NativeFSLockFactory@5b005506; maxCacheMB=48.0 maxMergeSizeMB=4.0),segFN=segments_20,generation=72}
+	commit{dir=NRTCachingDirectory(MMapDirectory@/Applications/drupal-7.50-0/apps/solr-5.5.0/server/solr/drupal/data/index lockFactory=org.apache.lucene.store.NativeFSLockFactory@5b005506; maxCacheMB=48.0 maxMergeSizeMB=4.0),segFN=segments_21,generation=73}
+321991 INFO  (commitScheduler-14-thread-1) [   x:drupal] o.a.s.c.SolrDeletionPolicy newest commit generation = 73
+321993 INFO  (commitScheduler-14-thread-1) [   x:drupal] o.a.s.s.SolrIndexSearcher Opening Searcher@7bd3941f[drupal] main
+321993 INFO  (commitScheduler-14-thread-1) [   x:drupal] o.a.s.u.DirectUpdateHandler2 end_commit_flush
+321994 INFO  (searcherExecutor-8-thread-1-processing-x:drupal) [   x:drupal] o.a.s.c.QuerySenderListener QuerySenderListener sending requests to Searcher@7bd3941f[drupal] main{ExitableDirectoryReader(UninvertingDirectoryReader(Uninverting(_1h(5.5.0):C23)))}
+321995 INFO  (searcherExecutor-8-thread-1-processing-x:drupal) [   x:drupal] o.a.s.c.QuerySenderListener QuerySenderListener done.
+321995 INFO  (searcherExecutor-8-thread-1-processing-x:drupal) [   x:drupal] o.a.s.h.c.SpellCheckComponent Building spell index for spell checker: default
+322043 INFO  (searcherExecutor-8-thread-1-processing-x:drupal) [   x:drupal] o.a.s.c.SolrCore [drupal] Registered new searcher Searcher@7bd3941f[drupal] main{ExitableDirectoryReader(UninvertingDirectoryReader(Uninverting(_1h(5.5.0):C23)))}
+2572429 INFO  (qtp434176574-16) [   x:drupal] o.a.s.c.S.Request [drupal]  webapp=/solr path=/admin/ping params={} hits=23 status=0 QTime=0
+2572431 INFO  (qtp434176574-16) [   x:drupal] o.a.s.c.S.Request [drupal]  webapp=/solr path=/admin/ping params={} status=0 QTime=2
+2572445 INFO  (qtp434176574-38) [   x:search] o.a.s.c.S.Request [search]  webapp=/solr path=/admin/ping params={} hits=0 status=0 QTime=0
+2572445 INFO  (qtp434176574-38) [   x:search] o.a.s.c.S.Request [search]  webapp=/solr path=/admin/ping params={} status=0 QTime=0
+2572447 INFO  (qtp434176574-40) [   x:drupal] o.a.s.c.S.Request [drupal]  webapp=/solr path=/admin/ping params={} hits=23 status=0 QTime=0
+2572447 INFO  (qtp434176574-40) [   x:drupal] o.a.s.c.S.Request [drupal]  webapp=/solr path=/admin/ping params={} status=0 QTime=0
+2575568 INFO  (qtp434176574-14) [   x:drupal] o.a.s.c.S.Request [drupal]  webapp=/solr path=/admin/ping params={} hits=23 status=0 QTime=0
+2575568 INFO  (qtp434176574-14) [   x:drupal] o.a.s.c.S.Request [drupal]  webapp=/solr path=/admin/ping params={} status=0 QTime=0
+2575570 INFO  (qtp434176574-17) [   x:drupal] o.a.s.c.S.Request [drupal]  webapp=/solr path=/admin/ping params={} hits=23 status=0 QTime=0
+2575571 INFO  (qtp434176574-17) [   x:drupal] o.a.s.c.S.Request [drupal]  webapp=/solr path=/admin/ping params={} status=0 QTime=0
+2575582 INFO  (qtp434176574-16) [   x:drupal] o.a.s.c.S.Request [drupal]  webapp=/solr path=/admin/luke params={json.nl=map&numTerms=0&wt=json} status=0 QTime=5
+2575605 INFO  (qtp434176574-38) [   x:drupal] o.a.s.c.S.Request [drupal]  webapp=/solr path=/admin/mbeans params={stats=true&wt=xml} status=0 QTime=3
+2628483 INFO  (qtp434176574-14) [   x:drupal] o.a.s.c.S.Request [drupal]  webapp=/solr path=/admin/ping params={} hits=23 status=0 QTime=0
+2628483 INFO  (qtp434176574-14) [   x:drupal] o.a.s.c.S.Request [drupal]  webapp=/solr path=/admin/ping params={} status=0 QTime=0
+2628486 INFO  (qtp434176574-40) [   x:drupal] o.a.s.c.S.Request [drupal]  webapp=/solr path=/admin/ping params={} hits=23 status=0 QTime=0
+2628486 INFO  (qtp434176574-40) [   x:drupal] o.a.s.c.S.Request [drupal]  webapp=/solr path=/admin/ping params={} status=0 QTime=0
+2628497 INFO  (qtp434176574-17) [   x:drupal] o.a.s.c.S.Request [drupal]  webapp=/solr path=/admin/luke params={json.nl=map&numTerms=0&wt=json} status=0 QTime=4
+2628518 INFO  (qtp434176574-16) [   x:drupal] o.a.s.c.S.Request [drupal]  webapp=/solr path=/admin/mbeans params={stats=true&wt=xml} status=0 QTime=1
+2629604 INFO  (qtp434176574-38) [   x:drupal] o.a.s.s.SolrIndexSearcher Opening Searcher@e10edb1[drupal] realtime
+2629605 INFO  (qtp434176574-38) [   x:drupal] o.a.s.u.p.LogUpdateProcessorFactory [drupal]  webapp=/solr path=/update params={wt=json}{deleteByQuery=*:* (-1544858561229619200)} 0 2
+2629609 INFO  (qtp434176574-14) [   x:drupal] o.a.s.u.DirectUpdateHandler2 start commit{,optimize=false,openSearcher=true,waitSearcher=true,expungeDeletes=false,softCommit=false,prepareCommit=false}
+2629610 INFO  (qtp434176574-14) [   x:drupal] o.a.s.c.SolrDeletionPolicy SolrDeletionPolicy.onCommit: commits: num=2
+	commit{dir=NRTCachingDirectory(MMapDirectory@/Applications/drupal-7.50-0/apps/solr-5.5.0/server/solr/drupal/data/index lockFactory=org.apache.lucene.store.NativeFSLockFactory@5b005506; maxCacheMB=48.0 maxMergeSizeMB=4.0),segFN=segments_21,generation=73}
+	commit{dir=NRTCachingDirectory(MMapDirectory@/Applications/drupal-7.50-0/apps/solr-5.5.0/server/solr/drupal/data/index lockFactory=org.apache.lucene.store.NativeFSLockFactory@5b005506; maxCacheMB=48.0 maxMergeSizeMB=4.0),segFN=segments_22,generation=74}
+2629610 INFO  (qtp434176574-14) [   x:drupal] o.a.s.c.SolrDeletionPolicy newest commit generation = 74
+2629610 INFO  (qtp434176574-14) [   x:drupal] o.a.s.s.SolrIndexSearcher Opening Searcher@77fa8552[drupal] main
+2629611 INFO  (qtp434176574-14) [   x:drupal] o.a.s.u.DirectUpdateHandler2 end_commit_flush
+2629612 INFO  (searcherExecutor-8-thread-1-processing-x:drupal) [   x:drupal] o.a.s.c.QuerySenderListener QuerySenderListener sending requests to Searcher@77fa8552[drupal] main{ExitableDirectoryReader(UninvertingDirectoryReader())}
+2629612 INFO  (searcherExecutor-8-thread-1-processing-x:drupal) [   x:drupal] o.a.s.c.QuerySenderListener QuerySenderListener done.
+2629612 INFO  (searcherExecutor-8-thread-1-processing-x:drupal) [   x:drupal] o.a.s.h.c.SpellCheckComponent Index is not optimized therefore skipping building spell check index for: default
+2629612 INFO  (searcherExecutor-8-thread-1-processing-x:drupal) [   x:drupal] o.a.s.c.SolrCore [drupal] Registered new searcher Searcher@77fa8552[drupal] main{ExitableDirectoryReader(UninvertingDirectoryReader())}
+2629614 INFO  (qtp434176574-14) [   x:drupal] o.a.s.u.p.LogUpdateProcessorFactory [drupal]  webapp=/solr path=/update params={wt=json}{commit=} 0 5
+2629775 INFO  (qtp434176574-40) [   x:drupal] o.a.s.c.S.Request [drupal]  webapp=/solr path=/admin/ping params={} hits=0 status=0 QTime=0
+2629775 INFO  (qtp434176574-40) [   x:drupal] o.a.s.c.S.Request [drupal]  webapp=/solr path=/admin/ping params={} status=0 QTime=0
+2629778 INFO  (qtp434176574-17) [   x:drupal] o.a.s.c.S.Request [drupal]  webapp=/solr path=/admin/ping params={} hits=0 status=0 QTime=0
+2629778 INFO  (qtp434176574-17) [   x:drupal] o.a.s.c.S.Request [drupal]  webapp=/solr path=/admin/ping params={} status=0 QTime=0
+2629781 INFO  (qtp434176574-16) [   x:drupal] o.a.s.c.S.Request [drupal]  webapp=/solr path=/admin/luke params={json.nl=map&numTerms=0&wt=json} status=0 QTime=0
+2629796 INFO  (qtp434176574-38) [   x:drupal] o.a.s.c.S.Request [drupal]  webapp=/solr path=/admin/system params={wt=json} status=0 QTime=10
+2629803 INFO  (qtp434176574-14) [   x:drupal] o.a.s.c.S.Request [drupal]  webapp=/solr path=/admin/mbeans params={stats=true&wt=xml} status=0 QTime=1
+2632081 INFO  (qtp434176574-40) [   x:drupal] o.a.s.c.S.Request [drupal]  webapp=/solr path=/admin/ping params={} hits=0 status=0 QTime=0
+2632081 INFO  (qtp434176574-40) [   x:drupal] o.a.s.c.S.Request [drupal]  webapp=/solr path=/admin/ping params={} status=0 QTime=0
+2632083 INFO  (qtp434176574-17) [   x:drupal] o.a.s.c.S.Request [drupal]  webapp=/solr path=/admin/ping params={} hits=0 status=0 QTime=0
+2632083 INFO  (qtp434176574-17) [   x:drupal] o.a.s.c.S.Request [drupal]  webapp=/solr path=/admin/ping params={} status=0 QTime=0
+2632087 INFO  (qtp434176574-16) [   x:drupal] o.a.s.c.S.Request [drupal]  webapp=/solr path=/admin/luke params={json.nl=map&numTerms=0&wt=json} status=0 QTime=0
+2632106 INFO  (qtp434176574-38) [   x:drupal] o.a.s.c.S.Request [drupal]  webapp=/solr path=/admin/mbeans params={stats=true&wt=xml} status=0 QTime=1
+2633278 INFO  (qtp434176574-14) [   x:drupal] o.a.s.c.S.Request [drupal]  webapp=/solr path=/admin/ping params={} hits=0 status=0 QTime=0
+2633278 INFO  (qtp434176574-14) [   x:drupal] o.a.s.c.S.Request [drupal]  webapp=/solr path=/admin/ping params={} status=0 QTime=0
+2633280 INFO  (qtp434176574-40) [   x:drupal] o.a.s.c.S.Request [drupal]  webapp=/solr path=/admin/ping params={} hits=0 status=0 QTime=0
+2633280 INFO  (qtp434176574-40) [   x:drupal] o.a.s.c.S.Request [drupal]  webapp=/solr path=/admin/ping params={} status=0 QTime=0
+2633283 INFO  (qtp434176574-17) [   x:drupal] o.a.s.c.S.Request [drupal]  webapp=/solr path=/admin/luke params={json.nl=map&numTerms=0&wt=json} status=0 QTime=0
+2633298 INFO  (qtp434176574-16) [   x:drupal] o.a.s.c.S.Request [drupal]  webapp=/solr path=/admin/system params={wt=json} status=0 QTime=10
+2633304 INFO  (qtp434176574-38) [   x:drupal] o.a.s.c.S.Request [drupal]  webapp=/solr path=/admin/mbeans params={stats=true&wt=xml} status=0 QTime=1
+2633999 INFO  (qtp434176574-14) [   x:drupal] o.a.s.c.S.Request [drupal]  webapp=/solr path=/admin/ping params={} hits=0 status=0 QTime=0
+2633999 INFO  (qtp434176574-14) [   x:drupal] o.a.s.c.S.Request [drupal]  webapp=/solr path=/admin/ping params={} status=0 QTime=0
+2634013 INFO  (qtp434176574-40) [   x:search] o.a.s.c.S.Request [search]  webapp=/solr path=/admin/ping params={} hits=0 status=0 QTime=0
+2634013 INFO  (qtp434176574-40) [   x:search] o.a.s.c.S.Request [search]  webapp=/solr path=/admin/ping params={} status=0 QTime=0
+2634015 INFO  (qtp434176574-17) [   x:drupal] o.a.s.c.S.Request [drupal]  webapp=/solr path=/admin/ping params={} hits=0 status=0 QTime=0
+2634015 INFO  (qtp434176574-17) [   x:drupal] o.a.s.c.S.Request [drupal]  webapp=/solr path=/admin/ping params={} status=0 QTime=0
+2642079 INFO  (qtp434176574-16) [   x:drupal] o.a.s.c.S.Request [drupal]  webapp=/solr path=/admin/ping params={} hits=0 status=0 QTime=0
+2642079 INFO  (qtp434176574-16) [   x:drupal] o.a.s.c.S.Request [drupal]  webapp=/solr path=/admin/ping params={} status=0 QTime=0
+2642176 INFO  (qtp434176574-38) [   x:search] o.a.s.c.S.Request [search]  webapp=/solr path=/admin/ping params={} hits=0 status=0 QTime=0
+2642176 INFO  (qtp434176574-38) [   x:search] o.a.s.c.S.Request [search]  webapp=/solr path=/admin/ping params={} status=0 QTime=0
+2642179 INFO  (qtp434176574-17) [   x:drupal] o.a.s.c.S.Request [drupal]  webapp=/solr path=/admin/ping params={} hits=0 status=0 QTime=0
+2642179 INFO  (qtp434176574-17) [   x:drupal] o.a.s.c.S.Request [drupal]  webapp=/solr path=/admin/ping params={} status=0 QTime=0
+2646009 INFO  (qtp434176574-40) [   x:drupal] o.a.s.c.S.Request [drupal]  webapp=/solr path=/admin/ping params={} hits=0 status=0 QTime=0
+2646009 INFO  (qtp434176574-40) [   x:drupal] o.a.s.c.S.Request [drupal]  webapp=/solr path=/admin/ping params={} status=0 QTime=0
+2646011 INFO  (qtp434176574-14) [   x:drupal] o.a.s.c.S.Request [drupal]  webapp=/solr path=/admin/ping params={} hits=0 status=0 QTime=0
+2646011 INFO  (qtp434176574-14) [   x:drupal] o.a.s.c.S.Request [drupal]  webapp=/solr path=/admin/ping params={} status=0 QTime=0
+2646014 INFO  (qtp434176574-16) [   x:drupal] o.a.s.c.S.Request [drupal]  webapp=/solr path=/admin/luke params={json.nl=map&numTerms=0&wt=json} status=0 QTime=0
+2646043 INFO  (qtp434176574-38) [   x:drupal] o.a.s.c.S.Request [drupal]  webapp=/solr path=/admin/system params={wt=json} status=0 QTime=10
+2646049 INFO  (qtp434176574-17) [   x:drupal] o.a.s.c.S.Request [drupal]  webapp=/solr path=/admin/mbeans params={stats=true&wt=xml} status=0 QTime=1
+2651057 INFO  (qtp434176574-40) [   x:drupal] o.a.s.c.S.Request [drupal]  webapp=/solr path=/admin/ping params={} hits=0 status=0 QTime=0
+2651057 INFO  (qtp434176574-40) [   x:drupal] o.a.s.c.S.Request [drupal]  webapp=/solr path=/admin/ping params={} status=0 QTime=0
+2651060 INFO  (qtp434176574-14) [   x:drupal] o.a.s.c.S.Request [drupal]  webapp=/solr path=/admin/ping params={} hits=0 status=0 QTime=0
+2651060 INFO  (qtp434176574-14) [   x:drupal] o.a.s.c.S.Request [drupal]  webapp=/solr path=/admin/ping params={} status=0 QTime=0
+2651065 INFO  (qtp434176574-16) [   x:drupal] o.a.s.c.S.Request [drupal]  webapp=/solr path=/admin/luke params={json.nl=map&numTerms=0&wt=json} status=0 QTime=0
+2651078 INFO  (qtp434176574-38) [   x:drupal] o.a.s.c.S.Request [drupal]  webapp=/solr path=/admin/mbeans params={stats=true&wt=xml} status=0 QTime=1
+2652221 INFO  (qtp434176574-17) [   x:drupal] o.a.s.c.S.Request [drupal]  webapp=/solr path=/admin/ping params={} hits=0 status=0 QTime=0
+2652221 INFO  (qtp434176574-17) [   x:drupal] o.a.s.c.S.Request [drupal]  webapp=/solr path=/admin/ping params={} status=0 QTime=0
+2652223 INFO  (qtp434176574-40) [   x:drupal] o.a.s.c.S.Request [drupal]  webapp=/solr path=/admin/ping params={} hits=0 status=0 QTime=0
+2652223 INFO  (qtp434176574-40) [   x:drupal] o.a.s.c.S.Request [drupal]  webapp=/solr path=/admin/ping params={} status=0 QTime=0
+2652226 INFO  (qtp434176574-14) [   x:drupal] o.a.s.c.S.Request [drupal]  webapp=/solr path=/admin/luke params={json.nl=map&numTerms=0&wt=json} status=0 QTime=0
+2652255 INFO  (qtp434176574-16) [   x:drupal] o.a.s.c.S.Request [drupal]  webapp=/solr path=/admin/system params={wt=json} status=0 QTime=25
+2652262 INFO  (qtp434176574-38) [   x:drupal] o.a.s.c.S.Request [drupal]  webapp=/solr path=/admin/mbeans params={stats=true&wt=xml} status=0 QTime=1
+2656616 INFO  (qtp434176574-17) [   x:drupal] o.a.s.c.S.Request [drupal]  webapp=/solr path=/admin/ping params={} hits=0 status=0 QTime=0
+2656616 INFO  (qtp434176574-17) [   x:drupal] o.a.s.c.S.Request [drupal]  webapp=/solr path=/admin/ping params={} status=0 QTime=0
+2656619 INFO  (qtp434176574-40) [   x:drupal] o.a.s.c.S.Request [drupal]  webapp=/solr path=/admin/ping params={} hits=0 status=0 QTime=0
+2656619 INFO  (qtp434176574-40) [   x:drupal] o.a.s.c.S.Request [drupal]  webapp=/solr path=/admin/ping params={} status=0 QTime=0
+2656623 INFO  (qtp434176574-14) [   x:drupal] o.a.s.c.S.Request [drupal]  webapp=/solr path=/admin/luke params={json.nl=map&numTerms=0&wt=json} status=0 QTime=0
+2656637 INFO  (qtp434176574-16) [   x:drupal] o.a.s.c.S.Request [drupal]  webapp=/solr path=/admin/mbeans params={stats=true&wt=xml} status=0 QTime=1
+2658021 INFO  (qtp434176574-38) [   x:drupal] o.a.s.c.S.Request [drupal]  webapp=/solr path=/admin/ping params={} hits=0 status=0 QTime=0
+2658021 INFO  (qtp434176574-38) [   x:drupal] o.a.s.c.S.Request [drupal]  webapp=/solr path=/admin/ping params={} status=0 QTime=0
+2658032 INFO  (qtp434176574-14) [   x:drupal] o.a.s.c.S.Request [drupal]  webapp=/solr path=/admin/ping params={} hits=0 status=0 QTime=0
+2658032 INFO  (qtp434176574-14) [   x:drupal] o.a.s.c.S.Request [drupal]  webapp=/solr path=/admin/ping params={} status=0 QTime=0
+2659411 INFO  (qtp434176574-16) [   x:drupal] o.a.s.u.p.LogUpdateProcessorFactory [drupal]  webapp=/solr path=/update params={wt=json}{add=[cvwiqq/node/4 (1544858592434192384), cvwiqq/node/5 (1544858592439435264), cvwiqq/node/6 (1544858592442580992), cvwiqq/node/7 (1544858592444678144), cvwiqq/node/8 (1544858592447823872), cvwiqq/node/9 (1544858592450969600), cvwiqq/node/10 (1544858592454115328), cvwiqq/node/11 (1544858592458309632), cvwiqq/node/12 (1544858592461455360), cvwiqq/node/13 (1544858592463552512), ... (20 adds)]} 0 50
+2659424 INFO  (qtp434176574-38) [   x:drupal] o.a.s.u.p.LogUpdateProcessorFactory [drupal]  webapp=/solr path=/update params={wt=json}{add=[cvwiqq/node/25 (1544858592489766912), cvwiqq/node/26 (1544858592492912640), cvwiqq/node/27 (1544858592495009792)]} 0 10
+2659652 INFO  (qtp434176574-17) [   x:drupal] o.a.s.c.S.Request [drupal]  webapp=/solr path=/admin/ping params={} hits=0 status=0 QTime=0
+2659652 INFO  (qtp434176574-17) [   x:drupal] o.a.s.c.S.Request [drupal]  webapp=/solr path=/admin/ping params={} status=0 QTime=0
+2659654 INFO  (qtp434176574-40) [   x:drupal] o.a.s.c.S.Request [drupal]  webapp=/solr path=/admin/ping params={} hits=0 status=0 QTime=0
+2659654 INFO  (qtp434176574-40) [   x:drupal] o.a.s.c.S.Request [drupal]  webapp=/solr path=/admin/ping params={} status=0 QTime=0
+2659659 INFO  (qtp434176574-14) [   x:drupal] o.a.s.c.S.Request [drupal]  webapp=/solr path=/admin/luke params={json.nl=map&numTerms=0&wt=json} status=0 QTime=0
+2659677 INFO  (qtp434176574-16) [   x:drupal] o.a.s.c.S.Request [drupal]  webapp=/solr path=/admin/mbeans params={stats=true&wt=xml} status=0 QTime=1
+2664667 INFO  (qtp434176574-16) [   x:drupal] o.a.s.c.S.Request [drupal]  webapp=/solr path=/admin/ping params={} hits=0 status=0 QTime=0
+2664668 INFO  (qtp434176574-16) [   x:drupal] o.a.s.c.S.Request [drupal]  webapp=/solr path=/admin/ping params={} status=0 QTime=0
+2664670 INFO  (qtp434176574-38) [   x:drupal] o.a.s.c.S.Request [drupal]  webapp=/solr path=/admin/ping params={} hits=0 status=0 QTime=0
+2664670 INFO  (qtp434176574-38) [   x:drupal] o.a.s.c.S.Request [drupal]  webapp=/solr path=/admin/ping params={} status=0 QTime=0
+2664675 INFO  (qtp434176574-17) [   x:drupal] o.a.s.c.S.Request [drupal]  webapp=/solr path=/admin/luke params={json.nl=map&numTerms=0&wt=json} status=0 QTime=0
+2664694 INFO  (qtp434176574-40) [   x:drupal] o.a.s.c.S.Request [drupal]  webapp=/solr path=/admin/mbeans params={stats=true&wt=xml} status=0 QTime=1
+2667299 INFO  (qtp434176574-14) [   x:drupal] o.a.s.c.S.Request [drupal]  webapp=/solr path=/admin/ping params={} hits=0 status=0 QTime=1
+2667299 INFO  (qtp434176574-14) [   x:drupal] o.a.s.c.S.Request [drupal]  webapp=/solr path=/admin/ping params={} status=0 QTime=1
+2667301 INFO  (qtp434176574-16) [   x:drupal] o.a.s.c.S.Request [drupal]  webapp=/solr path=/admin/ping params={} hits=0 status=0 QTime=0
+2667301 INFO  (qtp434176574-16) [   x:drupal] o.a.s.c.S.Request [drupal]  webapp=/solr path=/admin/ping params={} status=0 QTime=0
+2667306 INFO  (qtp434176574-38) [   x:drupal] o.a.s.c.S.Request [drupal]  webapp=/solr path=/admin/luke params={json.nl=map&numTerms=0&wt=json} status=0 QTime=0
+2667325 INFO  (qtp434176574-17) [   x:drupal] o.a.s.c.S.Request [drupal]  webapp=/solr path=/admin/mbeans params={stats=true&wt=xml} status=0 QTime=0
+2669060 INFO  (qtp434176574-40) [   x:drupal] o.a.s.c.S.Request [drupal]  webapp=/solr path=/admin/ping params={} hits=0 status=0 QTime=0
+2669060 INFO  (qtp434176574-40) [   x:drupal] o.a.s.c.S.Request [drupal]  webapp=/solr path=/admin/ping params={} status=0 QTime=0
+2669062 INFO  (qtp434176574-14) [   x:drupal] o.a.s.c.S.Request [drupal]  webapp=/solr path=/admin/ping params={} hits=0 status=0 QTime=0
+2669062 INFO  (qtp434176574-14) [   x:drupal] o.a.s.c.S.Request [drupal]  webapp=/solr path=/admin/ping params={} status=0 QTime=0
+2669067 INFO  (qtp434176574-16) [   x:drupal] o.a.s.c.S.Request [drupal]  webapp=/solr path=/admin/luke params={json.nl=map&numTerms=0&wt=json} status=0 QTime=0
+2669086 INFO  (qtp434176574-38) [   x:drupal] o.a.s.c.S.Request [drupal]  webapp=/solr path=/admin/mbeans params={stats=true&wt=xml} status=0 QTime=2
+2669370 INFO  (commitScheduler-16-thread-1) [   x:drupal] o.a.s.u.DirectUpdateHandler2 start commit{,optimize=false,openSearcher=true,waitSearcher=true,expungeDeletes=false,softCommit=true,prepareCommit=false}
+2669399 INFO  (commitScheduler-16-thread-1) [   x:drupal] o.a.s.s.SolrIndexSearcher Opening Searcher@57694216[drupal] main
+2669399 INFO  (commitScheduler-16-thread-1) [   x:drupal] o.a.s.u.DirectUpdateHandler2 end_commit_flush
+2669401 INFO  (searcherExecutor-8-thread-1-processing-x:drupal) [   x:drupal] o.a.s.c.QuerySenderListener QuerySenderListener sending requests to Searcher@57694216[drupal] main{ExitableDirectoryReader(UninvertingDirectoryReader(Uninverting(_1i(5.5.0):C23)))}
+2669401 INFO  (searcherExecutor-8-thread-1-processing-x:drupal) [   x:drupal] o.a.s.c.QuerySenderListener QuerySenderListener done.
+2669401 INFO  (searcherExecutor-8-thread-1-processing-x:drupal) [   x:drupal] o.a.s.h.c.SpellCheckComponent Building spell index for spell checker: default
+2669431 INFO  (searcherExecutor-8-thread-1-processing-x:drupal) [   x:drupal] o.a.s.c.SolrCore [drupal] Registered new searcher Searcher@57694216[drupal] main{ExitableDirectoryReader(UninvertingDirectoryReader(Uninverting(_1i(5.5.0):C23)))}
+2670841 INFO  (qtp434176574-17) [   x:drupal] o.a.s.c.S.Request [drupal]  webapp=/solr path=/admin/ping params={} hits=23 status=0 QTime=0
+2670841 INFO  (qtp434176574-17) [   x:drupal] o.a.s.c.S.Request [drupal]  webapp=/solr path=/admin/ping params={} status=0 QTime=0
+2670843 INFO  (qtp434176574-40) [   x:drupal] o.a.s.c.S.Request [drupal]  webapp=/solr path=/admin/ping params={} hits=23 status=0 QTime=0
+2670843 INFO  (qtp434176574-40) [   x:drupal] o.a.s.c.S.Request [drupal]  webapp=/solr path=/admin/ping params={} status=0 QTime=0
+2670855 INFO  (qtp434176574-14) [   x:drupal] o.a.s.c.S.Request [drupal]  webapp=/solr path=/admin/luke params={json.nl=map&numTerms=0&wt=json} status=0 QTime=4
+2670874 INFO  (qtp434176574-16) [   x:drupal] o.a.s.c.S.Request [drupal]  webapp=/solr path=/admin/mbeans params={stats=true&wt=xml} status=0 QTime=1
+2675399 INFO  (qtp434176574-47) [   ] o.a.s.s.HttpSolrCall [admin] webapp=null path=/admin/cores params={indexInfo=false&wt=json&_=1473291978118} status=0 QTime=0
+2675470 INFO  (qtp434176574-38) [   ] o.a.s.s.HttpSolrCall [admin] webapp=null path=/admin/info/system params={wt=json&_=1473291978177} status=0 QTime=14
+2675485 INFO  (qtp434176574-16) [   ] o.a.s.s.HttpSolrCall [admin] webapp=null path=/admin/cores params={wt=json&_=1473291978204} status=0 QTime=0
+2779367 INFO  (commitScheduler-14-thread-1) [   x:drupal] o.a.s.u.DirectUpdateHandler2 start commit{,optimize=false,openSearcher=true,waitSearcher=true,expungeDeletes=false,softCommit=false,prepareCommit=false}
+2779377 INFO  (commitScheduler-14-thread-1) [   x:drupal] o.a.s.c.SolrDeletionPolicy SolrDeletionPolicy.onCommit: commits: num=2
+	commit{dir=NRTCachingDirectory(MMapDirectory@/Applications/drupal-7.50-0/apps/solr-5.5.0/server/solr/drupal/data/index lockFactory=org.apache.lucene.store.NativeFSLockFactory@5b005506; maxCacheMB=48.0 maxMergeSizeMB=4.0),segFN=segments_22,generation=74}
+	commit{dir=NRTCachingDirectory(MMapDirectory@/Applications/drupal-7.50-0/apps/solr-5.5.0/server/solr/drupal/data/index lockFactory=org.apache.lucene.store.NativeFSLockFactory@5b005506; maxCacheMB=48.0 maxMergeSizeMB=4.0),segFN=segments_23,generation=75}
+2779377 INFO  (commitScheduler-14-thread-1) [   x:drupal] o.a.s.c.SolrDeletionPolicy newest commit generation = 75
+2779379 INFO  (commitScheduler-14-thread-1) [   x:drupal] o.a.s.s.SolrIndexSearcher Opening Searcher@1328e697[drupal] main
+2779381 INFO  (commitScheduler-14-thread-1) [   x:drupal] o.a.s.u.DirectUpdateHandler2 end_commit_flush
+2779381 INFO  (searcherExecutor-8-thread-1-processing-x:drupal) [   x:drupal] o.a.s.c.QuerySenderListener QuerySenderListener sending requests to Searcher@1328e697[drupal] main{ExitableDirectoryReader(UninvertingDirectoryReader(Uninverting(_1i(5.5.0):C23)))}
+2779381 INFO  (searcherExecutor-8-thread-1-processing-x:drupal) [   x:drupal] o.a.s.c.QuerySenderListener QuerySenderListener done.
+2779381 INFO  (searcherExecutor-8-thread-1-processing-x:drupal) [   x:drupal] o.a.s.h.c.SpellCheckComponent Building spell index for spell checker: default
+2779409 INFO  (searcherExecutor-8-thread-1-processing-x:drupal) [   x:drupal] o.a.s.c.SolrCore [drupal] Registered new searcher Searcher@1328e697[drupal] main{ExitableDirectoryReader(UninvertingDirectoryReader(Uninverting(_1i(5.5.0):C23)))}
+3115773 INFO  (qtp434176574-47) [   x:drupal] o.a.s.c.S.Request [drupal]  webapp=/solr path=/select params={facet.field=bundle&facet.field=sm_field_author&facet.field=sm_field_endorse&json.nl=arrarr&hl=true&indent=true&hl.fragsize=200&fq=ss_language:und&wt=json&facet=on} hits=23 status=0 QTime=74
+3121205 INFO  (qtp434176574-14) [   x:drupal] o.a.s.c.S.Request [drupal]  webapp=/solr path=/select params={facet.field=bundle&facet.field=sm_field_author&facet.field=sm_field_endorse&json.nl=arrarr&hl=true&indent=true&hl.fragsize=200&start=10&fq=ss_language:und&wt=json&facet=on} hits=23 status=0 QTime=17
+3122402 INFO  (qtp434176574-47) [   x:drupal] o.a.s.c.S.Request [drupal]  webapp=/solr path=/select params={facet.field=bundle&facet.field=sm_field_author&facet.field=sm_field_endorse&json.nl=arrarr&hl=true&indent=true&hl.fragsize=200&start=20&fq=ss_language:und&wt=json&facet=on} hits=23 status=0 QTime=7
+3129549 INFO  (qtp434176574-14) [   x:drupal] o.a.s.c.S.Request [drupal]  webapp=/solr path=/select params={facet.field=bundle&facet.field=sm_field_author&facet.field=sm_field_endorse&json.nl=arrarr&hl=true&indent=true&hl.fragsize=200&start=10&fq=ss_language:und&wt=json&facet=on} hits=23 status=0 QTime=10
+3133520 INFO  (qtp434176574-14) [   x:drupal] o.a.s.c.S.Request [drupal]  webapp=/solr path=/select params={facet.field=bundle&facet.field=sm_field_author&facet.field=sm_field_endorse&json.nl=arrarr&hl=true&indent=true&hl.fragsize=200&start=20&fq=ss_language:und&wt=json&facet=on} hits=23 status=0 QTime=6
+3137249 INFO  (qtp434176574-47) [   x:drupal] o.a.s.c.S.Request [drupal]  webapp=/solr path=/select params={facet.field=bundle&facet.field=sm_field_author&facet.field=sm_field_endorse&json.nl=arrarr&hl=true&indent=true&hl.fragsize=200&start=10&fq=ss_language:und&wt=json&facet=on} hits=23 status=0 QTime=9
+3141571 INFO  (qtp434176574-47) [   x:drupal] o.a.s.c.S.Request [drupal]  webapp=/solr path=/select params={facet.field=bundle&facet.field=sm_field_author&facet.field=sm_field_endorse&json.nl=arrarr&hl=true&indent=true&hl.fragsize=200&start=20&fq=ss_language:und&wt=json&facet=on} hits=23 status=0 QTime=17
+3206523 INFO  (qtp434176574-47) [   x:drupal] o.a.s.c.S.Request [drupal]  webapp=/solr path=/select params={facet.field=bundle&facet.field=sm_field_author&facet.field=sm_field_endorse&json.nl=arrarr&hl=true&indent=true&hl.fragsize=200&fq=ss_language:und&wt=json&facet=on} hits=23 status=0 QTime=15
+4400296 INFO  (qtp434176574-16) [   x:drupal] o.a.s.c.S.Request [drupal]  webapp=/solr path=/select params={facet.field=bundle&facet.field=sm_field_author&facet.field=sm_field_endorse&json.nl=arrarr&hl=true&indent=true&hl.fragsize=200&fq=ss_language:und&wt=json&facet=on} hits=23 status=0 QTime=13
+4403736 INFO  (qtp434176574-16) [   x:drupal] o.a.s.c.S.Request [drupal]  webapp=/solr path=/select params={facet.field=bundle&facet.field=sm_field_author&facet.field=sm_field_endorse&json.nl=arrarr&hl=true&indent=true&hl.fragsize=200&start=20&fq=ss_language:und&wt=json&facet=on} hits=23 status=0 QTime=4
+65311089 INFO  (qtp434176574-48) [   x:drupal] o.a.s.c.S.Request [drupal]  webapp=/solr path=/admin/ping params={} hits=23 status=0 QTime=16
+65311092 INFO  (qtp434176574-48) [   x:drupal] o.a.s.c.S.Request [drupal]  webapp=/solr path=/admin/ping params={} status=0 QTime=19
+65311116 INFO  (qtp434176574-47) [   x:drupal] o.a.s.c.S.Request [drupal]  webapp=/solr path=/admin/luke params={json.nl=map&numTerms=0&wt=json} status=0 QTime=12
+65311152 INFO  (qtp434176574-16) [   x:drupal] o.a.s.c.S.Request [drupal]  webapp=/solr path=/admin/ping params={} hits=23 status=0 QTime=0
+65311152 INFO  (qtp434176574-16) [   x:drupal] o.a.s.c.S.Request [drupal]  webapp=/solr path=/admin/ping params={} status=0 QTime=0
+65311157 INFO  (qtp434176574-48) [   x:search] o.a.s.c.S.Request [search]  webapp=/solr path=/admin/ping params={} hits=0 status=0 QTime=1
+65311157 INFO  (qtp434176574-48) [   x:search] o.a.s.c.S.Request [search]  webapp=/solr path=/admin/ping params={} status=0 QTime=1
+65311161 INFO  (qtp434176574-40) [   x:search] o.a.s.c.S.Request [search]  webapp=/solr path=/admin/luke params={json.nl=map&numTerms=0&wt=json} status=0 QTime=0
+65311175 INFO  (qtp434176574-14) [   x:search] o.a.s.c.S.Request [search]  webapp=/solr path=/admin/ping params={} hits=0 status=0 QTime=0
+65311175 INFO  (qtp434176574-14) [   x:search] o.a.s.c.S.Request [search]  webapp=/solr path=/admin/ping params={} status=0 QTime=0
+65314216 INFO  (qtp434176574-47) [   x:drupal] o.a.s.u.p.LogUpdateProcessorFactory [drupal]  webapp=/solr path=/update params={wt=json}{add=[i93uvx-node_search-25 (1544924290788360192), i93uvx-node_search-26 (1544924290809331712), i93uvx-node_search-27 (1544924290810380288)]} 0 24
+65324218 INFO  (commitScheduler-16-thread-1) [   x:drupal] o.a.s.u.DirectUpdateHandler2 start commit{,optimize=false,openSearcher=true,waitSearcher=true,expungeDeletes=false,softCommit=true,prepareCommit=false}
+65324241 INFO  (commitScheduler-16-thread-1) [   x:drupal] o.a.s.s.SolrIndexSearcher Opening Searcher@76c69c18[drupal] main
+65324243 INFO  (commitScheduler-16-thread-1) [   x:drupal] o.a.s.u.DirectUpdateHandler2 end_commit_flush
+65324251 INFO  (searcherExecutor-8-thread-1-processing-x:drupal) [   x:drupal] o.a.s.c.QuerySenderListener QuerySenderListener sending requests to Searcher@76c69c18[drupal] main{ExitableDirectoryReader(UninvertingDirectoryReader(Uninverting(_1i(5.5.0):C23) Uninverting(_1j(5.5.0):C3)))}
+65324251 INFO  (searcherExecutor-8-thread-1-processing-x:drupal) [   x:drupal] o.a.s.c.QuerySenderListener QuerySenderListener done.
+65324252 INFO  (searcherExecutor-8-thread-1-processing-x:drupal) [   x:drupal] o.a.s.h.c.SpellCheckComponent Index is not optimized therefore skipping building spell check index for: default
+65324252 INFO  (searcherExecutor-8-thread-1-processing-x:drupal) [   x:drupal] o.a.s.c.SolrCore [drupal] Registered new searcher Searcher@76c69c18[drupal] main{ExitableDirectoryReader(UninvertingDirectoryReader(Uninverting(_1i(5.5.0):C23) Uninverting(_1j(5.5.0):C3)))}
+65434209 INFO  (commitScheduler-14-thread-1) [   x:drupal] o.a.s.u.DirectUpdateHandler2 start commit{,optimize=false,openSearcher=true,waitSearcher=true,expungeDeletes=false,softCommit=false,prepareCommit=false}
+65434218 INFO  (commitScheduler-14-thread-1) [   x:drupal] o.a.s.c.SolrDeletionPolicy SolrDeletionPolicy.onCommit: commits: num=2
+	commit{dir=NRTCachingDirectory(MMapDirectory@/Applications/drupal-7.50-0/apps/solr-5.5.0/server/solr/drupal/data/index lockFactory=org.apache.lucene.store.NativeFSLockFactory@5b005506; maxCacheMB=48.0 maxMergeSizeMB=4.0),segFN=segments_23,generation=75}
+	commit{dir=NRTCachingDirectory(MMapDirectory@/Applications/drupal-7.50-0/apps/solr-5.5.0/server/solr/drupal/data/index lockFactory=org.apache.lucene.store.NativeFSLockFactory@5b005506; maxCacheMB=48.0 maxMergeSizeMB=4.0),segFN=segments_24,generation=76}
+65434218 INFO  (commitScheduler-14-thread-1) [   x:drupal] o.a.s.c.SolrDeletionPolicy newest commit generation = 76
+65434220 INFO  (commitScheduler-14-thread-1) [   x:drupal] o.a.s.s.SolrIndexSearcher Opening Searcher@230b030[drupal] main
+65434221 INFO  (commitScheduler-14-thread-1) [   x:drupal] o.a.s.u.DirectUpdateHandler2 end_commit_flush
+65434222 INFO  (searcherExecutor-8-thread-1-processing-x:drupal) [   x:drupal] o.a.s.c.QuerySenderListener QuerySenderListener sending requests to Searcher@230b030[drupal] main{ExitableDirectoryReader(UninvertingDirectoryReader(Uninverting(_1i(5.5.0):C23) Uninverting(_1j(5.5.0):C3)))}
+65434222 INFO  (searcherExecutor-8-thread-1-processing-x:drupal) [   x:drupal] o.a.s.c.QuerySenderListener QuerySenderListener done.
+65434222 INFO  (searcherExecutor-8-thread-1-processing-x:drupal) [   x:drupal] o.a.s.h.c.SpellCheckComponent Index is not optimized therefore skipping building spell check index for: default
+65434222 INFO  (searcherExecutor-8-thread-1-processing-x:drupal) [   x:drupal] o.a.s.c.SolrCore [drupal] Registered new searcher Searcher@230b030[drupal] main{ExitableDirectoryReader(UninvertingDirectoryReader(Uninverting(_1i(5.5.0):C23) Uninverting(_1j(5.5.0):C3)))}
+65571014 INFO  (qtp434176574-16) [   x:drupal] o.a.s.c.S.Request [drupal]  webapp=/solr path=/admin/ping params={} hits=26 status=0 QTime=0
+65571014 INFO  (qtp434176574-16) [   x:drupal] o.a.s.c.S.Request [drupal]  webapp=/solr path=/admin/ping params={} status=0 QTime=1
+65701165 INFO  (qtp434176574-14) [   x:drupal] o.a.s.c.S.Request [drupal]  webapp=/solr path=/admin/ping params={} hits=26 status=0 QTime=0
+65701166 INFO  (qtp434176574-14) [   x:drupal] o.a.s.c.S.Request [drupal]  webapp=/solr path=/admin/ping params={} status=0 QTime=0
+65810578 INFO  (qtp434176574-16) [   x:drupal] o.a.s.c.S.Request [drupal]  webapp=/solr path=/admin/ping params={} hits=26 status=0 QTime=0
+65810578 INFO  (qtp434176574-16) [   x:drupal] o.a.s.c.S.Request [drupal]  webapp=/solr path=/admin/ping params={} status=0 QTime=0
+65819186 INFO  (qtp434176574-40) [   x:drupal] o.a.s.c.S.Request [drupal]  webapp=/solr path=/admin/ping params={} hits=26 status=0 QTime=0
+65819186 INFO  (qtp434176574-40) [   x:drupal] o.a.s.c.S.Request [drupal]  webapp=/solr path=/admin/ping params={} status=0 QTime=0
+65938489 INFO  (qtp434176574-40) [   x:drupal] o.a.s.c.S.Request [drupal]  webapp=/solr path=/admin/ping params={} hits=26 status=0 QTime=0
+65938490 INFO  (qtp434176574-40) [   x:drupal] o.a.s.c.S.Request [drupal]  webapp=/solr path=/admin/ping params={} status=0 QTime=0
+66184640 INFO  (qtp434176574-48) [   x:drupal] o.a.s.c.S.Request [drupal]  webapp=/solr path=/admin/ping params={} hits=26 status=0 QTime=0
+66184640 INFO  (qtp434176574-48) [   x:drupal] o.a.s.c.S.Request [drupal]  webapp=/solr path=/admin/ping params={} status=0 QTime=0
+66289303 INFO  (qtp434176574-47) [   x:drupal] o.a.s.c.S.Request [drupal]  webapp=/solr path=/admin/ping params={} hits=26 status=0 QTime=0
+66289304 INFO  (qtp434176574-47) [   x:drupal] o.a.s.c.S.Request [drupal]  webapp=/solr path=/admin/ping params={} status=0 QTime=1
+66305216 INFO  (qtp434176574-14) [   x:drupal] o.a.s.c.S.Request [drupal]  webapp=/solr path=/admin/ping params={} hits=26 status=0 QTime=0
+66305217 INFO  (qtp434176574-14) [   x:drupal] o.a.s.c.S.Request [drupal]  webapp=/solr path=/admin/ping params={} status=0 QTime=1
+66434252 INFO  (qtp434176574-47) [   x:drupal] o.a.s.c.S.Request [drupal]  webapp=/solr path=/admin/ping params={} hits=26 status=0 QTime=0
+66434253 INFO  (qtp434176574-47) [   x:drupal] o.a.s.c.S.Request [drupal]  webapp=/solr path=/admin/ping params={} status=0 QTime=1
+66498840 INFO  (qtp434176574-48) [   x:drupal] o.a.s.c.S.Request [drupal]  webapp=/solr path=/admin/ping params={} hits=26 status=0 QTime=0
+66498841 INFO  (qtp434176574-48) [   x:drupal] o.a.s.c.S.Request [drupal]  webapp=/solr path=/admin/ping params={} status=0 QTime=1
+66518675 INFO  (qtp434176574-16) [   x:drupal] o.a.s.c.S.Request [drupal]  webapp=/solr path=/admin/ping params={} hits=26 status=0 QTime=0
+66518675 INFO  (qtp434176574-16) [   x:drupal] o.a.s.c.S.Request [drupal]  webapp=/solr path=/admin/ping params={} status=0 QTime=0
+76300051 INFO  (qtp434176574-40) [   x:drupal] o.a.s.u.DirectUpdateHandler2 start commit{,optimize=true,openSearcher=true,waitSearcher=false,expungeDeletes=false,softCommit=false,prepareCommit=false}
+76300054 WARN  (qtp434176574-40) [   x:drupal] o.a.s.u.DirectUpdateHandler2 Starting optimize... Reading and rewriting the entire index! Use with care.
+76300215 INFO  (qtp434176574-40) [   x:drupal] o.a.s.c.SolrDeletionPolicy SolrDeletionPolicy.onCommit: commits: num=2
+	commit{dir=NRTCachingDirectory(MMapDirectory@/Applications/drupal-7.50-0/apps/solr-5.5.0/server/solr/drupal/data/index lockFactory=org.apache.lucene.store.NativeFSLockFactory@5b005506; maxCacheMB=48.0 maxMergeSizeMB=4.0),segFN=segments_24,generation=76}
+	commit{dir=NRTCachingDirectory(MMapDirectory@/Applications/drupal-7.50-0/apps/solr-5.5.0/server/solr/drupal/data/index lockFactory=org.apache.lucene.store.NativeFSLockFactory@5b005506; maxCacheMB=48.0 maxMergeSizeMB=4.0),segFN=segments_25,generation=77}
+76300215 INFO  (qtp434176574-40) [   x:drupal] o.a.s.c.SolrDeletionPolicy newest commit generation = 77
+76300222 INFO  (qtp434176574-40) [   x:drupal] o.a.s.s.SolrIndexSearcher Opening Searcher@6be6dc72[drupal] main
+76300224 INFO  (qtp434176574-40) [   x:drupal] o.a.s.u.DirectUpdateHandler2 end_commit_flush
+76300225 INFO  (qtp434176574-40) [   x:drupal] o.a.s.u.p.LogUpdateProcessorFactory [drupal]  webapp=/solr path=/update params={wt=json}{optimize=} 0 178
+76300228 INFO  (searcherExecutor-8-thread-1-processing-x:drupal) [   x:drupal] o.a.s.c.QuerySenderListener QuerySenderListener sending requests to Searcher@6be6dc72[drupal] main{ExitableDirectoryReader(UninvertingDirectoryReader(Uninverting(_1k(5.5.0):C26)))}
+76300228 INFO  (searcherExecutor-8-thread-1-processing-x:drupal) [   x:drupal] o.a.s.c.QuerySenderListener QuerySenderListener done.
+76300228 INFO  (searcherExecutor-8-thread-1-processing-x:drupal) [   x:drupal] o.a.s.h.c.SpellCheckComponent Building spell index for spell checker: default
+76300276 INFO  (searcherExecutor-8-thread-1-processing-x:drupal) [   x:drupal] o.a.s.c.SolrCore [drupal] Registered new searcher Searcher@6be6dc72[drupal] main{ExitableDirectoryReader(UninvertingDirectoryReader(Uninverting(_1k(5.5.0):C26)))}
+76300311 INFO  (qtp434176574-16) [   x:drupal] o.a.s.c.S.Request [drupal]  webapp=/solr path=/admin/ping params={} hits=26 status=0 QTime=2
+76300311 INFO  (qtp434176574-16) [   x:drupal] o.a.s.c.S.Request [drupal]  webapp=/solr path=/admin/ping params={} status=0 QTime=2
+76300328 INFO  (qtp434176574-47) [   x:drupal] o.a.s.c.S.Request [drupal]  webapp=/solr path=/admin/luke params={json.nl=map&numTerms=0&wt=json} status=0 QTime=13
+76300338 INFO  (qtp434176574-14) [   x:drupal] o.a.s.c.S.Request [drupal]  webapp=/solr path=/admin/ping params={} hits=26 status=0 QTime=0
+76300338 INFO  (qtp434176574-14) [   x:drupal] o.a.s.c.S.Request [drupal]  webapp=/solr path=/admin/ping params={} status=0 QTime=0
+76300404 INFO  (qtp434176574-48) [   x:drupal] o.a.s.u.p.LogUpdateProcessorFactory [drupal]  webapp=/solr path=/update params={wt=json}{add=[cvwiqq/node/27 (1544935810652962816)]} 0 11
+76300454 INFO  (qtp434176574-40) [   x:search] o.a.s.c.S.Request [search]  webapp=/solr path=/admin/system params={wt=json} status=0 QTime=21
+76300460 INFO  (qtp434176574-16) [   x:search] o.a.s.u.DirectUpdateHandler2 start commit{,optimize=true,openSearcher=true,waitSearcher=false,expungeDeletes=false,softCommit=false,prepareCommit=false}
+76300460 WARN  (qtp434176574-16) [   x:search] o.a.s.u.DirectUpdateHandler2 Starting optimize... Reading and rewriting the entire index! Use with care.
+76300461 INFO  (qtp434176574-16) [   x:search] o.a.s.u.DirectUpdateHandler2 No uncommitted changes. Skipping IW.commit.
+76300461 INFO  (qtp434176574-16) [   x:search] o.a.s.c.SolrCore SolrIndexSearcher has not changed - not re-opening: org.apache.solr.search.SolrIndexSearcher
+76300461 INFO  (qtp434176574-16) [   x:search] o.a.s.u.DirectUpdateHandler2 end_commit_flush
+76300461 INFO  (qtp434176574-16) [   x:search] o.a.s.u.p.LogUpdateProcessorFactory [search]  webapp=/solr path=/update params={wt=json}{optimize=} 0 1
+76300485 INFO  (qtp434176574-47) [   x:search] o.a.s.c.S.Request [search]  webapp=/solr path=/admin/ping params={} hits=0 status=0 QTime=0
+76300485 INFO  (qtp434176574-47) [   x:search] o.a.s.c.S.Request [search]  webapp=/solr path=/admin/ping params={} status=0 QTime=1
+76300488 INFO  (qtp434176574-14) [   x:search] o.a.s.c.S.Request [search]  webapp=/solr path=/admin/luke params={json.nl=map&numTerms=0&wt=json} status=0 QTime=0
+76300492 INFO  (qtp434176574-48) [   x:search] o.a.s.c.S.Request [search]  webapp=/solr path=/admin/ping params={} hits=0 status=0 QTime=0
+76300493 INFO  (qtp434176574-48) [   x:search] o.a.s.c.S.Request [search]  webapp=/solr path=/admin/ping params={} status=0 QTime=0
+76300791 INFO  (qtp434176574-40) [   x:drupal] o.a.s.u.p.LogUpdateProcessorFactory [drupal]  webapp=/solr path=/update params={wt=json}{add=[i93uvx-node_search-27 (1544935811068198912)]} 0 2
+76300858 INFO  (qtp434176574-16) [   x:drupal] o.a.s.c.S.Request [drupal]  webapp=/solr path=/select params={json.nl=map&spellcheck=true&rows=0&wt=json&spellcheck.build=true} hits=26 status=0 QTime=50
+76300865 INFO  (qtp434176574-47) [   x:search] o.a.s.c.S.Request [search]  webapp=/solr path=/select params={json.nl=map&spellcheck=true&rows=0&wt=json&spellcheck.build=true} hits=0 status=0 QTime=4
+76310407 INFO  (commitScheduler-16-thread-1) [   x:drupal] o.a.s.u.DirectUpdateHandler2 start commit{,optimize=false,openSearcher=true,waitSearcher=true,expungeDeletes=false,softCommit=true,prepareCommit=false}
+76310429 INFO  (commitScheduler-16-thread-1) [   x:drupal] o.a.s.s.SolrIndexSearcher Opening Searcher@1e1efa1b[drupal] main
+76310429 INFO  (commitScheduler-16-thread-1) [   x:drupal] o.a.s.u.DirectUpdateHandler2 end_commit_flush
+76310432 INFO  (searcherExecutor-8-thread-1-processing-x:drupal) [   x:drupal] o.a.s.c.QuerySenderListener QuerySenderListener sending requests to Searcher@1e1efa1b[drupal] main{ExitableDirectoryReader(UninvertingDirectoryReader(Uninverting(_1k(5.5.0):C26/2) Uninverting(_1l(5.5.0):C2)))}
+76310432 INFO  (searcherExecutor-8-thread-1-processing-x:drupal) [   x:drupal] o.a.s.c.QuerySenderListener QuerySenderListener done.
+76310432 INFO  (searcherExecutor-8-thread-1-processing-x:drupal) [   x:drupal] o.a.s.h.c.SpellCheckComponent Index is not optimized therefore skipping building spell check index for: default
+76310432 INFO  (searcherExecutor-8-thread-1-processing-x:drupal) [   x:drupal] o.a.s.c.SolrCore [drupal] Registered new searcher Searcher@1e1efa1b[drupal] main{ExitableDirectoryReader(UninvertingDirectoryReader(Uninverting(_1k(5.5.0):C26/2) Uninverting(_1l(5.5.0):C2)))}
+76420401 INFO  (commitScheduler-14-thread-1) [   x:drupal] o.a.s.u.DirectUpdateHandler2 start commit{,optimize=false,openSearcher=true,waitSearcher=true,expungeDeletes=false,softCommit=false,prepareCommit=false}
+76420412 INFO  (commitScheduler-14-thread-1) [   x:drupal] o.a.s.c.SolrDeletionPolicy SolrDeletionPolicy.onCommit: commits: num=2
+	commit{dir=NRTCachingDirectory(MMapDirectory@/Applications/drupal-7.50-0/apps/solr-5.5.0/server/solr/drupal/data/index lockFactory=org.apache.lucene.store.NativeFSLockFactory@5b005506; maxCacheMB=48.0 maxMergeSizeMB=4.0),segFN=segments_25,generation=77}
+	commit{dir=NRTCachingDirectory(MMapDirectory@/Applications/drupal-7.50-0/apps/solr-5.5.0/server/solr/drupal/data/index lockFactory=org.apache.lucene.store.NativeFSLockFactory@5b005506; maxCacheMB=48.0 maxMergeSizeMB=4.0),segFN=segments_26,generation=78}
+76420412 INFO  (commitScheduler-14-thread-1) [   x:drupal] o.a.s.c.SolrDeletionPolicy newest commit generation = 78
+76420414 INFO  (commitScheduler-14-thread-1) [   x:drupal] o.a.s.s.SolrIndexSearcher Opening Searcher@153e27b5[drupal] main
+76420415 INFO  (commitScheduler-14-thread-1) [   x:drupal] o.a.s.u.DirectUpdateHandler2 end_commit_flush
+76420417 INFO  (searcherExecutor-8-thread-1-processing-x:drupal) [   x:drupal] o.a.s.c.QuerySenderListener QuerySenderListener sending requests to Searcher@153e27b5[drupal] main{ExitableDirectoryReader(UninvertingDirectoryReader(Uninverting(_1k(5.5.0):C26/2:delGen=1) Uninverting(_1l(5.5.0):C2)))}
+76420417 INFO  (searcherExecutor-8-thread-1-processing-x:drupal) [   x:drupal] o.a.s.c.QuerySenderListener QuerySenderListener done.
+76420417 INFO  (searcherExecutor-8-thread-1-processing-x:drupal) [   x:drupal] o.a.s.h.c.SpellCheckComponent Index is not optimized therefore skipping building spell check index for: default
+76420417 INFO  (searcherExecutor-8-thread-1-processing-x:drupal) [   x:drupal] o.a.s.c.SolrCore [drupal] Registered new searcher Searcher@153e27b5[drupal] main{ExitableDirectoryReader(UninvertingDirectoryReader(Uninverting(_1k(5.5.0):C26/2:delGen=1) Uninverting(_1l(5.5.0):C2)))}
+79245969 INFO  (qtp434176574-14) [   x:drupal] o.a.s.c.S.Request [drupal]  webapp=/solr path=/select params={facet.field=bundle&facet.field=sm_field_author&facet.field=sm_field_endorse&json.nl=arrarr&hl=true&indent=true&hl.fragsize=200&fq=ss_language:und&wt=json&facet=on} hits=23 status=0 QTime=34
