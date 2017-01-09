@@ -1,0 +1,262 @@
+2016-09-13 21:50:42.413 INFO  (main) [   ] o.e.j.u.log Logging initialized @370ms
+2016-09-13 21:50:42.619 INFO  (main) [   ] o.e.j.s.Server jetty-9.2.13.v20150730
+2016-09-13 21:50:42.635 WARN  (main) [   ] o.e.j.s.h.RequestLogHandler !RequestLog
+2016-09-13 21:50:42.637 INFO  (main) [   ] o.e.j.d.p.ScanningAppProvider Deployment monitor [file:/Applications/drupal-7.50-0/apps/solr-5.5.0/server/contexts/] at interval 0
+2016-09-13 21:50:43.032 INFO  (main) [   ] o.e.j.w.StandardDescriptorProcessor NO JSP Support for /solr, did not find org.apache.jasper.servlet.JspServlet
+2016-09-13 21:50:43.043 WARN  (main) [   ] o.e.j.s.SecurityHandler ServletContext@o.e.j.w.WebAppContext@146ba0ac{/solr,file:/Applications/drupal-7.50-0/apps/solr-5.5.0/server/solr-webapp/webapp/,STARTING}{/Applications/drupal-7.50-0/apps/solr-5.5.0/server/solr-webapp/webapp} has uncovered http methods for path: /
+2016-09-13 21:50:43.056 INFO  (main) [   ] o.a.s.s.SolrDispatchFilter SolrDispatchFilter.init(): WebAppClassLoader=239465106@e45f292
+2016-09-13 21:50:43.079 INFO  (main) [   ] o.a.s.c.SolrResourceLoader JNDI not configured for solr (NoInitialContextEx)
+2016-09-13 21:50:43.079 INFO  (main) [   ] o.a.s.c.SolrResourceLoader using system property solr.solr.home: /Applications/drupal-7.50-0/apps/solr-5.5.0/server/solr
+2016-09-13 21:50:43.080 INFO  (main) [   ] o.a.s.c.SolrResourceLoader new SolrResourceLoader for directory: '/Applications/drupal-7.50-0/apps/solr-5.5.0/server/solr'
+2016-09-13 21:50:43.080 INFO  (main) [   ] o.a.s.c.SolrResourceLoader JNDI not configured for solr (NoInitialContextEx)
+2016-09-13 21:50:43.080 INFO  (main) [   ] o.a.s.c.SolrResourceLoader using system property solr.solr.home: /Applications/drupal-7.50-0/apps/solr-5.5.0/server/solr
+2016-09-13 21:50:43.086 INFO  (main) [   ] o.a.s.c.SolrXmlConfig Loading container configuration from /Applications/drupal-7.50-0/apps/solr-5.5.0/server/solr/solr.xml
+2016-09-13 21:50:43.185 INFO  (main) [   ] o.a.s.c.CorePropertiesLocator Config-defined core root directory: /Applications/drupal-7.50-0/apps/solr-5.5.0/server/solr
+2016-09-13 21:50:43.217 INFO  (main) [   ] o.a.s.c.CoreContainer New CoreContainer 513700442
+2016-09-13 21:50:43.218 INFO  (main) [   ] o.a.s.c.CoreContainer Loading cores into CoreContainer [instanceDir=/Applications/drupal-7.50-0/apps/solr-5.5.0/server/solr]
+2016-09-13 21:50:43.218 WARN  (main) [   ] o.a.s.c.CoreContainer Couldn't add files from /Applications/drupal-7.50-0/apps/solr-5.5.0/server/solr/lib to classpath: /Applications/drupal-7.50-0/apps/solr-5.5.0/server/solr/lib
+2016-09-13 21:50:43.231 INFO  (main) [   ] o.a.s.h.c.HttpShardHandlerFactory created with socketTimeout : 600000,connTimeout : 60000,maxConnectionsPerHost : 20,maxConnections : 10000,corePoolSize : 0,maximumPoolSize : 2147483647,maxThreadIdleTime : 5,sizeOfQueue : -1,fairnessPolicy : false,useRetries : false,
+2016-09-13 21:50:43.448 INFO  (main) [   ] o.a.s.u.UpdateShardHandler Creating UpdateShardHandler HTTP client with params: socketTimeout=600000&connTimeout=60000&retry=true
+2016-09-13 21:50:43.451 INFO  (main) [   ] o.a.s.l.LogWatcher SLF4J impl is org.slf4j.impl.Log4jLoggerFactory
+2016-09-13 21:50:43.452 INFO  (main) [   ] o.a.s.l.LogWatcher Registering Log Listener [Log4j (org.slf4j.impl.Log4jLoggerFactory)]
+2016-09-13 21:50:43.454 INFO  (main) [   ] o.a.s.c.CoreContainer Security conf doesn't exist. Skipping setup for authorization module.
+2016-09-13 21:50:43.454 INFO  (main) [   ] o.a.s.c.CoreContainer No authentication plugin used.
+2016-09-13 21:50:44.092 INFO  (main) [   ] o.a.s.c.CorePropertiesLocator Looking for core definitions underneath /Applications/drupal-7.50-0/apps/solr-5.5.0/server/solr
+2016-09-13 21:50:44.117 INFO  (main) [   ] o.a.s.c.CoreDescriptor Created CoreDescriptor: {solr.replication.pollInterval=00:00:60, solr.autoCommit.MaxDocs=10000, solr.contrib.dir=../../../contrib, solr.replication.confFiles=schema.xml,mapping-ISOLatin1Accent.txt,protwords.txt,stopwords.txt,synonyms.txt,elevate.xml, loadOnStartup=true, solr.replication.master=false, solr.mlt.timeAllowed=2000, solr.pinkPony.timeAllowed=-1, solr.autoSoftCommit.MaxTime=10000, schema=schema.xml, solr.replication.masterUrl=http://localhost:8983/solr, solr.autoSoftCommit.MaxDocs=2000, solr.luceneMatchVersion=5.0.0, configSetProperties=configsetprops.json, solr.autoCommit.MaxTime=120000, dataDir=data, transient=false, config=solrconfig.xml, solr.replication.slave=false, name=drupal}
+2016-09-13 21:50:44.117 INFO  (main) [   ] o.a.s.c.CorePropertiesLocator Found core drupal in /Applications/drupal-7.50-0/apps/solr-5.5.0/server/solr/drupal
+2016-09-13 21:50:44.120 INFO  (main) [   ] o.a.s.c.CoreDescriptor Created CoreDescriptor: {solr.replication.pollInterval=00:00:60, solr.autoCommit.MaxDocs=10000, solr.contrib.dir=../../../contrib, solr.replication.confFiles=schema.xml,mapping-ISOLatin1Accent.txt,protwords.txt,stopwords.txt,synonyms.txt,elevate.xml, loadOnStartup=true, solr.replication.master=false, solr.mlt.timeAllowed=2000, solr.pinkPony.timeAllowed=-1, solr.autoSoftCommit.MaxTime=10000, schema=schema.xml, solr.replication.masterUrl=http://localhost:8983/solr, solr.autoSoftCommit.MaxDocs=2000, solr.luceneMatchVersion=5.0.0, configSetProperties=configsetprops.json, solr.autoCommit.MaxTime=120000, dataDir=data, transient=false, config=solrconfig.xml, solr.replication.slave=false, name=search}
+2016-09-13 21:50:44.120 INFO  (main) [   ] o.a.s.c.CorePropertiesLocator Found core search in /Applications/drupal-7.50-0/apps/solr-5.5.0/server/solr/search
+2016-09-13 21:50:44.120 INFO  (main) [   ] o.a.s.c.CorePropertiesLocator Found 2 core definitions
+2016-09-13 21:50:44.124 INFO  (main) [   ] o.a.s.s.SolrDispatchFilter user.dir=/Applications/drupal-7.50-0/apps/solr-5.5.0/server
+2016-09-13 21:50:44.124 INFO  (main) [   ] o.a.s.s.SolrDispatchFilter SolrDispatchFilter.init() done
+2016-09-13 21:50:44.124 INFO  (coreLoadExecutor-6-thread-1) [   ] o.a.s.c.SolrResourceLoader new SolrResourceLoader for directory: '/Applications/drupal-7.50-0/apps/solr-5.5.0/server/solr/drupal'
+2016-09-13 21:50:44.124 INFO  (coreLoadExecutor-6-thread-2) [   ] o.a.s.c.SolrResourceLoader new SolrResourceLoader for directory: '/Applications/drupal-7.50-0/apps/solr-5.5.0/server/solr/search'
+2016-09-13 21:50:44.124 INFO  (coreLoadExecutor-6-thread-1) [   ] o.a.s.c.SolrResourceLoader JNDI not configured for solr (NoInitialContextEx)
+2016-09-13 21:50:44.124 INFO  (coreLoadExecutor-6-thread-1) [   ] o.a.s.c.SolrResourceLoader using system property solr.solr.home: /Applications/drupal-7.50-0/apps/solr-5.5.0/server/solr
+2016-09-13 21:50:44.124 INFO  (coreLoadExecutor-6-thread-2) [   ] o.a.s.c.SolrResourceLoader JNDI not configured for solr (NoInitialContextEx)
+2016-09-13 21:50:44.125 INFO  (coreLoadExecutor-6-thread-2) [   ] o.a.s.c.SolrResourceLoader using system property solr.solr.home: /Applications/drupal-7.50-0/apps/solr-5.5.0/server/solr
+2016-09-13 21:50:44.135 INFO  (main) [   ] o.e.j.s.h.ContextHandler Started o.e.j.w.WebAppContext@146ba0ac{/solr,file:/Applications/drupal-7.50-0/apps/solr-5.5.0/server/solr-webapp/webapp/,AVAILABLE}{/Applications/drupal-7.50-0/apps/solr-5.5.0/server/solr-webapp/webapp}
+2016-09-13 21:50:44.160 INFO  (main) [   ] o.e.j.s.ServerConnector Started ServerConnector@5c6648b0{HTTP/1.1}{0.0.0.0:8983}
+2016-09-13 21:50:44.160 INFO  (main) [   ] o.e.j.s.Server Started @2119ms
+2016-09-13 21:50:44.186 INFO  (coreLoadExecutor-6-thread-2) [   ] o.a.s.c.SolrConfig current version of requestparams : -1
+2016-09-13 21:50:44.186 INFO  (coreLoadExecutor-6-thread-1) [   ] o.a.s.c.SolrConfig current version of requestparams : -1
+2016-09-13 21:50:44.190 INFO  (coreLoadExecutor-6-thread-2) [   ] o.a.s.c.SolrConfig Adding specified lib dirs to ClassLoader
+2016-09-13 21:50:44.190 INFO  (coreLoadExecutor-6-thread-1) [   ] o.a.s.c.SolrConfig Adding specified lib dirs to ClassLoader
+2016-09-13 21:50:44.198 INFO  (coreLoadExecutor-6-thread-1) [   ] o.a.s.c.SolrResourceLoader Adding 'file:/Applications/drupal-7.50-0/apps/solr-5.5.0/contrib/extraction/lib/apache-mime4j-core-0.7.2.jar' to classloader
+2016-09-13 21:50:44.198 INFO  (coreLoadExecutor-6-thread-1) [   ] o.a.s.c.SolrResourceLoader Adding 'file:/Applications/drupal-7.50-0/apps/solr-5.5.0/contrib/extraction/lib/apache-mime4j-dom-0.7.2.jar' to classloader
+2016-09-13 21:50:44.198 INFO  (coreLoadExecutor-6-thread-2) [   ] o.a.s.c.SolrResourceLoader Adding 'file:/Applications/drupal-7.50-0/apps/solr-5.5.0/contrib/extraction/lib/apache-mime4j-core-0.7.2.jar' to classloader
+2016-09-13 21:50:44.198 INFO  (coreLoadExecutor-6-thread-2) [   ] o.a.s.c.SolrResourceLoader Adding 'file:/Applications/drupal-7.50-0/apps/solr-5.5.0/contrib/extraction/lib/apache-mime4j-dom-0.7.2.jar' to classloader
+2016-09-13 21:50:44.198 INFO  (coreLoadExecutor-6-thread-2) [   ] o.a.s.c.SolrResourceLoader Adding 'file:/Applications/drupal-7.50-0/apps/solr-5.5.0/contrib/extraction/lib/aspectjrt-1.8.0.jar' to classloader
+2016-09-13 21:50:44.198 INFO  (coreLoadExecutor-6-thread-1) [   ] o.a.s.c.SolrResourceLoader Adding 'file:/Applications/drupal-7.50-0/apps/solr-5.5.0/contrib/extraction/lib/aspectjrt-1.8.0.jar' to classloader
+2016-09-13 21:50:44.198 INFO  (coreLoadExecutor-6-thread-1) [   ] o.a.s.c.SolrResourceLoader Adding 'file:/Applications/drupal-7.50-0/apps/solr-5.5.0/contrib/extraction/lib/bcmail-jdk15-1.45.jar' to classloader
+2016-09-13 21:50:44.198 INFO  (coreLoadExecutor-6-thread-2) [   ] o.a.s.c.SolrResourceLoader Adding 'file:/Applications/drupal-7.50-0/apps/solr-5.5.0/contrib/extraction/lib/bcmail-jdk15-1.45.jar' to classloader
+2016-09-13 21:50:44.198 INFO  (coreLoadExecutor-6-thread-1) [   ] o.a.s.c.SolrResourceLoader Adding 'file:/Applications/drupal-7.50-0/apps/solr-5.5.0/contrib/extraction/lib/bcprov-jdk15-1.45.jar' to classloader
+2016-09-13 21:50:44.199 INFO  (coreLoadExecutor-6-thread-2) [   ] o.a.s.c.SolrResourceLoader Adding 'file:/Applications/drupal-7.50-0/apps/solr-5.5.0/contrib/extraction/lib/bcprov-jdk15-1.45.jar' to classloader
+2016-09-13 21:50:44.199 INFO  (coreLoadExecutor-6-thread-1) [   ] o.a.s.c.SolrResourceLoader Adding 'file:/Applications/drupal-7.50-0/apps/solr-5.5.0/contrib/extraction/lib/boilerpipe-1.1.0.jar' to classloader
+2016-09-13 21:50:44.199 INFO  (coreLoadExecutor-6-thread-2) [   ] o.a.s.c.SolrResourceLoader Adding 'file:/Applications/drupal-7.50-0/apps/solr-5.5.0/contrib/extraction/lib/boilerpipe-1.1.0.jar' to classloader
+2016-09-13 21:50:44.199 INFO  (coreLoadExecutor-6-thread-2) [   ] o.a.s.c.SolrResourceLoader Adding 'file:/Applications/drupal-7.50-0/apps/solr-5.5.0/contrib/extraction/lib/commons-compress-1.8.1.jar' to classloader
+2016-09-13 21:50:44.199 INFO  (coreLoadExecutor-6-thread-2) [   ] o.a.s.c.SolrResourceLoader Adding 'file:/Applications/drupal-7.50-0/apps/solr-5.5.0/contrib/extraction/lib/fontbox-1.8.8.jar' to classloader
+2016-09-13 21:50:44.199 INFO  (coreLoadExecutor-6-thread-2) [   ] o.a.s.c.SolrResourceLoader Adding 'file:/Applications/drupal-7.50-0/apps/solr-5.5.0/contrib/extraction/lib/icu4j-54.1.jar' to classloader
+2016-09-13 21:50:44.199 INFO  (coreLoadExecutor-6-thread-2) [   ] o.a.s.c.SolrResourceLoader Adding 'file:/Applications/drupal-7.50-0/apps/solr-5.5.0/contrib/extraction/lib/isoparser-1.0.2.jar' to classloader
+2016-09-13 21:50:44.199 INFO  (coreLoadExecutor-6-thread-2) [   ] o.a.s.c.SolrResourceLoader Adding 'file:/Applications/drupal-7.50-0/apps/solr-5.5.0/contrib/extraction/lib/java-libpst-0.8.1.jar' to classloader
+2016-09-13 21:50:44.199 INFO  (coreLoadExecutor-6-thread-1) [   ] o.a.s.c.SolrResourceLoader Adding 'file:/Applications/drupal-7.50-0/apps/solr-5.5.0/contrib/extraction/lib/commons-compress-1.8.1.jar' to classloader
+2016-09-13 21:50:44.199 INFO  (coreLoadExecutor-6-thread-2) [   ] o.a.s.c.SolrResourceLoader Adding 'file:/Applications/drupal-7.50-0/apps/solr-5.5.0/contrib/extraction/lib/jdom-1.0.jar' to classloader
+2016-09-13 21:50:44.200 INFO  (coreLoadExecutor-6-thread-2) [   ] o.a.s.c.SolrResourceLoader Adding 'file:/Applications/drupal-7.50-0/apps/solr-5.5.0/contrib/extraction/lib/jempbox-1.8.8.jar' to classloader
+2016-09-13 21:50:44.199 INFO  (coreLoadExecutor-6-thread-1) [   ] o.a.s.c.SolrResourceLoader Adding 'file:/Applications/drupal-7.50-0/apps/solr-5.5.0/contrib/extraction/lib/fontbox-1.8.8.jar' to classloader
+2016-09-13 21:50:44.200 INFO  (coreLoadExecutor-6-thread-1) [   ] o.a.s.c.SolrResourceLoader Adding 'file:/Applications/drupal-7.50-0/apps/solr-5.5.0/contrib/extraction/lib/icu4j-54.1.jar' to classloader
+2016-09-13 21:50:44.200 INFO  (coreLoadExecutor-6-thread-1) [   ] o.a.s.c.SolrResourceLoader Adding 'file:/Applications/drupal-7.50-0/apps/solr-5.5.0/contrib/extraction/lib/isoparser-1.0.2.jar' to classloader
+2016-09-13 21:50:44.200 INFO  (coreLoadExecutor-6-thread-1) [   ] o.a.s.c.SolrResourceLoader Adding 'file:/Applications/drupal-7.50-0/apps/solr-5.5.0/contrib/extraction/lib/java-libpst-0.8.1.jar' to classloader
+2016-09-13 21:50:44.200 INFO  (coreLoadExecutor-6-thread-2) [   ] o.a.s.c.SolrResourceLoader Adding 'file:/Applications/drupal-7.50-0/apps/solr-5.5.0/contrib/extraction/lib/jmatio-1.0.jar' to classloader
+2016-09-13 21:50:44.200 INFO  (coreLoadExecutor-6-thread-2) [   ] o.a.s.c.SolrResourceLoader Adding 'file:/Applications/drupal-7.50-0/apps/solr-5.5.0/contrib/extraction/lib/juniversalchardet-1.0.3.jar' to classloader
+2016-09-13 21:50:44.200 INFO  (coreLoadExecutor-6-thread-2) [   ] o.a.s.c.SolrResourceLoader Adding 'file:/Applications/drupal-7.50-0/apps/solr-5.5.0/contrib/extraction/lib/metadata-extractor-2.6.2.jar' to classloader
+2016-09-13 21:50:44.200 INFO  (coreLoadExecutor-6-thread-2) [   ] o.a.s.c.SolrResourceLoader Adding 'file:/Applications/drupal-7.50-0/apps/solr-5.5.0/contrib/extraction/lib/pdfbox-1.8.8.jar' to classloader
+2016-09-13 21:50:44.200 INFO  (coreLoadExecutor-6-thread-2) [   ] o.a.s.c.SolrResourceLoader Adding 'file:/Applications/drupal-7.50-0/apps/solr-5.5.0/contrib/extraction/lib/poi-3.11.jar' to classloader
+2016-09-13 21:50:44.200 INFO  (coreLoadExecutor-6-thread-2) [   ] o.a.s.c.SolrResourceLoader Adding 'file:/Applications/drupal-7.50-0/apps/solr-5.5.0/contrib/extraction/lib/poi-ooxml-3.11.jar' to classloader
+2016-09-13 21:50:44.200 INFO  (coreLoadExecutor-6-thread-2) [   ] o.a.s.c.SolrResourceLoader Adding 'file:/Applications/drupal-7.50-0/apps/solr-5.5.0/contrib/extraction/lib/poi-ooxml-schemas-3.11.jar' to classloader
+2016-09-13 21:50:44.200 INFO  (coreLoadExecutor-6-thread-2) [   ] o.a.s.c.SolrResourceLoader Adding 'file:/Applications/drupal-7.50-0/apps/solr-5.5.0/contrib/extraction/lib/poi-scratchpad-3.11.jar' to classloader
+2016-09-13 21:50:44.200 INFO  (coreLoadExecutor-6-thread-2) [   ] o.a.s.c.SolrResourceLoader Adding 'file:/Applications/drupal-7.50-0/apps/solr-5.5.0/contrib/extraction/lib/rome-1.0.jar' to classloader
+2016-09-13 21:50:44.200 INFO  (coreLoadExecutor-6-thread-2) [   ] o.a.s.c.SolrResourceLoader Adding 'file:/Applications/drupal-7.50-0/apps/solr-5.5.0/contrib/extraction/lib/tagsoup-1.2.1.jar' to classloader
+2016-09-13 21:50:44.201 INFO  (coreLoadExecutor-6-thread-2) [   ] o.a.s.c.SolrResourceLoader Adding 'file:/Applications/drupal-7.50-0/apps/solr-5.5.0/contrib/extraction/lib/tika-core-1.7.jar' to classloader
+2016-09-13 21:50:44.200 INFO  (coreLoadExecutor-6-thread-1) [   ] o.a.s.c.SolrResourceLoader Adding 'file:/Applications/drupal-7.50-0/apps/solr-5.5.0/contrib/extraction/lib/jdom-1.0.jar' to classloader
+2016-09-13 21:50:44.201 INFO  (coreLoadExecutor-6-thread-2) [   ] o.a.s.c.SolrResourceLoader Adding 'file:/Applications/drupal-7.50-0/apps/solr-5.5.0/contrib/extraction/lib/tika-java7-1.7.jar' to classloader
+2016-09-13 21:50:44.201 INFO  (coreLoadExecutor-6-thread-2) [   ] o.a.s.c.SolrResourceLoader Adding 'file:/Applications/drupal-7.50-0/apps/solr-5.5.0/contrib/extraction/lib/tika-parsers-1.7.jar' to classloader
+2016-09-13 21:50:44.201 INFO  (coreLoadExecutor-6-thread-1) [   ] o.a.s.c.SolrResourceLoader Adding 'file:/Applications/drupal-7.50-0/apps/solr-5.5.0/contrib/extraction/lib/jempbox-1.8.8.jar' to classloader
+2016-09-13 21:50:44.201 INFO  (coreLoadExecutor-6-thread-2) [   ] o.a.s.c.SolrResourceLoader Adding 'file:/Applications/drupal-7.50-0/apps/solr-5.5.0/contrib/extraction/lib/tika-xmp-1.7.jar' to classloader
+2016-09-13 21:50:44.201 INFO  (coreLoadExecutor-6-thread-2) [   ] o.a.s.c.SolrResourceLoader Adding 'file:/Applications/drupal-7.50-0/apps/solr-5.5.0/contrib/extraction/lib/vorbis-java-core-0.6.jar' to classloader
+2016-09-13 21:50:44.201 INFO  (coreLoadExecutor-6-thread-2) [   ] o.a.s.c.SolrResourceLoader Adding 'file:/Applications/drupal-7.50-0/apps/solr-5.5.0/contrib/extraction/lib/vorbis-java-tika-0.6.jar' to classloader
+2016-09-13 21:50:44.201 INFO  (coreLoadExecutor-6-thread-2) [   ] o.a.s.c.SolrResourceLoader Adding 'file:/Applications/drupal-7.50-0/apps/solr-5.5.0/contrib/extraction/lib/xercesImpl-2.9.1.jar' to classloader
+2016-09-13 21:50:44.201 INFO  (coreLoadExecutor-6-thread-2) [   ] o.a.s.c.SolrResourceLoader Adding 'file:/Applications/drupal-7.50-0/apps/solr-5.5.0/contrib/extraction/lib/xmlbeans-2.6.0.jar' to classloader
+2016-09-13 21:50:44.201 INFO  (coreLoadExecutor-6-thread-2) [   ] o.a.s.c.SolrResourceLoader Adding 'file:/Applications/drupal-7.50-0/apps/solr-5.5.0/contrib/extraction/lib/xmpcore-5.1.2.jar' to classloader
+2016-09-13 21:50:44.201 INFO  (coreLoadExecutor-6-thread-2) [   ] o.a.s.c.SolrResourceLoader Adding 'file:/Applications/drupal-7.50-0/apps/solr-5.5.0/contrib/extraction/lib/xz-1.5.jar' to classloader
+2016-09-13 21:50:44.201 INFO  (coreLoadExecutor-6-thread-2) [   ] o.a.s.c.SolrResourceLoader Adding 'file:/Applications/drupal-7.50-0/apps/solr-5.5.0/contrib/clustering/lib/attributes-binder-1.2.3.jar' to classloader
+2016-09-13 21:50:44.201 INFO  (coreLoadExecutor-6-thread-2) [   ] o.a.s.c.SolrResourceLoader Adding 'file:/Applications/drupal-7.50-0/apps/solr-5.5.0/contrib/clustering/lib/carrot2-guava-18.0.jar' to classloader
+2016-09-13 21:50:44.201 INFO  (coreLoadExecutor-6-thread-1) [   ] o.a.s.c.SolrResourceLoader Adding 'file:/Applications/drupal-7.50-0/apps/solr-5.5.0/contrib/extraction/lib/jmatio-1.0.jar' to classloader
+2016-09-13 21:50:44.201 INFO  (coreLoadExecutor-6-thread-2) [   ] o.a.s.c.SolrResourceLoader Adding 'file:/Applications/drupal-7.50-0/apps/solr-5.5.0/contrib/clustering/lib/carrot2-mini-3.10.4.jar' to classloader
+2016-09-13 21:50:44.202 INFO  (coreLoadExecutor-6-thread-1) [   ] o.a.s.c.SolrResourceLoader Adding 'file:/Applications/drupal-7.50-0/apps/solr-5.5.0/contrib/extraction/lib/juniversalchardet-1.0.3.jar' to classloader
+2016-09-13 21:50:44.202 INFO  (coreLoadExecutor-6-thread-2) [   ] o.a.s.c.SolrResourceLoader Adding 'file:/Applications/drupal-7.50-0/apps/solr-5.5.0/contrib/clustering/lib/jackson-annotations-2.5.4.jar' to classloader
+2016-09-13 21:50:44.202 INFO  (coreLoadExecutor-6-thread-1) [   ] o.a.s.c.SolrResourceLoader Adding 'file:/Applications/drupal-7.50-0/apps/solr-5.5.0/contrib/extraction/lib/metadata-extractor-2.6.2.jar' to classloader
+2016-09-13 21:50:44.202 INFO  (coreLoadExecutor-6-thread-1) [   ] o.a.s.c.SolrResourceLoader Adding 'file:/Applications/drupal-7.50-0/apps/solr-5.5.0/contrib/extraction/lib/pdfbox-1.8.8.jar' to classloader
+2016-09-13 21:50:44.202 INFO  (coreLoadExecutor-6-thread-2) [   ] o.a.s.c.SolrResourceLoader Adding 'file:/Applications/drupal-7.50-0/apps/solr-5.5.0/contrib/clustering/lib/jackson-databind-2.5.4.jar' to classloader
+2016-09-13 21:50:44.202 INFO  (coreLoadExecutor-6-thread-1) [   ] o.a.s.c.SolrResourceLoader Adding 'file:/Applications/drupal-7.50-0/apps/solr-5.5.0/contrib/extraction/lib/poi-3.11.jar' to classloader
+2016-09-13 21:50:44.202 INFO  (coreLoadExecutor-6-thread-2) [   ] o.a.s.c.SolrResourceLoader Adding 'file:/Applications/drupal-7.50-0/apps/solr-5.5.0/contrib/clustering/lib/mahout-collections-1.0.jar' to classloader
+2016-09-13 21:50:44.202 INFO  (coreLoadExecutor-6-thread-1) [   ] o.a.s.c.SolrResourceLoader Adding 'file:/Applications/drupal-7.50-0/apps/solr-5.5.0/contrib/extraction/lib/poi-ooxml-3.11.jar' to classloader
+2016-09-13 21:50:44.202 INFO  (coreLoadExecutor-6-thread-2) [   ] o.a.s.c.SolrResourceLoader Adding 'file:/Applications/drupal-7.50-0/apps/solr-5.5.0/contrib/clustering/lib/mahout-math-0.6.jar' to classloader
+2016-09-13 21:50:44.202 INFO  (coreLoadExecutor-6-thread-1) [   ] o.a.s.c.SolrResourceLoader Adding 'file:/Applications/drupal-7.50-0/apps/solr-5.5.0/contrib/extraction/lib/poi-ooxml-schemas-3.11.jar' to classloader
+2016-09-13 21:50:44.202 INFO  (coreLoadExecutor-6-thread-2) [   ] o.a.s.c.SolrResourceLoader Adding 'file:/Applications/drupal-7.50-0/apps/solr-5.5.0/contrib/clustering/lib/simple-xml-2.7.1.jar' to classloader
+2016-09-13 21:50:44.202 INFO  (coreLoadExecutor-6-thread-1) [   ] o.a.s.c.SolrResourceLoader Adding 'file:/Applications/drupal-7.50-0/apps/solr-5.5.0/contrib/extraction/lib/poi-scratchpad-3.11.jar' to classloader
+2016-09-13 21:50:44.203 INFO  (coreLoadExecutor-6-thread-1) [   ] o.a.s.c.SolrResourceLoader Adding 'file:/Applications/drupal-7.50-0/apps/solr-5.5.0/contrib/extraction/lib/rome-1.0.jar' to classloader
+2016-09-13 21:50:44.203 INFO  (coreLoadExecutor-6-thread-1) [   ] o.a.s.c.SolrResourceLoader Adding 'file:/Applications/drupal-7.50-0/apps/solr-5.5.0/contrib/extraction/lib/tagsoup-1.2.1.jar' to classloader
+2016-09-13 21:50:44.203 INFO  (coreLoadExecutor-6-thread-1) [   ] o.a.s.c.SolrResourceLoader Adding 'file:/Applications/drupal-7.50-0/apps/solr-5.5.0/contrib/extraction/lib/tika-core-1.7.jar' to classloader
+2016-09-13 21:50:44.203 INFO  (coreLoadExecutor-6-thread-1) [   ] o.a.s.c.SolrResourceLoader Adding 'file:/Applications/drupal-7.50-0/apps/solr-5.5.0/contrib/extraction/lib/tika-java7-1.7.jar' to classloader
+2016-09-13 21:50:44.203 INFO  (coreLoadExecutor-6-thread-1) [   ] o.a.s.c.SolrResourceLoader Adding 'file:/Applications/drupal-7.50-0/apps/solr-5.5.0/contrib/extraction/lib/tika-parsers-1.7.jar' to classloader
+2016-09-13 21:50:44.203 INFO  (coreLoadExecutor-6-thread-1) [   ] o.a.s.c.SolrResourceLoader Adding 'file:/Applications/drupal-7.50-0/apps/solr-5.5.0/contrib/extraction/lib/tika-xmp-1.7.jar' to classloader
+2016-09-13 21:50:44.203 INFO  (coreLoadExecutor-6-thread-1) [   ] o.a.s.c.SolrResourceLoader Adding 'file:/Applications/drupal-7.50-0/apps/solr-5.5.0/contrib/extraction/lib/vorbis-java-core-0.6.jar' to classloader
+2016-09-13 21:50:44.203 INFO  (coreLoadExecutor-6-thread-1) [   ] o.a.s.c.SolrResourceLoader Adding 'file:/Applications/drupal-7.50-0/apps/solr-5.5.0/contrib/extraction/lib/vorbis-java-tika-0.6.jar' to classloader
+2016-09-13 21:50:44.203 INFO  (coreLoadExecutor-6-thread-1) [   ] o.a.s.c.SolrResourceLoader Adding 'file:/Applications/drupal-7.50-0/apps/solr-5.5.0/contrib/extraction/lib/xercesImpl-2.9.1.jar' to classloader
+2016-09-13 21:50:44.203 INFO  (coreLoadExecutor-6-thread-1) [   ] o.a.s.c.SolrResourceLoader Adding 'file:/Applications/drupal-7.50-0/apps/solr-5.5.0/contrib/extraction/lib/xmlbeans-2.6.0.jar' to classloader
+2016-09-13 21:50:44.203 INFO  (coreLoadExecutor-6-thread-1) [   ] o.a.s.c.SolrResourceLoader Adding 'file:/Applications/drupal-7.50-0/apps/solr-5.5.0/contrib/extraction/lib/xmpcore-5.1.2.jar' to classloader
+2016-09-13 21:50:44.203 INFO  (coreLoadExecutor-6-thread-1) [   ] o.a.s.c.SolrResourceLoader Adding 'file:/Applications/drupal-7.50-0/apps/solr-5.5.0/contrib/extraction/lib/xz-1.5.jar' to classloader
+2016-09-13 21:50:44.203 INFO  (coreLoadExecutor-6-thread-1) [   ] o.a.s.c.SolrResourceLoader Adding 'file:/Applications/drupal-7.50-0/apps/solr-5.5.0/contrib/clustering/lib/attributes-binder-1.2.3.jar' to classloader
+2016-09-13 21:50:44.203 INFO  (coreLoadExecutor-6-thread-1) [   ] o.a.s.c.SolrResourceLoader Adding 'file:/Applications/drupal-7.50-0/apps/solr-5.5.0/contrib/clustering/lib/carrot2-guava-18.0.jar' to classloader
+2016-09-13 21:50:44.203 INFO  (coreLoadExecutor-6-thread-1) [   ] o.a.s.c.SolrResourceLoader Adding 'file:/Applications/drupal-7.50-0/apps/solr-5.5.0/contrib/clustering/lib/carrot2-mini-3.10.4.jar' to classloader
+2016-09-13 21:50:44.203 INFO  (coreLoadExecutor-6-thread-1) [   ] o.a.s.c.SolrResourceLoader Adding 'file:/Applications/drupal-7.50-0/apps/solr-5.5.0/contrib/clustering/lib/jackson-annotations-2.5.4.jar' to classloader
+2016-09-13 21:50:44.203 INFO  (coreLoadExecutor-6-thread-1) [   ] o.a.s.c.SolrResourceLoader Adding 'file:/Applications/drupal-7.50-0/apps/solr-5.5.0/contrib/clustering/lib/jackson-databind-2.5.4.jar' to classloader
+2016-09-13 21:50:44.203 INFO  (coreLoadExecutor-6-thread-1) [   ] o.a.s.c.SolrResourceLoader Adding 'file:/Applications/drupal-7.50-0/apps/solr-5.5.0/contrib/clustering/lib/mahout-collections-1.0.jar' to classloader
+2016-09-13 21:50:44.203 INFO  (coreLoadExecutor-6-thread-1) [   ] o.a.s.c.SolrResourceLoader Adding 'file:/Applications/drupal-7.50-0/apps/solr-5.5.0/contrib/clustering/lib/mahout-math-0.6.jar' to classloader
+2016-09-13 21:50:44.203 INFO  (coreLoadExecutor-6-thread-1) [   ] o.a.s.c.SolrResourceLoader Adding 'file:/Applications/drupal-7.50-0/apps/solr-5.5.0/contrib/clustering/lib/simple-xml-2.7.1.jar' to classloader
+2016-09-13 21:50:44.422 WARN  (coreLoadExecutor-6-thread-1) [   ] o.a.s.c.Config Solr no longer supports forceful unlocking via the 'unlockOnStartup' option.  This is no longer neccessary for the default lockType except in situations where it would be dangerous and should not be done.  For other lockTypes and/or directoryFactory options it may also be dangerous and users must resolve problematic locks manually.
+2016-09-13 21:50:44.423 WARN  (coreLoadExecutor-6-thread-2) [   ] o.a.s.c.Config Solr no longer supports forceful unlocking via the 'unlockOnStartup' option.  This is no longer neccessary for the default lockType except in situations where it would be dangerous and should not be done.  For other lockTypes and/or directoryFactory options it may also be dangerous and users must resolve problematic locks manually.
+2016-09-13 21:50:44.462 WARN  (coreLoadExecutor-6-thread-1) [   ] o.a.s.c.Config Beginning with Solr 5.5, <mergePolicy> is deprecated, use <mergePolicyFactory> instead.
+2016-09-13 21:50:44.462 WARN  (coreLoadExecutor-6-thread-1) [   ] o.a.s.c.Config Beginning with Solr 5.5, <maxMergeDocs> is deprecated, configure it on the relevant <mergePolicyFactory> instead.
+2016-09-13 21:50:44.462 WARN  (coreLoadExecutor-6-thread-1) [   ] o.a.s.c.Config Beginning with Solr 5.5, <mergeFactor> is deprecated, configure it on the relevant <mergePolicyFactory> instead.
+2016-09-13 21:50:44.464 WARN  (coreLoadExecutor-6-thread-2) [   ] o.a.s.c.Config Beginning with Solr 5.5, <mergePolicy> is deprecated, use <mergePolicyFactory> instead.
+2016-09-13 21:50:44.464 WARN  (coreLoadExecutor-6-thread-2) [   ] o.a.s.c.Config Beginning with Solr 5.5, <maxMergeDocs> is deprecated, configure it on the relevant <mergePolicyFactory> instead.
+2016-09-13 21:50:44.464 WARN  (coreLoadExecutor-6-thread-2) [   ] o.a.s.c.Config Beginning with Solr 5.5, <mergeFactor> is deprecated, configure it on the relevant <mergePolicyFactory> instead.
+2016-09-13 21:50:44.467 INFO  (coreLoadExecutor-6-thread-1) [   ] o.a.s.u.SolrIndexConfig IndexWriter infoStream solr logging is enabled
+2016-09-13 21:50:44.469 INFO  (coreLoadExecutor-6-thread-2) [   ] o.a.s.u.SolrIndexConfig IndexWriter infoStream solr logging is enabled
+2016-09-13 21:50:44.478 INFO  (coreLoadExecutor-6-thread-1) [   ] o.a.s.c.SolrConfig Using Lucene MatchVersion: 5.0.0
+2016-09-13 21:50:44.478 INFO  (coreLoadExecutor-6-thread-2) [   ] o.a.s.c.SolrConfig Using Lucene MatchVersion: 5.0.0
+2016-09-13 21:50:44.582 INFO  (coreLoadExecutor-6-thread-1) [   ] o.a.s.c.SolrConfig Loaded SolrConfig: solrconfig.xml
+2016-09-13 21:50:44.582 INFO  (coreLoadExecutor-6-thread-2) [   ] o.a.s.c.SolrConfig Loaded SolrConfig: solrconfig.xml
+2016-09-13 21:50:44.616 INFO  (coreLoadExecutor-6-thread-2) [   ] o.a.s.s.IndexSchema [search] Schema name=drupal-4.3-solr-5.x
+2016-09-13 21:50:44.617 INFO  (coreLoadExecutor-6-thread-1) [   ] o.a.s.s.IndexSchema [drupal] Schema name=drupal-4.3-solr-5.x
+2016-09-13 21:50:44.841 INFO  (coreLoadExecutor-6-thread-2) [   ] o.a.s.s.IndexSchema unique key field: id
+2016-09-13 21:50:44.841 INFO  (coreLoadExecutor-6-thread-1) [   ] o.a.s.s.IndexSchema unique key field: id
+2016-09-13 21:50:44.887 INFO  (coreLoadExecutor-6-thread-1) [   ] o.a.s.c.ConfigSetProperties Did not find ConfigSet properties, assuming default properties: Can't find resource 'configsetprops.json' in classpath or '/Applications/drupal-7.50-0/apps/solr-5.5.0/server/solr/drupal'
+2016-09-13 21:50:44.887 INFO  (coreLoadExecutor-6-thread-2) [   ] o.a.s.c.ConfigSetProperties Did not find ConfigSet properties, assuming default properties: Can't find resource 'configsetprops.json' in classpath or '/Applications/drupal-7.50-0/apps/solr-5.5.0/server/solr/search'
+2016-09-13 21:50:44.887 INFO  (coreLoadExecutor-6-thread-2) [   ] o.a.s.c.CoreContainer Creating SolrCore 'search' using configuration from instancedir /Applications/drupal-7.50-0/apps/solr-5.5.0/server/solr/search
+2016-09-13 21:50:44.887 INFO  (coreLoadExecutor-6-thread-1) [   ] o.a.s.c.CoreContainer Creating SolrCore 'drupal' using configuration from instancedir /Applications/drupal-7.50-0/apps/solr-5.5.0/server/solr/drupal
+2016-09-13 21:50:44.907 INFO  (coreLoadExecutor-6-thread-2) [   x:search] o.a.s.c.SolrCore solr.NRTCachingDirectoryFactory
+2016-09-13 21:50:44.907 INFO  (coreLoadExecutor-6-thread-1) [   x:drupal] o.a.s.c.SolrCore solr.NRTCachingDirectoryFactory
+2016-09-13 21:50:44.919 INFO  (coreLoadExecutor-6-thread-1) [   x:drupal] o.a.s.c.SolrCore [[drupal] ] Opening new SolrCore at [/Applications/drupal-7.50-0/apps/solr-5.5.0/server/solr/drupal], dataDir=[/Applications/drupal-7.50-0/apps/solr-5.5.0/server/solr/drupal/data/]
+2016-09-13 21:50:44.919 INFO  (coreLoadExecutor-6-thread-2) [   x:search] o.a.s.c.SolrCore [[search] ] Opening new SolrCore at [/Applications/drupal-7.50-0/apps/solr-5.5.0/server/solr/search], dataDir=[/Applications/drupal-7.50-0/apps/solr-5.5.0/server/solr/search/data/]
+2016-09-13 21:50:44.920 INFO  (coreLoadExecutor-6-thread-1) [   x:drupal] o.a.s.c.SolrCore JMX monitoring not detected for core: drupal
+2016-09-13 21:50:44.920 INFO  (coreLoadExecutor-6-thread-2) [   x:search] o.a.s.c.SolrCore JMX monitoring not detected for core: search
+2016-09-13 21:50:44.924 INFO  (coreLoadExecutor-6-thread-1) [   x:drupal] o.a.s.c.SolrCore [[drupal] ] Added SolrEventListener for newSearcher: [org.apache.solr.core.QuerySenderListener{queries=[]}]
+2016-09-13 21:50:44.924 INFO  (coreLoadExecutor-6-thread-2) [   x:search] o.a.s.c.SolrCore [[search] ] Added SolrEventListener for newSearcher: [org.apache.solr.core.QuerySenderListener{queries=[]}]
+2016-09-13 21:50:44.924 INFO  (coreLoadExecutor-6-thread-1) [   x:drupal] o.a.s.c.SolrCore [[drupal] ] Added SolrEventListener for firstSearcher: [org.apache.solr.core.QuerySenderListener{queries=[{q=solr rocks,start=0,rows=10}]}]
+2016-09-13 21:50:44.924 INFO  (coreLoadExecutor-6-thread-2) [   x:search] o.a.s.c.SolrCore [[search] ] Added SolrEventListener for firstSearcher: [org.apache.solr.core.QuerySenderListener{queries=[{q=solr rocks,start=0,rows=10}]}]
+2016-09-13 21:50:44.929 INFO  (coreLoadExecutor-6-thread-1) [   x:drupal] o.a.s.c.SchemaCodecFactory Using default compressionMode: BEST_SPEED
+2016-09-13 21:50:44.929 INFO  (coreLoadExecutor-6-thread-2) [   x:search] o.a.s.c.SchemaCodecFactory Using default compressionMode: BEST_SPEED
+2016-09-13 21:50:44.937 INFO  (coreLoadExecutor-6-thread-1) [   x:drupal] o.a.s.c.CachingDirectoryFactory return new directory for /Applications/drupal-7.50-0/apps/solr-5.5.0/server/solr/drupal/data
+2016-09-13 21:50:44.937 INFO  (coreLoadExecutor-6-thread-2) [   x:search] o.a.s.c.CachingDirectoryFactory return new directory for /Applications/drupal-7.50-0/apps/solr-5.5.0/server/solr/search/data
+2016-09-13 21:50:44.938 INFO  (coreLoadExecutor-6-thread-1) [   x:drupal] o.a.s.c.SolrCore New index directory detected: old=null new=/Applications/drupal-7.50-0/apps/solr-5.5.0/server/solr/drupal/data/index/
+2016-09-13 21:50:44.938 INFO  (coreLoadExecutor-6-thread-2) [   x:search] o.a.s.c.SolrCore New index directory detected: old=null new=/Applications/drupal-7.50-0/apps/solr-5.5.0/server/solr/search/data/index/
+2016-09-13 21:50:44.938 INFO  (coreLoadExecutor-6-thread-2) [   x:search] o.a.s.c.CachingDirectoryFactory return new directory for /Applications/drupal-7.50-0/apps/solr-5.5.0/server/solr/search/data/index
+2016-09-13 21:50:44.939 INFO  (coreLoadExecutor-6-thread-1) [   x:drupal] o.a.s.c.CachingDirectoryFactory return new directory for /Applications/drupal-7.50-0/apps/solr-5.5.0/server/solr/drupal/data/index
+2016-09-13 21:50:44.953 INFO  (OldIndexDirectoryCleanupThreadForCore-search) [   x:search] o.a.s.c.SolrCore Looking for old index directories to cleanup for core search in /Applications/drupal-7.50-0/apps/solr-5.5.0/server/solr/search/data/
+2016-09-13 21:50:44.954 INFO  (OldIndexDirectoryCleanupThreadForCore-drupal) [   x:drupal] o.a.s.c.SolrCore Looking for old index directories to cleanup for core drupal in /Applications/drupal-7.50-0/apps/solr-5.5.0/server/solr/drupal/data/
+2016-09-13 21:50:44.959 INFO  (coreLoadExecutor-6-thread-1) [   x:drupal] o.a.s.r.XSLTResponseWriter xsltCacheLifetimeSeconds=5
+2016-09-13 21:50:44.959 INFO  (coreLoadExecutor-6-thread-2) [   x:search] o.a.s.r.XSLTResponseWriter xsltCacheLifetimeSeconds=5
+2016-09-13 21:50:45.063 INFO  (coreLoadExecutor-6-thread-2) [   x:search] o.a.s.c.SolrCore no updateRequestProcessorChain defined as default, creating implicit default
+2016-09-13 21:50:45.063 INFO  (coreLoadExecutor-6-thread-1) [   x:drupal] o.a.s.c.SolrCore no updateRequestProcessorChain defined as default, creating implicit default
+2016-09-13 21:50:45.101 INFO  (coreLoadExecutor-6-thread-1) [   x:drupal] o.a.s.h.l.XMLLoader xsltCacheLifetimeSeconds=60
+2016-09-13 21:50:45.101 INFO  (coreLoadExecutor-6-thread-2) [   x:search] o.a.s.h.l.XMLLoader xsltCacheLifetimeSeconds=60
+2016-09-13 21:50:45.103 INFO  (coreLoadExecutor-6-thread-1) [   x:drupal] o.a.s.c.PluginBag requestHandler : '/update/json' created with startup=lazy 
+2016-09-13 21:50:45.103 INFO  (coreLoadExecutor-6-thread-2) [   x:search] o.a.s.c.PluginBag requestHandler : '/update/json' created with startup=lazy 
+2016-09-13 21:50:45.103 INFO  (coreLoadExecutor-6-thread-1) [   x:drupal] o.a.s.c.PluginBag requestHandler : '/update/csv' created with startup=lazy 
+2016-09-13 21:50:45.103 INFO  (coreLoadExecutor-6-thread-2) [   x:search] o.a.s.c.PluginBag requestHandler : '/update/csv' created with startup=lazy 
+2016-09-13 21:50:45.104 INFO  (coreLoadExecutor-6-thread-1) [   x:drupal] o.a.s.h.l.XMLLoader xsltCacheLifetimeSeconds=60
+2016-09-13 21:50:45.104 INFO  (coreLoadExecutor-6-thread-2) [   x:search] o.a.s.h.l.XMLLoader xsltCacheLifetimeSeconds=60
+2016-09-13 21:50:45.122 INFO  (coreLoadExecutor-6-thread-2) [   x:search] o.a.s.c.PluginBag requestHandler : '/update/extract' created with startup=lazy 
+2016-09-13 21:50:45.122 INFO  (coreLoadExecutor-6-thread-1) [   x:drupal] o.a.s.c.PluginBag requestHandler : '/update/extract' created with startup=lazy 
+2016-09-13 21:50:45.122 INFO  (coreLoadExecutor-6-thread-2) [   x:search] o.a.s.c.PluginBag requestHandler : '/update/xslt' created with startup=lazy 
+2016-09-13 21:50:45.122 INFO  (coreLoadExecutor-6-thread-1) [   x:drupal] o.a.s.c.PluginBag requestHandler : '/update/xslt' created with startup=lazy 
+2016-09-13 21:50:45.122 INFO  (coreLoadExecutor-6-thread-2) [   x:search] o.a.s.c.PluginBag requestHandler : '/analysis/field' created with startup=lazy 
+2016-09-13 21:50:45.122 INFO  (coreLoadExecutor-6-thread-1) [   x:drupal] o.a.s.c.PluginBag requestHandler : '/analysis/field' created with startup=lazy 
+2016-09-13 21:50:45.122 INFO  (coreLoadExecutor-6-thread-2) [   x:search] o.a.s.c.PluginBag requestHandler : '/analysis/document' created with startup=lazy 
+2016-09-13 21:50:45.122 INFO  (coreLoadExecutor-6-thread-1) [   x:drupal] o.a.s.c.PluginBag requestHandler : '/analysis/document' created with startup=lazy 
+2016-09-13 21:50:45.125 INFO  (coreLoadExecutor-6-thread-2) [   x:search] o.a.s.c.PluginBag requestHandler : '/spell' created with startup=lazy 
+2016-09-13 21:50:45.125 INFO  (coreLoadExecutor-6-thread-1) [   x:drupal] o.a.s.c.PluginBag requestHandler : '/spell' created with startup=lazy 
+2016-09-13 21:50:45.125 INFO  (coreLoadExecutor-6-thread-2) [   x:search] o.a.s.c.PluginBag requestHandler : '/tvrh' created with startup=lazy 
+2016-09-13 21:50:45.125 INFO  (coreLoadExecutor-6-thread-1) [   x:drupal] o.a.s.c.PluginBag requestHandler : '/tvrh' created with startup=lazy 
+2016-09-13 21:50:45.125 INFO  (coreLoadExecutor-6-thread-2) [   x:search] o.a.s.c.PluginBag requestHandler : '/terms' created with startup=lazy 
+2016-09-13 21:50:45.125 INFO  (coreLoadExecutor-6-thread-1) [   x:drupal] o.a.s.c.PluginBag requestHandler : '/terms' created with startup=lazy 
+2016-09-13 21:50:45.125 INFO  (coreLoadExecutor-6-thread-2) [   x:search] o.a.s.c.PluginBag requestHandler : '/elevate' created with startup=lazy 
+2016-09-13 21:50:45.125 INFO  (coreLoadExecutor-6-thread-1) [   x:drupal] o.a.s.c.PluginBag requestHandler : '/elevate' created with startup=lazy 
+2016-09-13 21:50:45.126 INFO  (coreLoadExecutor-6-thread-1) [   x:drupal] o.a.s.c.RequestHandlers Registered paths: /admin/mbeans,standard,,/update/json/docs,/admin/luke,/export,pinkPony,/get,/admin/properties,/elevate,/update/json,/admin/threads,/query,/analysis/field,/analysis/document,/spell,/update/csv,/tvrh,/admin/segments,/admin/system,/replication,mlt,/config,/schema,/update/xslt,/admin/plugins,/admin/logging,/admin/ping,/update,/admin/file,/debug/dump,/terms,/update/extract
+2016-09-13 21:50:45.126 INFO  (coreLoadExecutor-6-thread-2) [   x:search] o.a.s.c.RequestHandlers Registered paths: /admin/mbeans,standard,,/update/json/docs,/admin/luke,/export,pinkPony,/get,/admin/properties,/elevate,/update/json,/admin/threads,/query,/analysis/field,/analysis/document,/spell,/update/csv,/tvrh,/admin/segments,/admin/system,/replication,mlt,/config,/schema,/update/xslt,/admin/plugins,/admin/logging,/admin/ping,/update,/admin/file,/debug/dump,/terms,/update/extract
+2016-09-13 21:50:45.127 INFO  (coreLoadExecutor-6-thread-1) [   x:drupal] o.a.s.c.SolrCore Using default statsCache cache: org.apache.solr.search.stats.LocalStatsCache
+2016-09-13 21:50:45.127 INFO  (coreLoadExecutor-6-thread-2) [   x:search] o.a.s.c.SolrCore Using default statsCache cache: org.apache.solr.search.stats.LocalStatsCache
+2016-09-13 21:50:45.137 INFO  (coreLoadExecutor-6-thread-1) [   x:drupal] o.a.s.u.UpdateHandler Using UpdateLog implementation: org.apache.solr.update.UpdateLog
+2016-09-13 21:50:45.137 INFO  (coreLoadExecutor-6-thread-2) [   x:search] o.a.s.u.UpdateHandler Using UpdateLog implementation: org.apache.solr.update.UpdateLog
+2016-09-13 21:50:45.137 INFO  (coreLoadExecutor-6-thread-1) [   x:drupal] o.a.s.u.UpdateLog Initializing UpdateLog: dataDir= defaultSyncLevel=FLUSH numRecordsToKeep=100 maxNumLogsToKeep=10 numVersionBuckets=65536
+2016-09-13 21:50:45.137 INFO  (coreLoadExecutor-6-thread-2) [   x:search] o.a.s.u.UpdateLog Initializing UpdateLog: dataDir= defaultSyncLevel=FLUSH numRecordsToKeep=100 maxNumLogsToKeep=10 numVersionBuckets=65536
+2016-09-13 21:50:45.163 INFO  (coreLoadExecutor-6-thread-2) [   x:search] o.a.s.u.CommitTracker Hard AutoCommit: if uncommited for 120000ms; if 10000 uncommited docs 
+2016-09-13 21:50:45.163 INFO  (coreLoadExecutor-6-thread-2) [   x:search] o.a.s.u.CommitTracker Soft AutoCommit: if uncommited for 10000ms; if 2000 uncommited docs 
+2016-09-13 21:50:45.164 INFO  (coreLoadExecutor-6-thread-1) [   x:drupal] o.a.s.u.CommitTracker Hard AutoCommit: if uncommited for 120000ms; if 10000 uncommited docs 
+2016-09-13 21:50:45.164 INFO  (coreLoadExecutor-6-thread-1) [   x:drupal] o.a.s.u.CommitTracker Soft AutoCommit: if uncommited for 10000ms; if 2000 uncommited docs 
+2016-09-13 21:50:45.205 INFO  (coreLoadExecutor-6-thread-1) [   x:drupal] o.a.s.c.SolrDeletionPolicy SolrDeletionPolicy.onInit: commits: num=1
+	commit{dir=NRTCachingDirectory(MMapDirectory@/Applications/drupal-7.50-0/apps/solr-5.5.0/server/solr/drupal/data/index lockFactory=org.apache.lucene.store.NativeFSLockFactory@1ce9f57; maxCacheMB=48.0 maxMergeSizeMB=4.0),segFN=segments_2c,generation=84}
+2016-09-13 21:50:45.205 INFO  (coreLoadExecutor-6-thread-2) [   x:search] o.a.s.c.SolrDeletionPolicy SolrDeletionPolicy.onInit: commits: num=1
+	commit{dir=NRTCachingDirectory(MMapDirectory@/Applications/drupal-7.50-0/apps/solr-5.5.0/server/solr/search/data/index lockFactory=org.apache.lucene.store.NativeFSLockFactory@1ce9f57; maxCacheMB=48.0 maxMergeSizeMB=4.0),segFN=segments_1,generation=1}
+2016-09-13 21:50:45.205 INFO  (coreLoadExecutor-6-thread-1) [   x:drupal] o.a.s.c.SolrDeletionPolicy newest commit generation = 84
+2016-09-13 21:50:45.205 INFO  (coreLoadExecutor-6-thread-2) [   x:search] o.a.s.c.SolrDeletionPolicy newest commit generation = 1
+2016-09-13 21:50:45.220 INFO  (coreLoadExecutor-6-thread-2) [   x:search] o.a.s.s.SolrIndexSearcher Opening Searcher@4c22c1f1[search] main
+2016-09-13 21:50:45.228 INFO  (coreLoadExecutor-6-thread-2) [   x:search] o.a.s.r.ManagedResourceStorage File-based storage initialized to use dir: /Applications/drupal-7.50-0/apps/solr-5.5.0/server/solr/search/conf
+2016-09-13 21:50:45.228 INFO  (coreLoadExecutor-6-thread-2) [   x:search] o.a.s.r.RestManager Initializing RestManager with initArgs: {storageDir=/Applications/drupal-7.50-0/apps/solr-5.5.0/server/solr/search/conf}
+2016-09-13 21:50:45.240 INFO  (coreLoadExecutor-6-thread-2) [   x:search] o.a.s.r.ManagedResourceStorage Reading _rest_managed.json using file:dir=/Applications/drupal-7.50-0/apps/solr-5.5.0/server/solr/search/conf
+2016-09-13 21:50:45.240 INFO  (coreLoadExecutor-6-thread-2) [   x:search] o.a.s.r.RestManager Initializing 0 registered ManagedResources
+2016-09-13 21:50:45.253 INFO  (coreLoadExecutor-6-thread-2) [   x:search] o.a.s.h.c.QueryElevationComponent Loading QueryElevation from: /Applications/drupal-7.50-0/apps/solr-5.5.0/server/solr/search/conf/elevate.xml
+2016-09-13 21:50:45.262 INFO  (coreLoadExecutor-6-thread-2) [   x:search] o.a.s.h.c.SpellCheckComponent Initializing spell checkers
+2016-09-13 21:50:45.269 INFO  (coreLoadExecutor-6-thread-2) [   x:search] o.a.s.h.c.SpellCheckComponent Registering newSearcher listener for spellchecker: default
+2016-09-13 21:50:45.270 INFO  (coreLoadExecutor-6-thread-2) [   x:search] o.a.s.h.c.SpellCheckComponent No queryConverter defined, using default converter
+2016-09-13 21:50:45.271 INFO  (coreLoadExecutor-6-thread-2) [   x:search] o.a.s.h.ReplicationHandler Commits will be reserved for  10000
+2016-09-13 21:50:45.272 INFO  (searcherExecutor-7-thread-1-processing-x:search) [   x:search] o.a.s.c.QuerySenderListener QuerySenderListener sending requests to Searcher@4c22c1f1[search] main{ExitableDirectoryReader(UninvertingDirectoryReader())}
+2016-09-13 21:50:45.273 INFO  (coreLoadExecutor-6-thread-2) [   x:search] o.a.s.u.UpdateLog Looking up max value of version field to seed version buckets
+2016-09-13 21:50:45.274 INFO  (coreLoadExecutor-6-thread-2) [   x:search] o.a.s.u.VersionInfo Refreshing highest value of _version_ for 65536 version buckets from index
+2016-09-13 21:50:45.274 INFO  (coreLoadExecutor-6-thread-2) [   x:search] o.a.s.u.VersionInfo No terms found for _version_, cannot seed version bucket highest value from index
+2016-09-13 21:50:45.276 INFO  (coreLoadExecutor-6-thread-1) [   x:drupal] o.a.s.s.SolrIndexSearcher Opening Searcher@79513f79[drupal] main
+2016-09-13 21:50:45.277 INFO  (coreLoadExecutor-6-thread-1) [   x:drupal] o.a.s.r.ManagedResourceStorage File-based storage initialized to use dir: /Applications/drupal-7.50-0/apps/solr-5.5.0/server/solr/drupal/conf
+2016-09-13 21:50:45.277 INFO  (coreLoadExecutor-6-thread-1) [   x:drupal] o.a.s.r.RestManager Initializing RestManager with initArgs: {storageDir=/Applications/drupal-7.50-0/apps/solr-5.5.0/server/solr/drupal/conf}
+2016-09-13 21:50:45.277 INFO  (coreLoadExecutor-6-thread-1) [   x:drupal] o.a.s.r.ManagedResourceStorage Reading _rest_managed.json using file:dir=/Applications/drupal-7.50-0/apps/solr-5.5.0/server/solr/drupal/conf
+2016-09-13 21:50:45.277 INFO  (coreLoadExecutor-6-thread-1) [   x:drupal] o.a.s.r.RestManager Initializing 0 registered ManagedResources
+2016-09-13 21:50:45.277 INFO  (coreLoadExecutor-6-thread-1) [   x:drupal] o.a.s.h.c.QueryElevationComponent Loading QueryElevation from: /Applications/drupal-7.50-0/apps/solr-5.5.0/server/solr/drupal/conf/elevate.xml
+2016-09-13 21:50:45.278 INFO  (coreLoadExecutor-6-thread-2) [   x:search] o.a.s.u.UpdateLog Took 4.0ms to seed version buckets with highest version 1545047583700811776
+2016-09-13 21:50:45.279 INFO  (coreLoadExecutor-6-thread-2) [   x:search] o.a.s.c.CoreContainer registering core: search
+2016-09-13 21:50:45.281 INFO  (coreLoadExecutor-6-thread-1) [   x:drupal] o.a.s.h.c.SpellCheckComponent Initializing spell checkers
+2016-09-13 21:50:45.287 INFO  (coreLoadExecutor-6-thread-1) [   x:drupal] o.a.s.h.c.SpellCheckComponent Registering newSearcher listener for spellchecker: default
+2016-09-13 21:50:45.287 INFO  (coreLoadExecutor-6-thread-1) [   x:drupal] o.a.s.h.c.SpellCheckComponent No queryConverter defined, using default converter
+2016-09-13 21:50:45.287 INFO  (coreLoadExecutor-6-thread-1) [   x:drupal] o.a.s.h.ReplicationHandler Commits will be reserved for  10000
+2016-09-13 21:50:45.288 INFO  (searcherExecutor-8-thread-1-processing-x:drupal) [   x:drupal] o.a.s.c.QuerySenderListener QuerySenderListener sending requests to Searcher@79513f79[drupal] main{ExitableDirectoryReader(UninvertingDirectoryReader(Uninverting(_1r(5.5.0):C28)))}
+2016-09-13 21:50:45.288 INFO  (coreLoadExecutor-6-thread-1) [   x:drupal] o.a.s.u.UpdateLog Looking up max value of version field to seed version buckets
+2016-09-13 21:50:45.289 INFO  (coreLoadExecutor-6-thread-1) [   x:drupal] o.a.s.u.VersionInfo Refreshing highest value of _version_ for 65536 version buckets from index
+2016-09-13 21:50:45.301 INFO  (coreLoadExecutor-6-thread-1) [   x:drupal] o.a.s.u.VersionInfo Found MAX value 1545297308370862080 from Terms for _version_ in index
+2016-09-13 21:50:45.304 INFO  (coreLoadExecutor-6-thread-1) [   x:drupal] o.a.s.u.UpdateLog Took 15.0ms to seed version buckets with highest version 1545297308370862080
+2016-09-13 21:50:45.304 INFO  (coreLoadExecutor-6-thread-1) [   x:drupal] o.a.s.c.CoreContainer registering core: drupal
+2016-09-13 21:50:45.356 INFO  (searcherExecutor-7-thread-1-processing-x:search) [   x:search] o.a.s.c.S.Request [search]  webapp=null path=null params={q=solr+rocks&distrib=false&start=0&rows=10&event=firstSearcher} hits=0 status=0 QTime=81
+2016-09-13 21:50:45.357 INFO  (searcherExecutor-7-thread-1-processing-x:search) [   x:search] o.a.s.c.QuerySenderListener QuerySenderListener done.
+2016-09-13 21:50:45.357 INFO  (searcherExecutor-7-thread-1-processing-x:search) [   x:search] o.a.s.h.c.SpellCheckComponent Loading spell index for spellchecker: default
+2016-09-13 21:50:45.359 INFO  (searcherExecutor-7-thread-1-processing-x:search) [   x:search] o.a.s.c.SolrCore [search] Registered new searcher Searcher@4c22c1f1[search] main{ExitableDirectoryReader(UninvertingDirectoryReader())}
+2016-09-13 21:50:45.361 INFO  (searcherExecutor-8-thread-1-processing-x:drupal) [   x:drupal] o.a.s.c.S.Request [drupal]  webapp=null path=null params={q=solr+rocks&distrib=false&start=0&rows=10&event=firstSearcher} hits=11 status=0 QTime=73
+2016-09-13 21:50:45.373 INFO  (searcherExecutor-8-thread-1-processing-x:drupal) [   x:drupal] o.a.s.c.QuerySenderListener QuerySenderListener done.
+2016-09-13 21:50:45.374 INFO  (searcherExecutor-8-thread-1-processing-x:drupal) [   x:drupal] o.a.s.h.c.SpellCheckComponent Loading spell index for spellchecker: default
+2016-09-13 21:50:45.377 INFO  (searcherExecutor-8-thread-1-processing-x:drupal) [   x:drupal] o.a.s.c.SolrCore [drupal] Registered new searcher Searcher@79513f79[drupal] main{ExitableDirectoryReader(UninvertingDirectoryReader(Uninverting(_1r(5.5.0):C28)))}
+2016-09-13 21:50:49.453 INFO  (qtp434176574-14) [   x:drupal] o.a.s.c.S.Request [drupal]  webapp=/solr path=/select params={facet.field=bundle&facet.field=sm_field_author&facet.field=sm_field_endorse&json.nl=arrarr&hl=true&indent=true&hl.fragsize=200&fq=ss_language:und&rows=12&wt=json&facet=on} hits=24 status=0 QTime=159
+2016-09-13 21:50:49.515 INFO  (qtp434176574-20) [   x:drupal] o.a.s.c.S.Request [drupal]  webapp=/solr path=/select params={facet.field=bundle&facet.field=sm_field_author&facet.field=sm_field_endorse&json.nl=arrarr&hl=true&indent=true&hl.fragsize=200&fq=ss_language:und&rows=12&wt=json&facet=on} hits=24 status=0 QTime=30
+2016-09-13 21:51:38.553 INFO  (qtp434176574-20) [   x:drupal] o.a.s.c.S.Request [drupal]  webapp=/solr path=/select params={facet.field=bundle&facet.field=sm_field_author&facet.field=sm_field_endorse&json.nl=arrarr&hl=true&indent=true&hl.fragsize=200&fq=ss_language:und&rows=12&wt=json&facet=on} hits=24 status=0 QTime=25
+2016-09-13 21:51:38.587 INFO  (qtp434176574-14) [   x:drupal] o.a.s.c.S.Request [drupal]  webapp=/solr path=/select params={facet.field=bundle&facet.field=sm_field_author&facet.field=sm_field_endorse&json.nl=arrarr&hl=true&indent=true&hl.fragsize=200&fq=ss_language:und&rows=12&wt=json&facet=on} hits=24 status=0 QTime=19
+2016-09-13 21:51:41.392 INFO  (qtp434176574-20) [   x:drupal] o.a.s.c.S.Request [drupal]  webapp=/solr path=/select params={facet.field=bundle&facet.field=sm_field_author&facet.field=sm_field_endorse&json.nl=arrarr&hl=true&indent=true&hl.fragsize=200&start=12&fq=ss_language:und&rows=12&wt=json&facet=on} hits=24 status=0 QTime=21
+2016-09-13 21:53:08.477 INFO  (qtp434176574-18) [   x:drupal] o.a.s.c.S.Request [drupal]  webapp=/solr path=/select params={facet.field=bundle&facet.field=sm_field_author&facet.field=sm_field_endorse&json.nl=arrarr&hl=true&indent=true&hl.fragsize=200&fq=ss_language:und&rows=12&wt=json&facet=on} hits=24 status=0 QTime=16
+2016-09-13 21:53:08.502 INFO  (qtp434176574-20) [   x:drupal] o.a.s.c.S.Request [drupal]  webapp=/solr path=/select params={facet.field=bundle&facet.field=sm_field_author&facet.field=sm_field_endorse&json.nl=arrarr&hl=true&indent=true&hl.fragsize=200&fq=ss_language:und&rows=12&wt=json&facet=on} hits=24 status=0 QTime=12
+2016-09-13 21:53:10.881 INFO  (qtp434176574-21) [   x:drupal] o.a.s.c.S.Request [drupal]  webapp=/solr path=/select params={facet.field=bundle&facet.field=sm_field_author&facet.field=sm_field_endorse&json.nl=arrarr&hl=true&indent=true&hl.fragsize=200&start=12&fq=ss_language:und&rows=12&wt=json&facet=on} hits=24 status=0 QTime=10

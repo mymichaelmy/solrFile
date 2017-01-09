@@ -196,7 +196,7 @@
                 enablePositionIncrements="true"
                 /> -->
         <charFilter class="solr.HTMLStripCharFilterFactory" />
-        <filter class="solr.EdgeNGramFilterFactory" minGramSize="2" maxGramSize="25" />
+        <filter class="solr.EdgeNGramFilterFactory" minGramSize="4" maxGramSize="25" />
         <filter class="solr.WordDelimiterFilterFactory"
                 generateWordParts="1"
                 generateNumberParts="1"
@@ -475,6 +475,9 @@
 
     <!-- content is the default field for full text search - dump crap here -->
     <field name="content" type="text" indexed="true" stored="true" termVectors="true"/>
+
+    <copyField source="label" dest="content"/>
+
     <field name="teaser" type="text" indexed="false" stored="true"/>
     <field name="path" type="string" indexed="true" stored="true"/>
     <field name="path_alias" type="text" indexed="true" stored="true" termVectors="true" omitNorms="true"/>
